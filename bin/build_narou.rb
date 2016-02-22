@@ -22,7 +22,7 @@ end
 
 if ARGV.empty?
   Dir.chdir(ROOT_DIR) do
-    Dir.glob("chapter-*/**/*.md") do |file|
+    Dir.glob("chapter-*/**/*.txt") do |file|
       convert_file(ROOT_DIR + file, OUT_DIR + file)
     end
   end
