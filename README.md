@@ -5,5 +5,4 @@
 ## リンク
 - [小説家になろう内の小説ページ](http://ncode.syosetu.com/n5191dd/)
 - カクヨムでも連載予定
-- [GitBook](https://www.gitbook.com/book/io-monad/magi-hacker/details)
 - [GitHub](https://github.com/io-monad/magi-hacker)
