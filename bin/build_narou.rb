@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby -E UTF-8
 
-require "fileutils"
 require "pathname"
 
 ROOT_DIR = Pathname.new(File.expand_path(__FILE__)).join("..", "..")
