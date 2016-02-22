@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
 
 require "fileutils"
+require "pathname"
 
-OUT_DIR = "out/narou"
+ROOT_DIR = Pathname.new(File.expand_path(__FILE__)).join("..", "..")
+OUT_DIR  = Pathname.new(ROOT_DIR).join("out", "narou")
 
 def narou_markup(original)
   # 《《強調》》 → |強《・》|調《・》
@@ -11,15 +13,24 @@ def narou_markup(original)
   end
 end
 
-FileUtils.mkdir_p(OUT_DIR) unless Dir.exist?(OUT_DIR)
+def convert_file(orig_path, out_path)
+  out_path.parent.mkpath
+  original = orig_path.read
+  modified = narou_markup(original)
+  out_path.write(modified)
+end
 
-Dir.glob("chapter-*") do |chapter|
-  chapter_outdir = "#{OUT_DIR}/#{chapter}"
-  Dir.mkdir(chapter_outdir) unless Dir.exist?(chapter_outdir)
-  Dir.glob("#{chapter}/*.md") do |section|
-    section_outfile = "#{OUT_DIR}/#{section}"
-    original = IO.read(section)
-    modified = narou_markup(original)
-    IO.write(section_outfile, modified)
+if ARGV.empty?
+  Dir.chdir(ROOT_DIR) do
+    Dir.glob("chapter-*/**/*.md") do |file|
+      convert_file(ROOT_DIR + file, OUT_DIR + file)
+    end
+  end
+else
+  ARGV.each do |path|
+    orig_path = Pathname.new(ROOT_DIR).join(path)
+    rel_path = orig_path.relative_path_from(ROOT_DIR)
+    out_path = OUT_DIR + rel_path
+    convert_file(orig_path, out_path)
   end
 end
