@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby -E UTF-8
 
 require "fileutils"
 require "pathname"
@@ -15,9 +15,9 @@ end
 
 def convert_file(orig_path, out_path)
   out_path.parent.mkpath
-  original = orig_path.read
+  original = IO.read(orig_path)
   modified = narou_markup(original)
-  out_path.write(modified)
+  IO.write(out_path, modified)
 end
 
 if ARGV.empty?
