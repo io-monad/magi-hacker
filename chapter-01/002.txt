@@ -1,17 +1,17 @@
 # 002 - hacker.say("Hello, world!");
 
-> Magi-World System ver 6.15.468
+    > Magi-World System ver 6.15.468
 
-> Searching your account by magi-fingerprint... Not found
-> Accepting you as a new user; please fill out your information.
-Name: SHIRAISHI Banpei
-Password: ***********
-Re-type password: ***********
+    > Searching your account by magi-fingerprint... Not found
+    > Accepting you as a new user; please fill out your information.
+    Name: SHIRAISHI Banpei
+    Password: ***********
+    Re-type password: ***********
 
-> Creating your account... Done
-> Your registration has been completed.
+    > Creating your account... Done
+    > Your registration has been completed.
 
-> Welcome to Magi-World!
+    > Welcome to Magi-World!
 
 //----
 
