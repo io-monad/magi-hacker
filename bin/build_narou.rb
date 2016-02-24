@@ -16,7 +16,7 @@ def lint_novel(text)
   line_no = 1
   errors = []
   text.each_line do |line|
-    line.scan(%r{(\A[^#/ 　「『\n])|([　 ]\n?\z)|(。」)}) do |lead, trail, fs|
+    line.scan(%r{(\A[^#/ 　「『【\n])|([　 ]\n?\z)|(。」)}) do |lead, trail, fs|
       errors << "Line #{line_no}: No leading space" if lead
       errors << "Line #{line_no}: Extra tailing space" if trail
       errors << "Line #{line_no}: Extra full-stop in quote" if fs
