@@ -10,3 +10,10 @@
 - [小説家になろう内の小説ページ](http://ncode.syosetu.com/n5191dd/)
 - カクヨムでも連載予定
 - [GitHub](https://github.com/io-monad/magi-hacker)
+
+## 作者
+入出もなど / IRIDE Monad
+
+- ブログ: [もなでぃっく](http://io-monad.hatenablog.com/)
+- メール: iride.monad@gmail.com
+- Twitter: [@io_monad](https://twitter.com/io_monad)
