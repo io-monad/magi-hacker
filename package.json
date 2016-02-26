@@ -8,9 +8,15 @@
 	"repository": "io-monad/magi-hacker",
 	"homepage": "https://github.com/io-monad/magi-hacker",
 	"scripts": {
-		"test": "textlint chapter-*"
+		"test": "gulp lint"
 	},
 	"devDependencies": {
+		"coffee-script": "^1.10.0",
+		"gulp": "^3.9.1",
+		"gulp-load-plugins": "^1.2.0",
+		"gulp-replace": "^0.5.4",
+		"gulp-textlint": "^1.1.0",
+		"rimraf": "^2.5.2",
 		"textlint": "^5.3.1",
 		"textlint-rule-general-novel-style-ja": "^1.1.0",
 		"textlint-rule-no-doubled-joshi": "^3.2.0",
