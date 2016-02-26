@@ -1,0 +1,19 @@
+{
+	"name": "magi-hacker",
+	"version": "0.0.0",
+	"description": "Novel: Magi-Hacker's Start-up in Another World",
+	"author": "IRIDE Monad <iride.monad@gmail.com>",
+	"license": "UNLICENSED",
+	"private": true,
+	"repository": "io-monad/magi-hacker",
+	"homepage": "https://github.com/io-monad/magi-hacker",
+	"scripts": {
+		"test": "textlint chapter-*"
+	},
+	"devDependencies": {
+		"textlint": "^5.3.1",
+		"textlint-rule-general-novel-style-ja": "^1.1.0",
+		"textlint-rule-no-doubled-joshi": "^3.2.0",
+		"textlint-rule-no-start-duplicated-conjunction": "^1.0.7"
+	}
+}
