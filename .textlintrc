@@ -20,6 +20,8 @@
             "even_number_ellipsises": true,
             // 連続したダッシュ(―)の数は偶数にする
             "even_number_dashes": true,
+            // 連続した句読点(。、)を許可しない
+            "appropriate_use_of_punctuation": true,
             // 連続した中黒(・)を許可しない
             "appropriate_use_of_interpunct": true,
             // 連続した長音符(ー)を許可しない

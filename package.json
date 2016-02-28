@@ -18,7 +18,7 @@
 		"gulp-textlint": "^1.1.0",
 		"rimraf": "^2.5.2",
 		"textlint": "^5.3.1",
-		"textlint-rule-general-novel-style-ja": "^1.1.0",
+		"textlint-rule-general-novel-style-ja": "^1.2.0",
 		"textlint-rule-no-doubled-joshi": "^3.2.0",
 		"textlint-rule-no-start-duplicated-conjunction": "^1.0.7"
 	}
