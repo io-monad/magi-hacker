@@ -1,6 +1,6 @@
-# マギハッカーの異世界ベンチャー起業術
+# マギハッカーの異世界ベンチャー起業術 [![Build Status](https://travis-ci.org/io-monad/magi-hacker.svg?branch=master)](https://travis-ci.org/io-monad/magi-hacker)
 
-[![Build Status](https://travis-ci.org/io-monad/magi-hacker.svg?branch=master)](https://travis-ci.org/io-monad/magi-hacker)
+[![](./images/magi-hacker-cover.png)](https://kakuyomu.jp/works/4852201425154996024)
 
 ハッカーと呼ばれる存在に憧れてプログラマとなり、天才ハッカーとまで呼ばれるようになった白石番兵は、過酷なデスマーチ中に力尽きる。次に目を覚ますとそこは、プログラミング言語で作られた魔法のような「マギサービス」が人々の生活を支えている異世界だった。
 
@@ -10,7 +10,7 @@
 
 ## リンク
 - [小説家になろう内の小説ページ](http://ncode.syosetu.com/n5191dd/)
-- カクヨムでも連載予定
+- [カクヨム内の小説ページ](https://kakuyomu.jp/works/4852201425154996024)
 - [GitHub](https://github.com/io-monad/magi-hacker)
 
 ## 作者
