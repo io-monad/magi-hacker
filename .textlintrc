@@ -1,9 +1,5 @@
 {
     "rules": {
-        // 二重助詞
-        "no-doubled-joshi": {
-            "min_interval": 1
-        },
         // 同じ接続詞で開始する文が二文以内に出現
         "no-start-duplicated-conjunction": {
             "interval": 2
