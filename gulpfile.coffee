@@ -11,6 +11,10 @@ warnLongRuby = () ->
     if not /^[|｜]([^\n《|｜]{1,10})《([^\n》]{1,20})》$/.test(match)
       throw "Too long ruby found: #{match}"
 
+stripAnnotations = () ->
+  $.replace /《《([^\n》]+)》》|[|｜]([^\n《|｜]+)《[^\n》]+》/g,
+    (m, text1, text2) -> text1 or text2
+
 gulp.task "clean", (cb) ->
   rimraf "./out", cb
 
@@ -24,4 +28,9 @@ gulp.task "build", ["lint"], ->
   .pipe kakuyomuToNarou()
   .pipe gulp.dest("./out/narou")
 
-gulp.task "default", ["build"]
+gulp.task "stat", ->
+  gulp.src "./chapter-*/**/*.txt"
+  .pipe stripAnnotations()
+  .pipe $.countStat(words: false, showFile: false)
+
+gulp.task "default", ["build", "stat"]
