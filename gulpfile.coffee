@@ -1,36 +1,35 @@
 gulp = require "gulp"
 $ = do require "gulp-load-plugins"
 rimraf = require "rimraf"
-
-kakuyomuToNarou = () ->
-  $.replace /《《([^\n》]+)》》/g,
-    (m, text) -> text.split("").map((s) -> "|#{s}《・》").join("")
-
-warnLongRuby = () ->
-  $.scan term: /[|｜]([^\n《|｜]+)《([^\n》]+)》/g, fn: (match) ->
-    if not /^[|｜]([^\n《|｜]{1,10})《([^\n》]{1,20})》$/.test(match)
-      throw "Too long ruby found: #{match}"
-
-stripAnnotations = () ->
-  $.replace /《《([^\n》]+)》》|[|｜]([^\n《|｜]+)《[^\n》]+》/g,
-    (m, text1, text2) -> text1 or text2
+anno = require "./tasks/lib/annotations"
 
 gulp.task "clean", (cb) ->
   rimraf "./out", cb
 
 gulp.task "lint", ->
   gulp.src "./chapter-*/**/*.txt"
-  .pipe warnLongRuby()
+  .pipe anno.warnLongRuby()
+  .pipe anno.stripAnnotations()
   .pipe $.textlint()
 
-gulp.task "build", ["lint"], ->
+gulp.task "build:narou", ["lint"], ->
   gulp.src "./chapter-*/**/*.txt"
-  .pipe kakuyomuToNarou()
+  .pipe anno.filterSiteSpecific("narou")
+  .pipe anno.converToNarouEmphasis()
+  .pipe anno.warnRemainingMetaTag()
   .pipe gulp.dest("./out/narou")
+
+gulp.task "build:kakuyomu", ["lint"], ->
+  gulp.src "./chapter-*/**/*.txt"
+  .pipe anno.filterSiteSpecific("kakuyomu")
+  .pipe anno.warnRemainingMetaTag()
+  .pipe gulp.dest("./out/kakuyomu")
+
+gulp.task "build", ["build:narou", "build:kakuyomu"]
 
 gulp.task "stat", ->
   gulp.src "./chapter-*/**/*.txt"
-  .pipe stripAnnotations()
+  .pipe anno.stripAnnotations()
   .pipe $.countStat(words: false, showFile: false)
 
 gulp.task "default", ["build", "stat"]
