@@ -5,10 +5,5 @@
 			"path": ".",
 			"folder_exclude_patterns": ["node_modules"]
 		}
-	],
-	"settings":
-	{
-		"word_wrap": true,
-		"wrap_width": 80
-	}
+	]
 }
