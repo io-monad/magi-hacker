@@ -16,11 +16,11 @@
     "gulp-count-stat": "^1.0.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-replace": "^0.5.4",
-    "gulp-scan": "^0.1.1",
-    "gulp-textlint": "^1.1.0",
+    "gulp-scan": "^0.1.4",
+    "gulp-textlint": "^1.2.0",
     "gulp-util": "^3.0.7",
     "rimraf": "^2.5.2",
-    "textlint": "^6.0.1",
+    "textlint": "^6.0.3",
     "textlint-rule-general-novel-style-ja": "^1.3.0",
     "textlint-rule-no-start-duplicated-conjunction": "^1.0.7"
   }
