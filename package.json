@@ -15,6 +15,7 @@
     "gulp": "^3.9.1",
     "gulp-count-stat": "^1.0.0",
     "gulp-load-plugins": "^1.2.0",
+    "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-scan": "^0.1.4",
     "gulp-textlint": "^1.2.0",
