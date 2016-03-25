@@ -6,13 +6,10 @@
 :construction: 現在作業中です。まだ 008 話までしか対象となっていません。
 
 ## 索引
-<table>
-<tbody>
 <% toc.forEach(o => { %>
-<tr><th>[<%= o.category %>](#<%= o.category %>)</th><td><%- o.definitions.map(def => def.link).join(" / ") %></td></tr>
+[<%= o.category %>](#<%= o.category %>) - <%- o.definitions.map(def => def.link).join(" / ") %>
 <% }) %>
-</tbody>
-</table>
+
 <% toc.forEach(o => { %>
 ## <%- o.category %>
 
