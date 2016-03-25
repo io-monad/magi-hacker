@@ -76,11 +76,8 @@ module.exports = (inputFile, outFile) ->
       defs = _.sortBy(definitions[category], ["yomi", "word"])
       { category: category, definitions: defs }
 
-    navigation = toc.map((o) -> "[#{o.category}](##{o.category})").join(" / ")
-
     glossary = template
       toc: toc,
-      navigation: navigation,
       wordLink: wordLink
 
     file = new gutil.File

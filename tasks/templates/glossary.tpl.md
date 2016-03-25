@@ -3,15 +3,16 @@
 
 「マギハッカーの異世界ベンチャー起業術」の用語集です。また、小説内で解説された技術用語も逆引きで含みます。
 
-[索引](#索引) / <%- navigation %>
+:construction: 現在作業中です。まだ 008 話までしか対象となっていません。
 
 ## 索引
-
-| 行 | 用語 |
-| -- | ---- |
-<% toc.forEach(o => { %>| `<%= o.category %>` | <%- o.definitions.map(def => def.link).join(" / ") %> |
+<table>
+<tbody>
+<% toc.forEach(o => { %>
+<tr><th>[<%= o.category %>](#<%= o.category %>)</th><td><%- o.definitions.map(def => def.link).join(" / ") %></td></tr>
 <% }) %>
-
+</tbody>
+</table>
 <% toc.forEach(o => { %>
 ## <%- o.category %>
 
