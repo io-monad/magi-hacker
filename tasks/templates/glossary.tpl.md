@@ -9,6 +9,7 @@
 
 <%- o.definitions.map(def => def.link).join(" / ") %>
 <%   o.definitions.forEach(def => { %>
+<%= def.anchor %>
 ### <%= def.header %>
 
 <%= wordLink(def.content) %>

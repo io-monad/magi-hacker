@@ -66,7 +66,8 @@ module.exports = (inputFile, outFile) ->
       (definitions[category] ||= []).push
         word: word,
         yomi: yomi,
-        header: if word == yomi then word else ruby(word, yomi) + anchor(word),
+        header: if word == yomi then word else ruby(word, yomi),
+        anchor: if word == yomi then ""   else anchor(word),
         content: content.replace(/^\s+|\s+$/g, ""),
         first: firsts[word],
         link: "[#{word}](##{word})"
