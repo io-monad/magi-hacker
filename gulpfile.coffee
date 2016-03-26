@@ -2,6 +2,7 @@ gulp = require "gulp"
 $ = do require "gulp-load-plugins"
 rimraf = require "rimraf"
 anno = require "./tasks/lib/annotations"
+glossary = require "./tasks/lib/glossary"
 
 gulp.task "clean", (cb) ->
   rimraf "./out", cb
@@ -29,9 +30,18 @@ gulp.task "build:kakuyomu", ["lint"], ->
 
 gulp.task "build", ["build:narou", "build:kakuyomu"]
 
+gulp.task "glossary", ->
+  gulp.src "./chapter-*/**/*.txt"
+  .pipe anno.convertToMarkdown()
+  .pipe glossary("glossary.yml", "GLOSSARY.md")
+  .pipe gulp.dest(".")
+
+gulp.task "glossary:watch", ->
+  gulp.watch ["glossary.yml"], ["glossary"]
+
 gulp.task "stat", ->
   gulp.src "./chapter-*/**/*.txt"
   .pipe anno.stripAnnotations()
   .pipe $.countStat(words: false, showFile: false)
 
-gulp.task "default", ["build", "stat"]
+gulp.task "default", ["build", "glossary", "stat"]

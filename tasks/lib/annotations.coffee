@@ -19,17 +19,22 @@ SiteSpecificScope = ///
 
 module.exports =
 
+  # Convert annotations to Markdown tags
+  convertToMarkdown: () ->
+    replace /// #{Emphasis} | #{RubyLoose} ///g, (m, em, rb, rt) ->
+      if em then "**#{em}**" else "<ruby>#{rb}<rp> (</rp><rt>#{rt}</rt><rp>)</rp></ruby>"
+
   # Convert Kakuyomu-style emphasis to Narou-style using ruby
   # e.g. 《《あいう》》 -> |あ《・》|い《・》|う《・》
   converToNarouEmphasis: () ->
-    replace ///#{Emphasis}///g,
-      (m, text) -> text.split("").map((s) -> "|#{s}《・》").join("")
+    replace ///#{Emphasis}///g, (m, text) ->
+      text.split("").map((s) -> "|#{s}《・》").join("")
 
   # Filter site specific text using meta tags (//#)
   # e.g. //# kakuyomu { ... //#} only remains for Kakuyomu
   filterSiteSpecific: (targetSite) ->
-    replace SiteSpecificScope,
-      (m, site, text) -> if site == targetSite then text else ""
+    replace SiteSpecificScope, (m, site, text) ->
+      if site == targetSite then text else ""
 
   # Warn too long ruby not shown on Narou properly
   warnLongRuby: () ->

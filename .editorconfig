@@ -10,7 +10,7 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
-[{*.rb,Rakefile,Guardfile,*.coffee}]
+[{*.rb,Rakefile,Guardfile,*.coffee,*.yml}]
 indent_size = 2
 
 [*.md]

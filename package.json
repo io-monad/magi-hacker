@@ -20,9 +20,14 @@
     "gulp-scan": "^0.1.4",
     "gulp-textlint": "^1.2.0",
     "gulp-util": "^3.0.7",
+    "line-column": "^1.0.1",
+    "lodash": "^4.6.1",
+    "match-index": "^1.0.1",
+    "regex-trie": "^1.0.4",
     "rimraf": "^2.5.2",
     "textlint": "^6.0.3",
     "textlint-rule-general-novel-style-ja": "^1.3.0",
-    "textlint-rule-no-start-duplicated-conjunction": "^1.0.7"
+    "textlint-rule-no-start-duplicated-conjunction": "^1.0.7",
+    "yamljs": "^0.2.6"
   }
 }
