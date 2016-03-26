@@ -28,11 +28,20 @@ gulp.task "build:kakuyomu", ["lint"], ->
   .pipe $.rename(prefix: "kakuyomu-")
   .pipe gulp.dest("./out/kakuyomu")
 
-gulp.task "build", ["build:narou", "build:kakuyomu"]
+gulp.task "build:markdown", ["lint"], ->
+  gulp.src "./chapter-*/**/*.txt"
+  .pipe anno.filterSiteSpecific("kakuyomu")
+  .pipe anno.markupAnnotations()
+  .pipe anno.convertToMarkdown()
+  .pipe anno.warnRemainingMetaTag()
+  .pipe $.rename(prefix: "md-", extname: ".md")
+  .pipe gulp.dest("./out/markdown")
+
+gulp.task "build", ["build:narou", "build:kakuyomu", "build:markdown"]
 
 gulp.task "glossary", ->
   gulp.src "./chapter-*/**/*.txt"
-  .pipe anno.convertToMarkdown()
+  .pipe anno.markupAnnotations()
   .pipe glossary("glossary.yml", "GLOSSARY.md")
   .pipe gulp.dest(".")
 

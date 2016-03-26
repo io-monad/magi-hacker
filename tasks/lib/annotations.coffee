@@ -1,5 +1,6 @@
 replace = require "gulp-replace"
 scan = require "gulp-scan"
+combine = require "stream-combiner"
 
 Space         = "[ \\t]*"
 MultilineText = "(?:.|\\n)*?"
@@ -9,6 +10,7 @@ Emphasis      = "《《([^\\n》]+)》》"                            # 《《�
 RubyLoose     = "[|｜]([^\\n《|｜]+)《([^\\n》]+)》"             #  |ルビ対象《ルビ本文》
 RubyStrict    = "[|｜]([^\\n《|｜]{1,10})《([^\\n》]{1,20})》"   #  ルビ (文字数制限あり)
 MetaTagLine   = "#{MetaTagPrefix}.*"                             #  //# ... (メタタグ)
+RuleLine      = "^//----#{Space}(?:<br>)?$"                      #  //---- (区切り)
 
 # Site-specific text ($1 = Site name, $2 = Scoped text)
 SiteSpecificScope = ///
@@ -17,12 +19,27 @@ SiteSpecificScope = ///
   #{MetaTagPrefix} \} #{Space} \n                  # //# }
 ///mg
 
+# Ruby tag helper
+rubyTag = (rb, rt) ->
+  "<ruby>#{rb}<rp> (</rp><rt>#{rt}</rt><rp>)</rp></ruby>"
+
 module.exports =
 
-  # Convert annotations to Markdown tags
-  convertToMarkdown: () ->
+  # Convert annotations to HTML
+  markupAnnotations: () ->
     replace /// #{Emphasis} | #{RubyLoose} ///g, (m, em, rb, rt) ->
-      if em then "**#{em}**" else "<ruby>#{rb}<rp> (</rp><rt>#{rt}</rt><rp>)</rp></ruby>"
+      if em
+        em.split("").map((s) -> rubyTag(s, "・")).join("")
+      else
+        rubyTag(rb, rt)
+
+  # Convert text into Markdown
+  convertToMarkdown: () ->
+    combine(
+      this.markupAnnotations(),
+      replace(/\n+/g, (m) -> if m.length == 1 then "<br>\n" else m),
+      replace(///#{RuleLine}///mg, (m) -> "----")
+    )
 
   # Convert Kakuyomu-style emphasis to Narou-style using ruby
   # e.g. 《《あいう》》 -> |あ《・》|い《・》|う《・》
