@@ -3,6 +3,7 @@ $ = do require "gulp-load-plugins"
 rimraf = require "rimraf"
 anno = require "./tasks/lib/annotations"
 glossary = require "./tasks/lib/glossary"
+summary = require "./tasks/lib/summary"
 
 gulp.task "clean", (cb) ->
   rimraf "./out", cb
@@ -12,6 +13,13 @@ gulp.task "lint", ->
   .pipe anno.warnLongRuby()
   .pipe anno.stripAnnotations()
   .pipe $.textlint()
+
+gulp.task "build", [
+  "build:narou",
+  "build:kakuyomu",
+  "build:markdown",
+  "build:summary"
+]
 
 gulp.task "build:narou", ["lint"], ->
   gulp.src "./chapter-*/**/*.txt"
@@ -37,7 +45,10 @@ gulp.task "build:markdown", ["lint"], ->
   .pipe $.rename(prefix: "md-", extname: ".md")
   .pipe gulp.dest("./out/markdown")
 
-gulp.task "build", ["build:narou", "build:kakuyomu", "build:markdown"]
+gulp.task "build:summary", ->
+  gulp.src "./chapter-*/**/*.{txt,md}"
+  .pipe summary("SUMMARY.md")
+  .pipe gulp.dest(".")
 
 gulp.task "glossary", ->
   gulp.src "./chapter-*/**/*.txt"
