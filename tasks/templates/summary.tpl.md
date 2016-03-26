@@ -2,6 +2,9 @@
 # 目次
 
 「マギハッカーの異世界ベンチャー起業術」の目次です。
+
+* [用語集](GLOSSARY.md)
+
 <% pages.forEach(chapter => { %>
 ## <%- chapter.title %>
 <% if (chapter.cover) { %>
