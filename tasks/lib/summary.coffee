@@ -4,12 +4,14 @@ path = require "path"
 gutil = require "gulp-util"
 through = require "through2"
 
-TemplateFile = "#{__dirname}/../templates/summary.tpl.md"
+SummaryTemplateFile = "#{__dirname}/../templates/summary.tpl.md"
+ChapterTemplateFile = "#{__dirname}/../templates/chapter.tpl.md"
 
 module.exports = (outFile) ->
-  outFile  ||= "SUMMARY.md"
-  template   = _.template fs.readFileSync(TemplateFile).toString()
-  pages      = {}
+  outFile ||= "SUMMARY.md"
+  summaryTemplate = _.template fs.readFileSync(SummaryTemplateFile).toString()
+  chapterTemplate = _.template fs.readFileSync(ChapterTemplateFile).toString()
+  pages = {}
 
   eachFile = (file, enc, done) ->
     return done() if file.isNull() or file.isStream()
@@ -42,11 +44,16 @@ module.exports = (outFile) ->
     _.each(pages, (o) -> o.pages = _.sortBy(o.pages, "file"))
     pages = _.sortBy(pages, "file")
 
-    summary = template(pages: pages)
-
+    summary = summaryTemplate(pages: pages)
     this.push new gutil.File
       path: outFile,
       contents: new Buffer(summary)
+
+    _.each pages, (chapter) =>
+      readme = chapterTemplate(chapter: chapter)
+      this.push new gutil.File
+        path: chapter.file
+        contents: new Buffer(readme)
 
     done()
 
