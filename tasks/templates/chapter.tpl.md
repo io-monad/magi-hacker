@@ -6,4 +6,8 @@
 
 ## 目次
 
-<%- chapter.pages.map(page => `* ${page.link}`).join("\n") %>
+<%-
+    chapter.pages.map(page => {
+        return "* " + page.link.replace(/chapter-\d+\//, "");
+    }).join("\n")
+%>
