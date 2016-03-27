@@ -1,0 +1,50 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= pageTitle
+    link(rel="stylesheet", href="/magi-hacker/bower/bootstrap.min.css")
+    link(rel="stylesheet", href="/magi-hacker/assets/style.css")
+
+  body.page(class=pageClass)
+    nav.global-nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href="/magi-hacker/")
+            img(src="/magi-hacker/images/logo.png", alt="マギハッカーの異世界ベンチャー起業術", height="100%")
+        #global-navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href="/magi-hacker/SUMMARY.html") 目次
+            li
+              a(href="/magi-hacker/GLOSSARY.html") 用語集
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="https://github.com/io-monad/magi-hacker") GitHub
+            li
+              a(href="http://ncode.syosetu.com/n5191dd/") 小説家になろうで読む
+            li
+              a(href="https://kakuyomu.jp/works/4852201425154996024") カクヨムで読む
+
+    main
+      .container!= contents
+
+    if navigation
+      .container
+        nav.page-nav
+          ul.pager
+            if navigation.prev
+              li.previous
+                a(href="/magi-hacker/"+navigation.prev.url) 前: #{navigation.prev.title}
+            if navigation.next
+              li.next
+                a(href="/magi-hacker/"+navigation.next.url) 次: #{navigation.next.title}
+
+    footer
+      .container
+        p &copy; Copyright 2016 IRIDE Monad
+
+    script(src="/magi-hacker/bower/jquery.js", charset="utf-8")
+    script(src="/magi-hacker/bower/bootstrap.min.js", charset="utf-8")
+    script(src="/magi-hacker/assets/page.js", charset="utf-8")

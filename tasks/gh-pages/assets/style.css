@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+body {
+  margin-top: 70px;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -140px;
+  visibility: hidden;
+}
+
+nav a.navbar-brand {
+  padding: 3px 15px;
+}
+
+main .container {
+  max-width: 38em;
+  font-size: 17.5px;
+  line-height: 1.8;
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+main .container p img {
+  display: block;
+  margin: 15px auto;
+}
+main h1 {
+  text-align: center;
+  font-size: 170%;
+  margin-bottom: 30px;
+}
+main h2 {
+  font-size: 150%;
+  margin: 30px 0 15px;
+}
+main h3 {
+  font-size: 130%;
+  margin: 30px 0 15px;
+}
+main p {
+  margin: 0 0 1.8em;
+}
+main .paragraph {
+  display: block;
+  border-radius: 5px;
+}
+
+main .target.paragraph {
+  background-color: rgb(255, 252, 233);
+}
+
+footer {
+  margin: 30px 0;
+}
+footer .container {
+  text-align: center;
+}
+
+.page-index main .buttons {
+  margin: 30px 0;
+  text-align: center;
+}
+.page-index main .buttons a.btn {
+  width: 12em;
+  margin: 0 10px;
+}
+
+.page-glossary main p a {
+  color: inherit;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.page-novel h1 {
+  font-family: "Share Tech Mono", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  letter-spacing: -2px;
+}

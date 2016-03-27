@@ -7,7 +7,7 @@
         // 小説の一般的な作法
         "general-novel-style-ja": {
             // 各段落の先頭に許可する文字
-            "chars_leading_paragraph": "#/ 　「『【〈《（(“\"‘'［[〔｛{＜<",
+            "chars_leading_paragraph": "#/! 　「『【〈《（(“\"‘'［[〔｛{＜<",
             // 閉じ括弧の手前に句読点(。、)を置かない
             "no_punctuation_at_closing_quote": true,
             // 疑問符(？)と感嘆符(！)の直後にスペースを置く

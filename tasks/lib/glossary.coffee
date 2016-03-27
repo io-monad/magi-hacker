@@ -7,6 +7,7 @@ yaml = require "yamljs"
 RegexTrie = require "regex-trie"
 lineColumn = require "line-column"
 matchAll = require("match-index").matchAll
+h = require "./helpers"
 
 Categories = {
   "あ行": /^[ぁ-おァ-オ]/,
@@ -66,8 +67,8 @@ module.exports = (inputFile, outFile) ->
       (definitions[category] ||= []).push
         word: word,
         yomi: yomi,
-        header: if word == yomi then word else ruby(word, yomi),
-        anchor: if word == yomi then ""   else anchor(word),
+        header: if word == yomi then word else h.rubyTag(word, yomi),
+        anchor: if word == yomi then ""   else h.anchorTag(word),
         content: content.replace(/^\s+|\s+$/g, ""),
         first: firsts[word],
         link: "[#{word}](##{word})"
@@ -103,9 +104,3 @@ splitYomi = (word) ->
 wordLinker = (regexp) ->
   (content) ->
     content.replace regexp, (word) -> "[#{word}](##{word})"
-
-ruby = (body, text) ->
-  "<ruby>#{body}<rp> (</rp><rt>#{text}</rt><rp>)</rp></ruby>"
-
-anchor = (name) ->
-  """<a name="#{name}"></a>"""
