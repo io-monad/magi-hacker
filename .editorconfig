@@ -8,13 +8,11 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 charset = utf-8
 indent_style = space
-indent_size = 4
-
-[{*.rb,Rakefile,Guardfile,*.coffee,*.yml}]
 indent_size = 2
 
-[*.md]
+[*.{md,txt}]
 trim_trailing_whitespace = false
+indent_size = 4
 
-[*.{json,sublime-project}]
+[*.sublime-project]
 indent_style = tab
