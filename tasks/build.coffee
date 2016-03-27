@@ -6,7 +6,6 @@ summary = require "./lib/summary"
 gulp.task "build", [
   "build:narou",
   "build:kakuyomu",
-  "build:markdown",
   "build:summary"
 ]
 
@@ -24,16 +23,6 @@ gulp.task "build:kakuyomu", ["lint"], ->
   .pipe anno.warnRemainingMetaTag()
   .pipe rename(prefix: "kakuyomu-")
   .pipe gulp.dest("./out/kakuyomu")
-
-gulp.task "build:markdown", ["lint"], ->
-  gulp.src "./chapter-*/**/*.txt"
-  .pipe anno.addAnchorsToParagraphs()
-  .pipe anno.filterSiteSpecific("kakuyomu")
-  .pipe anno.markupAnnotations()
-  .pipe anno.convertToMarkdown()
-  .pipe anno.warnRemainingMetaTag()
-  .pipe rename(extname: ".md")
-  .pipe gulp.dest("./out/markdown")
 
 gulp.task "build:summary", ->
   gulp.src "./chapter-*/**/*.{txt,md}"
