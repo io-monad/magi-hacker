@@ -2,3 +2,4 @@ out
 *.sublime-workspace
 node_modules
 bower_components
+.publish

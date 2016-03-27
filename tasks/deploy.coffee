@@ -1,9 +1,14 @@
 _ = require "lodash"
 gulp = require "gulp"
+ghPages = require "gulp-gh-pages"
 bowerFiles = require "main-bower-files"
 pagify = require "./lib/pagify"
 
-gulp.task "deploy", [
+gulp.task "deploy", ["deploy:prepare"], ->
+  gulp.src("./out/gh-pages/**/*")
+  .pipe ghPages()
+
+gulp.task "deploy:prepare", [
   "deploy:pages"
   "deploy:covers"
   "deploy:images"
