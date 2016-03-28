@@ -23,6 +23,7 @@
     "gulp-scan": "^0.1.4",
     "gulp-textlint": "^1.2.0",
     "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1",
     "jade": "^1.11.0",
     "line-column": "^1.0.1",
     "lodash": "^4.6.1",

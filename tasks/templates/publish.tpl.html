@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Publishing novels through Novelous...</title>
+  </head>
+  <body>
+    <p>のべらすに送信しています……</p>
+    <script>
+      (function () {
+        if (!chrome || !chrome.runtime || !chrome.runtime.sendMessage) {
+          alert("この機能の利用には「のべらす」拡張機能のインストールが必要です");
+          return;
+        }
+
+        chrome.runtime.sendMessage(
+          <%= JSON.stringify(extensionId) %>,
+          <%= JSON.stringify(message) %>
+        );
+      })();
+    </script>
+  </body>
+</html>
