@@ -62,4 +62,5 @@
     * [041 - hacker.check(criminal);](chapter-02/041.txt)
     * [042 - hacker.move(forward);](chapter-02/042.txt)
     * [CoffeeBreak 03 - hacker.gain(trust);](chapter-02/cb3.txt)
+    * [CoffeeBreak 04 - c.cook(soup);](chapter-02/cb4.txt)
 
