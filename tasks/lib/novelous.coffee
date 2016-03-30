@@ -27,7 +27,7 @@ module.exports =
       content = file.contents.toString()
       lines = content.split("\n")
       title = lines.shift().replace(/^#\s*|\s*$/g, "")
-      body = _.trim(lines.join("\n"))
+      body = lines.join("\n").replace(/^\n+|\n+$/g, "")
 
       pubs.push {
         title
