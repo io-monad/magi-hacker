@@ -11,6 +11,11 @@ html(lang="ja")
     nav.global-nav.navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
+          button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#global-navbar", aria-expanded="false")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
           a.navbar-brand(href="/magi-hacker/")
             img(src="/magi-hacker/images/logo.png", alt="マギハッカーの異世界ベンチャー起業術", height="100%")
         #global-navbar.collapse.navbar-collapse
