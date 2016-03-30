@@ -1,20 +1,34 @@
 _ = require "lodash"
 gulp = require "gulp"
+sequence = require "gulp-sequence"
 ghPages = require "gulp-gh-pages"
+rimraf = require "rimraf"
 bowerFiles = require "main-bower-files"
 pagify = require "./lib/pagify"
+emojify = require "./lib/emojify"
 
-gulp.task "deploy", ["deploy:prepare"], ->
+gulp.task "deploy", sequence(
+  "deploy:build",
+  "deploy:publish"
+)
+
+gulp.task "deploy:publish", ->
   gulp.src("./out/gh-pages/**/*")
   .pipe ghPages()
 
-gulp.task "deploy:prepare", [
-  "deploy:pages"
-  "deploy:covers"
-  "deploy:images"
-  "deploy:assets"
-  "deploy:bower"
-]
+gulp.task "deploy:build", sequence(
+  "deploy:clean", [
+    "deploy:pages"
+    "deploy:covers"
+    "deploy:images"
+    "deploy:assets"
+    "deploy:bower"
+    "deploy:emoji"
+  ]
+)
+
+gulp.task "deploy:clean", (cb) ->
+  rimraf "./out/gh-pages", cb
 
 gulp.task "deploy:pages", ["build:summary", "glossary"], ->
   gulp.src [
@@ -24,6 +38,7 @@ gulp.task "deploy:pages", ["build:summary", "glossary"], ->
     "./SUMMARY.md"
     "./GLOSSARY.md"
   ]
+  .pipe emojify()
   .pipe pagify()
   .pipe gulp.dest("./out/gh-pages")
 
@@ -42,3 +57,7 @@ gulp.task "deploy:assets", ->
 gulp.task "deploy:bower", ->
   gulp.src bowerFiles()
   .pipe gulp.dest("./out/gh-pages/bower")
+
+gulp.task "deploy:emoji", ->
+  gulp.src ["./node_modules/emoji-images/pngs/*.png"]
+  .pipe gulp.dest("./out/gh-pages/emoji")
