@@ -64,3 +64,8 @@
     * [CoffeeBreak 03 - hacker.gain(trust);](chapter-02/cb3.txt)
     * [CoffeeBreak 04 - c.cook(soup);](chapter-02/cb4.txt)
 
+## Ch.03 - バンペイ先生の常識破壊レッスン!? ばらまけイノベーションの種!!
+
+* [Ch.03 - バンペイ先生の常識破壊レッスン!? ばらまけイノベーションの種!!](chapter-03/README.md)
+    * [043 - hacker = new Teacher();](chapter-03/043.txt)
+
