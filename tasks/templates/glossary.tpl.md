@@ -15,7 +15,7 @@
 
 <%- o.definitions.map(def => def.link).join(" / ") %>
 <%   o.definitions.forEach(def => { %>
-### <%= def.anchor %><%= def.header %>
+### <%= def.anchor %><%= (aliases[def.word] || []).join("") %><%= def.header %>
 
 <%= wordLink(def.content) %>
 <%     if (def.first) { %>

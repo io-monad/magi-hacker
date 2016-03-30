@@ -61,8 +61,14 @@ module.exports = (inputFile, outFile) ->
         _.first(_.sortBy(places, ["file", "index"]))
 
     definitions = {}
+    aliases = {}
     _.each glossary, (content, title) ->
       [word, yomi] = splitYomi(title)
+
+      if matched = content.match(/^=\s*(.+)$/)
+        (aliases[matched[1]] ||= []).push h.anchorTag(word)
+        return
+
       category = yomiToCategory(yomi)
       (definitions[category] ||= []).push
         word: word,
@@ -77,9 +83,7 @@ module.exports = (inputFile, outFile) ->
       defs = _.sortBy(definitions[category], ["yomi", "word"])
       { category: category, definitions: defs }
 
-    glossary = template
-      toc: toc,
-      wordLink: wordLink
+    glossary = template { toc, aliases, wordLink }
 
     file = new gutil.File
       path: outFile,
