@@ -8,8 +8,8 @@ cache:
     - .publish
 env:
   global:
-    - GIT_COMMITTER_NAME="io-monad@travis-ci"
-    - GIT_COMMITTER_EMAIL="iride.monad+travis@gmail.com"
-    - GIT_AUTHOR_NAME="io-monad@travis-ci"
-    - GIT_AUTHOR_EMAIL="iride.monad+travis@gmail.com"
-    - secure: GFJFx9qoJ1lm8FNRuWJIm5IqgCTzeFIvxW6iPR+2C3WK7oeFBozaDzFL1WwFL/KD5t6qRCi5x5M3XlXVekDlidNyIwZnV3v6FXExOu+2gF/qAzt5ZdYeFFeQpViuFnmJgubLxmijbuP/MxQWi3WoOMTgDdI/0uubfxewj2aiVWDbbtXWIFhlVK8iiRBrGKr2xMFAep9w7HUbQ6pFfm1UUFg1WOHmLjdhp434XHQeGndZI5dOTlJv5G7CkeDIg6hUVD7PYtaCq6R12zTyOq81iwNAb7dp4JHfN3yDWR1xmRJyYPGyLwyXIMwrE4uaDtheA/OVuUuLrhwYvRugATSxUmcnsW4GqtyhaIeYAgIyjDNq/FML8O2IMEmL2c705Rh/f6y/p1jOH6NRmY7WNM+F8B9QOGpnEQuUWBDkMoHbwKd78edNgdCoOSebiItU+wUk73/6otyLAvWYi1lrzH50RJgKyEPv+xRMViIttXBuyZhjeFk2wUV+rJEf8k+ysBerkB5N5ririQp4+wvdXV1IFt40Vhe/yyR+EORm8KqctjubFJH/poJvvs0LiQzBzEgxewFeufj1RA4DjyKySmUP/YHviZ93AiNeC/ZiHxfOYa3sPm/AJn5ze3ytcy7oasUGBXG5jrJa1gKyZSsZex1m+Y9qTdLw73eP5SzS6RgU1Dg=
+    - 'GIT_COMMITTER_NAME="io-monad@travis-ci"'
+    - 'GIT_COMMITTER_EMAIL="iride.monad+travis@gmail.com"'
+    - 'GIT_AUTHOR_NAME="io-monad@travis-ci"'
+    - 'GIT_AUTHOR_EMAIL="iride.monad+travis@gmail.com"'
+    - secure: BltUopd/2gxBP6z073jlcKBU293Ggl9nVGe8VuFSl9k4bnT3btOgPGonhoI97F88ZdlGDq1mLxfFAxWRue4QiRMVJymOyJbe5BRuboJbjJUnxZVErJDci0TRQEoY9Stdg/yENyvax5j942AjxHGd7LriPStZ7BJn2mUiM+9S6vZ+22mPpW6w5YZGkYqKUS13OX/MMvGVgNzDMVtMWeg7sJ/VkcPZU9FcCs+w1zZ55v3JaWa+YpJEbx/c3iHi+EhJ+ki7jNdknXLbe+s+0gLEPlju0R+30/0XQk2AmIkmeWxhPZ7cscY2szcB9myvkQJIn/3UQNYcMFy4JyvxlrICRCG7q4fg4q6ZwzxTK8ram76bgZnO41rMP832vR3HnQCQ/N/4ofJPBDjmzdKAQqVOcF0iwfJlttuy23GUT233SuJHYvL1wRvckf/1ZV3CgCoH2LaKAaVvxZIoKTulcptHogqFoq3Rr+FCsdvKRY0krNRAW3LRvrGok3Gd5Up/e53ZOJv4HZUSK0Xoek5NikFOlYwCCyjNJ9fJphwenz0jbIlU5nJ0U8qRIt+3xilme0C2O3NLthcocee7OwGeZdklflZSdVsqdDf+EvDpKBhZoQcDRI2BE43kMGAzGVvXncpmjcziRZzTf5WPrxK0LS2MOuesltbegIsqDqcRGa2iSck=
