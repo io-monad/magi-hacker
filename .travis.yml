@@ -1,3 +1,15 @@
 sudo: false
 language: node_js
-node_js: "stable"
+node_js: stable
+after_success:
+  - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && gulp deploy'
+cache:
+  directory:
+    - .publish
+env:
+  global:
+    - GIT_COMMITTER_NAME="io-monad@travis-ci"
+    - GIT_COMMITTER_EMAIL="iride.monad+travis@gmail.com"
+    - GIT_AUTHOR_NAME="io-monad@travis-ci"
+    - GIT_AUTHOR_EMAIL="iride.monad+travis@gmail.com"
+    - secure: GFJFx9qoJ1lm8FNRuWJIm5IqgCTzeFIvxW6iPR+2C3WK7oeFBozaDzFL1WwFL/KD5t6qRCi5x5M3XlXVekDlidNyIwZnV3v6FXExOu+2gF/qAzt5ZdYeFFeQpViuFnmJgubLxmijbuP/MxQWi3WoOMTgDdI/0uubfxewj2aiVWDbbtXWIFhlVK8iiRBrGKr2xMFAep9w7HUbQ6pFfm1UUFg1WOHmLjdhp434XHQeGndZI5dOTlJv5G7CkeDIg6hUVD7PYtaCq6R12zTyOq81iwNAb7dp4JHfN3yDWR1xmRJyYPGyLwyXIMwrE4uaDtheA/OVuUuLrhwYvRugATSxUmcnsW4GqtyhaIeYAgIyjDNq/FML8O2IMEmL2c705Rh/f6y/p1jOH6NRmY7WNM+F8B9QOGpnEQuUWBDkMoHbwKd78edNgdCoOSebiItU+wUk73/6otyLAvWYi1lrzH50RJgKyEPv+xRMViIttXBuyZhjeFk2wUV+rJEf8k+ysBerkB5N5ririQp4+wvdXV1IFt40Vhe/yyR+EORm8KqctjubFJH/poJvvs0LiQzBzEgxewFeufj1RA4DjyKySmUP/YHviZ93AiNeC/ZiHxfOYa3sPm/AJn5ze3ytcy7oasUGBXG5jrJa1gKyZSsZex1m+Y9qTdLw73eP5SzS6RgU1Dg=

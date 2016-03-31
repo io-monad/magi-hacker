@@ -15,8 +15,12 @@ gulp.task "deploy", sequence(
 )
 
 gulp.task "deploy:publish", ->
+  options = {}
+  if process.env.GH_TOKEN
+    options["remoteUrl"] = "https://#{process.env.GH_TOKEN}@github.com/io-monad/magi-hacker.git"
+
   gulp.src("#{outDir}/**/*")
-  .pipe ghPages()
+  .pipe ghPages(options)
 
 gulp.task "deploy:build", sequence(
   "deploy:clean", [
