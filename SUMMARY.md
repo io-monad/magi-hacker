@@ -71,4 +71,5 @@
     * [044 - hacker.start(lesson);](chapter-03/044.txt)
     * [045 - hacker.throwAway(CommonSense);](chapter-03/045.txt)
     * [046 - hacker.start(game);](chapter-03/046.txt)
+    * [047 - student.standBy();](chapter-03/047.txt)
 
