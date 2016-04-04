@@ -9,3 +9,4 @@
 * [045 - hacker.throwAway(CommonSense);](045.txt)
 * [046 - hacker.start(game);](046.txt)
 * [047 - student.standBy();](047.txt)
+* [048 - student.wantTo(&quot;escape&quot;);](048.txt)
