@@ -72,4 +72,5 @@
     * [045 - hacker.throwAway(CommonSense);](chapter-03/045.txt)
     * [046 - hacker.start(game);](chapter-03/046.txt)
     * [047 - student.standBy();](chapter-03/047.txt)
+    * [048 - student.wantTo(&quot;escape&quot;);](chapter-03/048.txt)
 
