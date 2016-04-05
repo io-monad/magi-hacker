@@ -73,4 +73,5 @@
     * [046 - hacker.start(game);](chapter-03/046.txt)
     * [047 - student.standBy();](chapter-03/047.txt)
     * [048 - student.wantTo(&quot;escape&quot;);](chapter-03/048.txt)
+    * [049 - hacker.fail();](chapter-03/049.txt)
 
