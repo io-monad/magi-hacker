@@ -10,3 +10,4 @@
 * [046 - hacker.start(game);](046.txt)
 * [047 - student.standBy();](047.txt)
 * [048 - student.wantTo(&quot;escape&quot;);](048.txt)
+* [049 - hacker.fail();](049.txt)
