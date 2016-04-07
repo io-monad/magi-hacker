@@ -11,3 +11,4 @@
 * [047 - student.standBy();](047.txt)
 * [048 - student.wantTo(&quot;escape&quot;);](048.txt)
 * [049 - hacker.fail();](049.txt)
+* [050 - student.invent(Magi);](050.txt)

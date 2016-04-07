@@ -74,4 +74,5 @@
     * [047 - student.standBy();](chapter-03/047.txt)
     * [048 - student.wantTo(&quot;escape&quot;);](chapter-03/048.txt)
     * [049 - hacker.fail();](chapter-03/049.txt)
+    * [050 - student.invent(Magi);](chapter-03/050.txt)
 
