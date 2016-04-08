@@ -75,4 +75,5 @@
     * [048 - student.wantTo(&quot;escape&quot;);](chapter-03/048.txt)
     * [049 - hacker.fail();](chapter-03/049.txt)
     * [050 - student.invent(Magi);](chapter-03/050.txt)
+    * [051 - hacker.sort(students);](chapter-03/051.txt)
 
