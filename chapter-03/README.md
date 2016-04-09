@@ -13,3 +13,4 @@
 * [049 - hacker.fail();](049.txt)
 * [050 - student.invent(Magi);](050.txt)
 * [051 - hacker.sort(students);](051.txt)
+* [052 - hacker.encounter(monster);](052.txt)
