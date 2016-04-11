@@ -78,4 +78,5 @@
     * [051 - hacker.sort(students);](chapter-03/051.txt)
     * [052 - hacker.encounter(monster);](chapter-03/052.txt)
     * [053 - hacker.throw(ball);](chapter-03/053.txt)
+    * [054 - hacker.activate(robot);](chapter-03/054.txt)
 

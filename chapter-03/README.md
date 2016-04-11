@@ -15,3 +15,4 @@
 * [051 - hacker.sort(students);](051.txt)
 * [052 - hacker.encounter(monster);](052.txt)
 * [053 - hacker.throw(ball);](053.txt)
+* [054 - hacker.activate(robot);](054.txt)
