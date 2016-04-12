@@ -16,3 +16,4 @@
 * [052 - hacker.encounter(monster);](052.txt)
 * [053 - hacker.throw(ball);](053.txt)
 * [054 - hacker.activate(robot);](054.txt)
+* [055 - hacker.propose(event);](055.txt)
