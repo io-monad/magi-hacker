@@ -80,4 +80,5 @@
     * [053 - hacker.throw(ball);](chapter-03/053.txt)
     * [054 - hacker.activate(robot);](chapter-03/054.txt)
     * [055 - hacker.propose(event);](chapter-03/055.txt)
+    * [056 - hacker.advertise();](chapter-03/056.txt)
 
