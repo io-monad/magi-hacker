@@ -81,4 +81,5 @@
     * [054 - hacker.activate(robot);](chapter-03/054.txt)
     * [055 - hacker.propose(event);](chapter-03/055.txt)
     * [056 - hacker.advertise();](chapter-03/056.txt)
+    * [057 - hacker.queue();](chapter-03/057.txt)
 

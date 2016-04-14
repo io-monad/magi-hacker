@@ -18,3 +18,4 @@
 * [054 - hacker.activate(robot);](054.txt)
 * [055 - hacker.propose(event);](055.txt)
 * [056 - hacker.advertise();](056.txt)
+* [057 - hacker.queue();](057.txt)
