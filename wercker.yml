@@ -24,7 +24,14 @@ build:
   # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     - npm-install
-    - hgen/bower-install@0.5.7
+
+    - script:
+        name: Install bower
+        code: sudo npm install -g bower
+    - script:
+        name: Run bower Install
+        code: bower install
+
     - npm-test
 
     - script:
