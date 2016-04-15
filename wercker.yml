@@ -17,10 +17,6 @@ box: node
     # - mongodb
     # http://devcenter.wercker.com/docs/services/mongodb.html
 
-steps:
-  - hgen/bower-install@0.5.7
-  - lukevivier/gh-pages@0.2.1
-
 build:
   # The steps that will be executed on build
   # Steps make up the actions in your pipeline
@@ -28,7 +24,7 @@ build:
   # http://devcenter.wercker.com/docs/steps/index.html
   steps:
     - npm-install
-    - bower-install
+    - hgen/bower-install@0.5.7
     - npm-test
 
     - script:
@@ -37,6 +33,6 @@ build:
 
 deploy:
   steps:
-    - gh-pages:
+    - lukevivier/gh-pages@0.2.1:
         token: $GITHUB_TOKEN
         basedir: out/gh-pages/magi-hacker
