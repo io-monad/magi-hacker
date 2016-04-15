@@ -1,4 +1,4 @@
-# マギハッカーの異世界ベンチャー起業術 [![Build Status](https://travis-ci.org/io-monad/magi-hacker.svg?branch=master)](https://travis-ci.org/io-monad/magi-hacker)
+# マギハッカーの異世界ベンチャー起業術 [![wercker status](https://app.wercker.com/status/6d2485b41ae330ec7b8181bc47a860e7/s/master "wercker status")](https://app.wercker.com/project/bykey/6d2485b41ae330ec7b8181bc47a860e7)
 
 [![](./images/magi-hacker-cover.png)](https://kakuyomu.jp/works/4852201425154996024)
 

@@ -9,7 +9,8 @@
   "homepage": "https://github.com/io-monad/magi-hacker",
   "scripts": {
     "prepublish": "bower install",
-    "test": "gulp lint"
+    "test": "gulp lint",
+    "gh-pages": "gulp gh-pages"
   },
   "devDependencies": {
     "bower": "^1.7.7",
@@ -17,7 +18,6 @@
     "emoji-images": "^0.1.1",
     "gulp": "^3.9.1",
     "gulp-count-stat": "^1.0.0",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-if": "^2.0.0",
     "gulp-layout": "0.0.3",
     "gulp-markdown": "^1.2.0",
