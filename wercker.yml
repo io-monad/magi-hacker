@@ -18,7 +18,7 @@ box: node
     # http://devcenter.wercker.com/docs/services/mongodb.html
 
 steps:
-  - plasticine/bower-install@0.0.4
+  - hgen/bower-install@0.5.7
   - lukevivier/gh-pages@0.2.1
 
 build:
