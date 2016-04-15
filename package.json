@@ -8,9 +8,8 @@
   "repository": "io-monad/magi-hacker",
   "homepage": "https://github.com/io-monad/magi-hacker",
   "scripts": {
-    "prepublish": "bower install",
     "test": "gulp lint",
-    "gh-pages": "gulp gh-pages"
+    "gh-pages": "bower install && gulp gh-pages"
   },
   "devDependencies": {
     "bower": "^1.7.7",
