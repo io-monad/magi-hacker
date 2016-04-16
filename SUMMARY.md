@@ -83,4 +83,5 @@
     * [056 - hacker.advertise();](chapter-03/056.txt)
     * [057 - hacker.queue();](chapter-03/057.txt)
     * [058 - hacker.start(new Game(IMPOSSIBLE));](chapter-03/058.txt)
+    * [059 - hacker.miss(enemy.shape);](chapter-03/059.txt)
 

@@ -20,3 +20,4 @@
 * [056 - hacker.advertise();](056.txt)
 * [057 - hacker.queue();](057.txt)
 * [058 - hacker.start(new Game(IMPOSSIBLE));](058.txt)
+* [059 - hacker.miss(enemy.shape);](059.txt)
