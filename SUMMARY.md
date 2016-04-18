@@ -86,4 +86,5 @@
     * [059 - hacker.miss(enemy.shape);](chapter-03/059.txt)
     * [060 - hacker.connect(lines);](chapter-03/060.txt)
     * [061 - hacker.waver();](chapter-03/061.txt)
+    * [062 - hacker.find(seeds);](chapter-03/062.txt)
 
