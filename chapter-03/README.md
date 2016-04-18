@@ -22,3 +22,4 @@
 * [058 - hacker.start(new Game(IMPOSSIBLE));](058.txt)
 * [059 - hacker.miss(enemy.shape);](059.txt)
 * [060 - hacker.connect(lines);](060.txt)
+* [061 - hacker.waver();](061.txt)
