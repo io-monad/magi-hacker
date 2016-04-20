@@ -87,4 +87,5 @@
     * [060 - hacker.connect(lines);](chapter-03/060.txt)
     * [061 - hacker.waver();](chapter-03/061.txt)
     * [062 - hacker.find(seeds);](chapter-03/062.txt)
+    * [063 - hacker.enjoy(race);](chapter-03/063.txt)
 
