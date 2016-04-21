@@ -25,3 +25,4 @@
 * [061 - hacker.waver();](061.txt)
 * [062 - hacker.find(seeds);](062.txt)
 * [063 - hacker.enjoy(race);](063.txt)
+* [064 - hacker.pass(torch);](064.txt)
