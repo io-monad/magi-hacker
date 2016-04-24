@@ -90,4 +90,5 @@
     * [063 - hacker.enjoy(race);](chapter-03/063.txt)
     * [064 - hacker.pass(torch);](chapter-03/064.txt)
     * [CoffeeBreak 05 - delphy.is(Teacher);](chapter-03/cb5.txt)
+    * [CoffeeBreak 06 - c.make(friends);](chapter-03/cb6.txt)
 
