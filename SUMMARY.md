@@ -92,3 +92,8 @@
     * [CoffeeBreak 05 - delphy.is(Teacher);](chapter-03/cb5.txt)
     * [CoffeeBreak 06 - c.make(friends);](chapter-03/cb6.txt)
 
+## Ch.04 - 信じるハッカーは救われる!? 踊るコンペと笑う影!!
+
+* [Ch.04 - 信じるハッカーは救われる!? 踊るコンペと笑う影!!](chapter-04/README.md)
+    * [065 - hacker.meet(sister);](chapter-04/065.txt)
+
