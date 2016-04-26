@@ -96,4 +96,5 @@
 
 * [Ch.04 - 信じるハッカーは救われる!? 踊るコンペと笑う影!!](chapter-04/README.md)
     * [065 - hacker.meet(sister);](chapter-04/065.txt)
+    * [066 - hacker.support(dream);](chapter-04/066.txt)
 
