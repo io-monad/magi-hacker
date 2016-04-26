@@ -5,3 +5,4 @@
 ## 目次
 
 * [065 - hacker.meet(sister);](065.txt)
+* [066 - hacker.support(dream);](066.txt)
