@@ -99,4 +99,5 @@
     * [066 - hacker.support(dream);](chapter-04/066.txt)
     * [067 - hacker.see(winner);](chapter-04/067.txt)
     * [068 - hacker.hesitate();](chapter-04/068.txt)
+    * [069 - hacker.make(sense);](chapter-04/069.txt)
 
