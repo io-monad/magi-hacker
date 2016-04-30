@@ -100,4 +100,5 @@
     * [067 - hacker.see(winner);](chapter-04/067.txt)
     * [068 - hacker.hesitate();](chapter-04/068.txt)
     * [069 - hacker.make(sense);](chapter-04/069.txt)
+    * [070 - hacker.struggle();](chapter-04/070.txt)
 
