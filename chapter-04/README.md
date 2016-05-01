@@ -10,3 +10,4 @@
 * [068 - hacker.hesitate();](068.txt)
 * [069 - hacker.make(sense);](069.txt)
 * [070 - hacker.struggle();](070.txt)
+* [071 - hacker.fix(system);](071.txt)
