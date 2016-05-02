@@ -6,7 +6,7 @@ through = require "through2"
 latest = require "./lib/latest"
 novelous = require "./lib/novelous"
 
-gulp.task "publish:html", ->
+gulp.task "publish:html", ["build"], ->
   gulp.src "./out/{narou,kakuyomu}/**/*.txt"
   .pipe setSite()
   .pipe gulpIf(forSite("narou"), latest())
