@@ -104,4 +104,5 @@
     * [071 - hacker.fix(system);](chapter-04/071.txt)
     * [072 - hacker.set(trap);](chapter-04/072.txt)
     * [073 - hacker.express(himself);](chapter-04/073.txt)
+    * [074 - hacker.observe();](chapter-04/074.txt)
 
