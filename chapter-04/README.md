@@ -15,3 +15,4 @@
 * [073 - hacker.express(himself);](073.txt)
 * [074 - hacker.observe();](074.txt)
 * [075 - hacker.play(tag);](075.txt)
+* [076 - hacker.say(&quot;Uh oh&quot;);](076.txt)
