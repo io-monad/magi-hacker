@@ -107,4 +107,5 @@
     * [074 - hacker.observe();](chapter-04/074.txt)
     * [075 - hacker.play(tag);](chapter-04/075.txt)
     * [076 - hacker.say(&quot;Uh oh&quot;);](chapter-04/076.txt)
+    * [077 - hacker.prayTo(god);](chapter-04/077.txt)
 
