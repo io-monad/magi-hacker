@@ -109,4 +109,5 @@
     * [076 - hacker.say(&quot;Uh oh&quot;);](chapter-04/076.txt)
     * [077 - hacker.prayTo(god);](chapter-04/077.txt)
     * [078 - hacker.say(&quot;Shhh!&quot;);](chapter-04/078.txt)
+    * [079 - hacker.trust(others);](chapter-04/079.txt)
 
