@@ -19,3 +19,4 @@
 * [077 - hacker.prayTo(god);](077.txt)
 * [078 - hacker.say(&quot;Shhh!&quot;);](078.txt)
 * [079 - hacker.trust(others);](079.txt)
+* [080 - hacker.witness(revolution);](080.txt)
