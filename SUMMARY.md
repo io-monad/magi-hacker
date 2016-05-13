@@ -112,4 +112,5 @@
     * [079 - hacker.trust(others);](chapter-04/079.txt)
     * [080 - hacker.witness(revolution);](chapter-04/080.txt)
     * [081 - hacker.make(wish);](chapter-04/081.txt)
+    * [082 - hacker.take(stage);](chapter-04/082.txt)
 

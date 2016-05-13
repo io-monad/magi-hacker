@@ -21,3 +21,4 @@
 * [079 - hacker.trust(others);](079.txt)
 * [080 - hacker.witness(revolution);](080.txt)
 * [081 - hacker.make(wish);](081.txt)
+* [082 - hacker.take(stage);](082.txt)
