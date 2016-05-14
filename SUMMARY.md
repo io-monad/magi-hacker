@@ -113,4 +113,5 @@
     * [080 - hacker.witness(revolution);](chapter-04/080.txt)
     * [081 - hacker.make(wish);](chapter-04/081.txt)
     * [082 - hacker.take(stage);](chapter-04/082.txt)
+    * [083 - hacker.talkWith(foreigner);](chapter-04/083.txt)
 
