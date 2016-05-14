@@ -22,3 +22,4 @@
 * [080 - hacker.witness(revolution);](080.txt)
 * [081 - hacker.make(wish);](081.txt)
 * [082 - hacker.take(stage);](082.txt)
+* [083 - hacker.talkWith(foreigner);](083.txt)
