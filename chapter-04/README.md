@@ -24,3 +24,4 @@
 * [082 - hacker.take(stage);](082.txt)
 * [083 - hacker.talkWith(foreigner);](083.txt)
 * [084 - hacker.isSaved();](084.txt)
+* [CoffeeBreak 07 - pongo.prayTo(god);](cb7.txt)
