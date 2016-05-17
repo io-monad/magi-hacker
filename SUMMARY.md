@@ -116,4 +116,5 @@
     * [083 - hacker.talkWith(foreigner);](chapter-04/083.txt)
     * [084 - hacker.isSaved();](chapter-04/084.txt)
     * [CoffeeBreak 07 - pongo.prayTo(god);](chapter-04/cb7.txt)
+    * [CoffeeBreak 08 - c.wonder(Pair(hacker, boss));](chapter-04/cb8.txt)
 
