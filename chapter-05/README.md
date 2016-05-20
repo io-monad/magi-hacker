@@ -5,3 +5,4 @@
 ## 目次
 
 * [085 - hacker.meet(princess);](085.txt)
+* [086 - hacker.feel(strange);](086.txt)
