@@ -118,3 +118,8 @@
     * [CoffeeBreak 07 - pongo.prayTo(god);](chapter-04/cb7.txt)
     * [CoffeeBreak 08 - c.wonder(Pair(hacker, boss));](chapter-04/cb8.txt)
 
+## Ch.05 - 社員旅行はオーバーラン!? 異国に咲いた薔薇の花!!
+
+* [Ch.05 - 社員旅行はオーバーラン!? 異国に咲いた薔薇の花!!](chapter-05/README.md)
+    * [085 - hacker.meet(princess);](chapter-05/085.txt)
+
