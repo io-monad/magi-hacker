@@ -6,3 +6,4 @@
 
 * [085 - hacker.meet(princess);](085.txt)
 * [086 - hacker.feel(strange);](086.txt)
+* [087 - hacker.meet(prince);](087.txt)
