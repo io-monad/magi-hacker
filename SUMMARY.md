@@ -123,4 +123,5 @@
 * [Ch.05 - 社員旅行はオーバーラン!? 異国に咲いた薔薇の花!!](chapter-05/README.md)
     * [085 - hacker.meet(princess);](chapter-05/085.txt)
     * [086 - hacker.feel(strange);](chapter-05/086.txt)
+    * [087 - hacker.meet(prince);](chapter-05/087.txt)
 
