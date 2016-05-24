@@ -124,4 +124,5 @@
     * [085 - hacker.meet(princess);](chapter-05/085.txt)
     * [086 - hacker.feel(strange);](chapter-05/086.txt)
     * [087 - hacker.meet(prince);](chapter-05/087.txt)
+    * [088 - hacker.read(book);](chapter-05/088.txt)
 
