@@ -8,3 +8,4 @@
 * [086 - hacker.feel(strange);](086.txt)
 * [087 - hacker.meet(prince);](087.txt)
 * [088 - hacker.read(book);](088.txt)
+* [089 - hacker.workUp(courage);](089.txt)
