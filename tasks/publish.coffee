@@ -3,8 +3,11 @@ gulp = require "gulp"
 gulpIf = require "gulp-if"
 webserver = require "gulp-webserver"
 through = require "through2"
+yargs = require "yargs"
 latest = require "./lib/latest"
 novelous = require "./lib/novelous"
+
+argv = yargs.argv
 
 gulp.task "publish:html", ["build"], ->
   gulp.src "./out/{narou,kakuyomu}/**/*.txt"
@@ -19,7 +22,7 @@ gulp.task "publish:html", ["build"], ->
         novelId: "815110"
       kakuyomu:
         novelId: "4852201425154996024"
-    time: nearestDateAtHour(18).toISOString()
+    time: nearestDateAtHour(18).toISOString() unless argv.now
   )
   .pipe gulp.dest "./out/publish"
 
