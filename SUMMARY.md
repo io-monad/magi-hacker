@@ -126,4 +126,5 @@
     * [087 - hacker.meet(prince);](chapter-05/087.txt)
     * [088 - hacker.read(book);](chapter-05/088.txt)
     * [089 - hacker.workUp(courage);](chapter-05/089.txt)
+    * [090 - hacker.rescue(hostages);](chapter-05/090.txt)
 
