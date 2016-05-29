@@ -129,4 +129,5 @@
     * [090 - hacker.rescue(hostages);](chapter-05/090.txt)
     * [091 - hacker.fightWith(general);](chapter-05/091.txt)
     * [092 - hacker.leaveFor(battle);](chapter-05/092.txt)
+    * [093 - hacker.washOut();](chapter-05/093.txt)
 
