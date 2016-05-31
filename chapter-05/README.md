@@ -14,3 +14,4 @@
 * [092 - hacker.leaveFor(battle);](092.txt)
 * [093 - hacker.washOut();](093.txt)
 * [094 - hacker.debug(poison);](094.txt)
+* [095 - hacker.gain(privileges);](095.txt)
