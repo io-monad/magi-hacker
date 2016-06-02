@@ -15,3 +15,4 @@
 * [093 - hacker.washOut();](093.txt)
 * [094 - hacker.debug(poison);](094.txt)
 * [095 - hacker.gain(privileges);](095.txt)
+* [096 - hacker.diagnose();](096.txt)
