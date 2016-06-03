@@ -16,3 +16,4 @@
 * [094 - hacker.debug(poison);](094.txt)
 * [095 - hacker.gain(privileges);](095.txt)
 * [096 - hacker.diagnose();](096.txt)
+* [097 - hacker.intercept(link);](097.txt)
