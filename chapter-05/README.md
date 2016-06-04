@@ -17,3 +17,4 @@
 * [095 - hacker.gain(privileges);](095.txt)
 * [096 - hacker.diagnose();](096.txt)
 * [097 - hacker.intercept(link);](097.txt)
+* [098 - hacker.isSandwiched();](098.txt)
