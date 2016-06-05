@@ -18,3 +18,4 @@
 * [096 - hacker.diagnose();](096.txt)
 * [097 - hacker.intercept(link);](097.txt)
 * [098 - hacker.isSandwiched();](098.txt)
+* [099 - hacker.boot(device);](099.txt)
