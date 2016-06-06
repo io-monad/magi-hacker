@@ -19,3 +19,4 @@
 * [097 - hacker.intercept(link);](097.txt)
 * [098 - hacker.isSandwiched();](098.txt)
 * [099 - hacker.boot(device);](099.txt)
+* [100 - hacker.view(photos);](100.txt)
