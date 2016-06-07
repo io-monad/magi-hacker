@@ -137,4 +137,5 @@
     * [098 - hacker.isSandwiched();](chapter-05/098.txt)
     * [099 - hacker.boot(device);](chapter-05/099.txt)
     * [100 - hacker.view(photos);](chapter-05/100.txt)
+    * [101 - hacker.confide();](chapter-05/101.txt)
 
