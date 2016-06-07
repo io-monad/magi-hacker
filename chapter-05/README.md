@@ -21,3 +21,4 @@
 * [099 - hacker.boot(device);](099.txt)
 * [100 - hacker.view(photos);](100.txt)
 * [101 - hacker.confide();](101.txt)
+* [102 - hacker.meet(operator);](102.txt)
