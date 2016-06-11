@@ -140,4 +140,5 @@
     * [101 - hacker.confide();](chapter-05/101.txt)
     * [102 - hacker.meet(operator);](chapter-05/102.txt)
     * [103 - hacker.overrun();](chapter-05/103.txt)
+    * [CoffeeBreak 09 - maria.start(story);](chapter-05/cb9.txt)
 
