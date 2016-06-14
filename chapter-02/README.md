@@ -27,5 +27,5 @@
 * [040 - hacker.pointOut(blindSpot);](040.txt)
 * [041 - hacker.check(criminal);](041.txt)
 * [042 - hacker.move(forward);](042.txt)
-* [CoffeeBreak 03 - hacker.gain(trust);](cb3.txt)
-* [CoffeeBreak 04 - c.cook(soup);](cb4.txt)
+* [CoffeeBreak 03 - hacker.gain(trust);](cb03.txt)
+* [CoffeeBreak 04 - c.cook(soup);](cb04.txt)
