@@ -32,8 +32,8 @@
     * [019 - hacker.develop(Phone);](chapter-01/019.txt)
     * [020 - hacker.freeze();](chapter-01/020.txt)
     * [021 - hacker.enjoy(AnotherWorld);](chapter-01/021.txt)
-    * [CoffeeBreak 01 - hacker.explain(Phone);](chapter-01/cb1.txt)
-    * [CoffeeBreak 02 - c.apologize();](chapter-01/cb2.txt)
+    * [CoffeeBreak 01 - hacker.explain(Phone);](chapter-01/cb01.txt)
+    * [CoffeeBreak 02 - c.apologize();](chapter-01/cb02.txt)
 
 ## Ch.02 - サービス運営は前途多難!? 異世界のキャズムをぶっ越えろ!!
 
@@ -61,8 +61,8 @@
     * [040 - hacker.pointOut(blindSpot);](chapter-02/040.txt)
     * [041 - hacker.check(criminal);](chapter-02/041.txt)
     * [042 - hacker.move(forward);](chapter-02/042.txt)
-    * [CoffeeBreak 03 - hacker.gain(trust);](chapter-02/cb3.txt)
-    * [CoffeeBreak 04 - c.cook(soup);](chapter-02/cb4.txt)
+    * [CoffeeBreak 03 - hacker.gain(trust);](chapter-02/cb03.txt)
+    * [CoffeeBreak 04 - c.cook(soup);](chapter-02/cb04.txt)
 
 ## Ch.03 - バンペイ先生の常識破壊レッスン!? ばらまけイノベーションの種!!
 
@@ -89,8 +89,8 @@
     * [062 - hacker.find(seeds);](chapter-03/062.txt)
     * [063 - hacker.enjoy(race);](chapter-03/063.txt)
     * [064 - hacker.pass(torch);](chapter-03/064.txt)
-    * [CoffeeBreak 05 - delphy.is(Teacher);](chapter-03/cb5.txt)
-    * [CoffeeBreak 06 - c.make(friends);](chapter-03/cb6.txt)
+    * [CoffeeBreak 05 - delphy.is(Teacher);](chapter-03/cb05.txt)
+    * [CoffeeBreak 06 - c.make(friends);](chapter-03/cb06.txt)
 
 ## Ch.04 - 信じるハッカーは救われる!? 踊るコンペと笑う影!!
 
@@ -115,8 +115,8 @@
     * [082 - hacker.take(stage);](chapter-04/082.txt)
     * [083 - hacker.talkWith(foreigner);](chapter-04/083.txt)
     * [084 - hacker.isSaved();](chapter-04/084.txt)
-    * [CoffeeBreak 07 - pongo.prayTo(god);](chapter-04/cb7.txt)
-    * [CoffeeBreak 08 - c.wonder(Pair(hacker, boss));](chapter-04/cb8.txt)
+    * [CoffeeBreak 07 - pongo.prayTo(god);](chapter-04/cb07.txt)
+    * [CoffeeBreak 08 - c.wonder(Pair(hacker, boss));](chapter-04/cb08.txt)
 
 ## Ch.05 - 社員旅行はオーバーラン!? 異国に咲いた薔薇の花!!
 
@@ -140,5 +140,6 @@
     * [101 - hacker.confide();](chapter-05/101.txt)
     * [102 - hacker.meet(operator);](chapter-05/102.txt)
     * [103 - hacker.overrun();](chapter-05/103.txt)
-    * [CoffeeBreak 09 - maria.start(story);](chapter-05/cb9.txt)
+    * [CoffeeBreak 09 - maria.start(story);](chapter-05/cb09.txt)
+    * [CoffeeBreak 10 - they.chat();](chapter-05/cb10.txt)
 

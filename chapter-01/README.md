@@ -27,5 +27,5 @@
 * [019 - hacker.develop(Phone);](019.txt)
 * [020 - hacker.freeze();](020.txt)
 * [021 - hacker.enjoy(AnotherWorld);](021.txt)
-* [CoffeeBreak 01 - hacker.explain(Phone);](cb1.txt)
-* [CoffeeBreak 02 - c.apologize();](cb2.txt)
+* [CoffeeBreak 01 - hacker.explain(Phone);](cb01.txt)
+* [CoffeeBreak 02 - c.apologize();](cb02.txt)
