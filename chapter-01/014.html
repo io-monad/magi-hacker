@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>014 - hacker.hack(wall);</title><link rel="stylesheet" href="/magi-hacker/bower/bootstrap.min.css"><link rel="stylesheet" href="/magi-hacker/assets/style.css"></head><body class="page page-chapter-01-014 page-novel"><nav class="global-nav navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><button data-toggle="collapse" data-target="#global-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/magi-hacker/" class="navbar-brand"><img src="/magi-hacker/images/logo.png" alt="マギハッカーの異世界ベンチャー起業術" height="100%"></a></div><div id="global-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/magi-hacker/SUMMARY.html">目次</a></li><li><a href="/magi-hacker/GLOSSARY.html">用語集</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://github.com/io-monad/magi-hacker">GitHub</a></li><li><a href="http://ncode.syosetu.com/n5191dd/">小説家になろうで読む</a></li><li><a href="https://kakuyomu.jp/works/4852201425154996024">カクヨムで読む</a></li></ul></div></div></nav><main><div class="container"><h1>
+  <a name="014-hacker-hack-wall" id="014-hacker-hack-wall" class="anchor"></a>
+  014 - hacker.hack(wall);
+</h1><p><span class="paragraph sticky"><a name="L3" id="L3" class="anchor"></a>　透明の壁は明らかにマギに関する力で動いている。</span>
+<span class="paragraph"><a name="L4" id="L4" class="anchor"></a>　物理的な手段が一切通用しないならば、マギでどうにかするしかない。しかし、試行したマギランゲージでの命令は<ruby>何らかの制約<rp> (</rp><rt>ランタイムエラー</rt><rp>)</rp></ruby>によって上手くいかなかった。マギデバイスで指し示しても動作しない。となると、それ以外の<ruby>マ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ギ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>的<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>な<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>手<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>段<rp> (</rp><rt>・</rt><rp>)</rp></ruby>で干渉する必要がある。</span></p>
+<p><span class="paragraph"><a name="L6" id="L6" class="anchor"></a>「【オープン・エディター】」</span></p>
+<p><span class="paragraph sticky"><a name="L8" id="L8" class="anchor"></a>　僕は思いついた事を実行するために呪文を唱え、マギデバイスのスクリーンを呼び出した。そもそもの発想は、ブライさんが何気なく言った「何か伝えたい」という言葉だ。人に何かを伝えるのは様々な方法があるが、代表的なのは「声」と「文字」だろう。</span>
+<span class="paragraph"><a name="L9" id="L9" class="anchor"></a>　この内、「声」は内側に届かない事がわかっている。しかし「文字」ならばどうか。</span></p>
+<p><span class="paragraph sticky"><a name="L11" id="L11" class="anchor"></a>　目の前にスクリーンと呼ばれる白い板が現れる。</span>
+<span class="paragraph sticky"><a name="L12" id="L12" class="anchor"></a>　考えれば考えるほど、このスクリーンというのは不可解な存在だ。重さを感じさせず空中に浮かび、文字をマギデバイスで書き込むと文字認識したように整形される。マギランゲージを書き込めば実行できるし、書いたコードを保存する事もできる。</span>
+<span class="paragraph"><a name="L13" id="L13" class="anchor"></a>　そして、極めつけは先ほどの「エラー表示」だ。</span></p>
+<p><span class="paragraph sticky"><a name="L15" id="L15" class="anchor"></a>　僕にはこのスクリーンがマギデバイスやマギランゲージを作った<ruby>誰<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>か<rp> (</rp><rt>・</rt><rp>)</rp></ruby>のための『開発環境』のように思えるのだ。</span>
+<span class="paragraph sticky"><a name="L16" id="L16" class="anchor"></a>　開発環境、つまり何かを開発するための環境。環境とはコードを書き込むためのエディタに始まり、コードを書いて実行するために必要な様々なソフト、動かしたコードをテストするためのソフト、他にもマニュアルやドキュメントを書いたり、コードを動かすＯＳやマシンそのものを指してそう呼ぶ事もある。</span>
+<span class="paragraph sticky"><a name="L17" id="L17" class="anchor"></a>　要するに開発に必要な様々なモノをひっくるめてそう呼ぶ。マギデバイスを作った誰かだって、マギデバイスやマギランゲージの開発には開発環境が必要だったはずだ。</span>
+<span class="paragraph sticky"><a name="L18" id="L18" class="anchor"></a>　開発環境を作るためにその開発環境を利用するというと矛盾しているようだが、実はソフトウェアの世界ではそんなに珍しい事ではない。世界で広く使われているオープンソースのＯＳやプログラミング言語の実行環境は、この手法で作られている事も多い。</span>
+<span class="paragraph"><a name="L19" id="L19" class="anchor"></a>　具体的には最初にごく単純な環境を別の手段で用意して、あとはその環境を環境自身の手によって徐々に育てていくのだ。</span></p>
+<p><span class="paragraph"><a name="L21" id="L21" class="anchor"></a>　そう、まるで人類が人類自身の手によって徐々に<ruby>発<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>展<rp> (</rp><rt>・</rt><rp>)</rp></ruby>してきたように。</span></p>
+<p><span class="paragraph"><a name="L23" id="L23" class="anchor"></a>　僕は何も書かれていないスクリーンを手に取ると、そのまま透明の壁に<ruby>貼<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>り<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>付<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>け<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>た<rp> (</rp><rt>・</rt><rp>)</rp></ruby>。すると、どうやら僕の予想は的中したらしい。</span></p>
+<p><span class="paragraph"><a name="L25" id="L25" class="anchor"></a>「……これは！？」</span></p>
+<p><span class="paragraph"><a name="L27" id="L27" class="anchor"></a>　横で様子を見ていたブライさんが驚きの声を上げる。マギランゲージを知らないブライさんでもわかるほどの劇的な変化が現れたのだ。</span></p>
+<p><span class="paragraph sticky"><a name="L29" id="L29" class="anchor"></a>　真っ白だったスクリーン上には、今や様々な情報が表示されていた。全てがマギランゲージで使われる文字で書かれているが、例えば『壁内に存在する人間たち』の情報がある。名前や生年月日、年齢、容姿の特徴、身長、体重。ただし、日付や身長体重は使われている暦や単位が異なるのか具体的にはわからない。</span>
+<span class="paragraph sticky"><a name="L30" id="L30" class="anchor"></a>　また、よく分からない項目もいくつかあった。「ＩＤ」のところには長大な数字が書かれているし、「ステータス」のところには「ノーマル」や「インフェクテッド」といった文字や刻々と変化する数字が踊っている。</span>
+<span class="paragraph"><a name="L31" id="L31" class="anchor"></a>　マギランゲージの読めないブライさんに書かれている内容を伝えると目を丸くしていた。壁の中にいる人達の名前や容姿の特徴を読み上げると、まさしくその通りだと何度も頷いた。</span></p>
+<p><span class="paragraph sticky"><a name="L33" id="L33" class="anchor"></a>　そして、僕にとってはもっと目を引く情報があった。</span>
+<span class="paragraph sticky"><a name="L34" id="L34" class="anchor"></a>　スクリーン内はいくつかの『<ruby>窓<rp> (</rp><rt>ウィンドウ</rt><rp>)</rp></ruby>』によって分けられているのだが、その中の一つに「ファイヤーウォール・ポリシー」と題されたものがあった。そこには「マギ・プロテクション」や「トランスペアレンシー」、「インバウンド」、「アウトバウンド」といった言葉が並んでいる。</span>
+<span class="paragraph"><a name="L35" id="L35" class="anchor"></a>　それぞれを訳すならば、「防火<ruby>壁<rp> (</rp><rt>・</rt><rp>)</rp></ruby>の設定」「マギの保護」「透明度」「内向き」「外向き」という意味になる。明らかに例の透明の壁に関する内容だ。もしかしてこの設定を変える事ができたら、壁に出入りする事ができるようになるのではないか。</span></p>
+<p><span class="paragraph sticky"><a name="L37" id="L37" class="anchor"></a>　期待感を持ちながら、設定を変える方法がないかどうか探る。スクリーンに指で触れてみても、いつものほんのり暖かい感触が返ってくるだけで何の反応もない。そういえば、文字を入力する時はマギデバイスを使っていたんだった。</span>
+<span class="paragraph"><a name="L38" id="L38" class="anchor"></a>　慌ててマギデバイスを取り出してスクリーン上の「<ruby>透明度<rp> (</rp><rt>トランスペアレンシー</rt><rp>)</rp></ruby>」という項目をいじってみる。今度は反応があり、透明度の横に書かれていた１００という数値を変化させる事ができた。１００より上には増えないようなので、数値を下げて５０にしてみる。</span></p>
+<p><span class="paragraph"><a name="L40" id="L40" class="anchor"></a>「バ、バンペイ！　見ろ！　壁に色がついたぞ！」</span></p>
+<p><span class="paragraph sticky"><a name="L42" id="L42" class="anchor"></a>　ボスの驚いた声が耳に届いた。スクリーンから顔を上げて見てみると、透明の壁は<ruby>透<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>明<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>で<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>は<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>な<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>く<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>な<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>っ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>て<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>い<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>た<rp> (</rp><rt>・</rt><rp>)</rp></ruby>。白い色で彩られ、散々悩まされた壁がそこに存在する事がわかるようになった。いや、完全に真っ白ではなく、よく見ると壁の向こうの風景も相変わらず透けて見える。半透明というやつだ。</span>
+<span class="paragraph"><a name="L43" id="L43" class="anchor"></a>　ブライさんや周囲の人達も、透明だった壁に突如として色がついた事に驚きざわめいている。そして原因だと思われる僕に視線が集まる。</span></p>
+<p><span class="paragraph sticky"><a name="L45" id="L45" class="anchor"></a>「大丈夫です。どうやら、このスクリーンを通して壁に干渉できるみたいです」</span>
+<span class="paragraph"><a name="L46" id="L46" class="anchor"></a>「おお！　さすがはバンペイだ！　相変わらず意味不明な理解力だな！」</span></p>
+<p><span class="paragraph"><a name="L48" id="L48" class="anchor"></a>　もはやボスからの評価は覆しようがないのだろうか。足元にいたバレットが慰めるように僕の手をペロペロと舐めてくれる。やっぱりバレットは賢いなぁ。なでなで。</span></p>
+<p><span class="paragraph sticky"><a name="L50" id="L50" class="anchor"></a>　気を取り直して、透明度を変更できた事に気を良くした僕は、いよいよ本題の設定にとりかかる事にする。「<ruby>内向き<rp> (</rp><rt>インバウンド</rt><rp>)</rp></ruby>」「<ruby>外向き<rp> (</rp><rt>アウトバウンド</rt><rp>)</rp></ruby>」という設定項目だ。</span>
+<span class="paragraph sticky"><a name="L51" id="L51" class="anchor"></a>　その横には数値ではなく、「禁止」「許可」と書かれたいくつかの項目のリストが存在している。外向きのリストの先頭には「禁止：全て」と書かれていて、その下に「許可：自然光」「許可：空気」「禁止：空気の振動」と並んでいる。内向きもほぼ同様だがリストの末尾に「禁止：大気以外による反射光」の項目がある。</span>
+<span class="paragraph sticky"><a name="L52" id="L52" class="anchor"></a>　これは要するに壁を通過できるものとできないものを定めているに違いない。「禁止」が通過できないもので、「許可」が通過できるものだ。空気が通らないと息ができなくなるし、光が通らないと真っ暗になり、中の様子を見る事もできないからだ。</span>
+<span class="paragraph"><a name="L53" id="L53" class="anchor"></a>　しかし空気の振動の出入りが禁止されているので、『音』や『声』は届かない。また、大気以外による反射光の通過が中から外への片方向だけ許可されているので、外から中の様子を伺う事はできるが、中から外の様子は見えないのだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L55" id="L55" class="anchor"></a>　先頭に「禁止：全て」というのがあるのは、まず最初に何も通れないようにしておいてから、通れるものを一つずつ例外として挙げるという設定方法を採っているからだろう。これによって人間やマギで作った塗料などは通れないようになっている。こういう設定方法は『ホワイトリスト』と呼ばれる。</span>
+<span class="paragraph sticky"><a name="L56" id="L56" class="anchor"></a>　反対に、最初に全てを通れるようにしてから一つ一つ通れないものを決めていく方法は『ブラックリスト』だ。</span>
+<span class="paragraph sticky"><a name="L57" id="L57" class="anchor"></a>　通過する物を厳しく取り締まりたい場合はホワイトリストを採用するのが一般的だ。ブラックリストだと抜けが出る事が多い。未知の物体の通過を禁止する事ができないからだ。</span>
+<span class="paragraph"><a name="L58" id="L58" class="anchor"></a>　しかし、ホワイトリストは「完全な白以外は通さない」事になるため融通が効かないという問題もある。よって、法律や空港の税関ではブラックリスト方式が採用されている。何事も適材適所というわけだ。</span></p>
+<p><span class="paragraph"><a name="L60" id="L60" class="anchor"></a>　つまり、僕達が壁を通れるようになるには、これらのリストに「許可：人間」を追加できればいいはずだ。</span></p>
+<p><span class="paragraph"><a name="L62" id="L62" class="anchor"></a>　僕はマギデバイスを手にして、リストに手を加えようとした。</span></p>
+<p><span class="paragraph"><a name="L64" id="L64" class="anchor"></a>「だめぇぇぇぇ！！」</span></p>
+<p><span class="paragraph"><a name="L66" id="L66" class="anchor"></a>　そして、ドンと衝撃を受けて吹っ飛ばされた。</span></p>
+<hr>
+<p><span class="paragraph"><a name="L70" id="L70" class="anchor"></a>「あたた……な、なんだ？」</span></p>
+<p><span class="paragraph"><a name="L72" id="L72" class="anchor"></a>　突然吹き飛ばされて尻もちをついた僕は、お尻を押さえながら立ち上がる。幸いといっていいのか別に怪我をしたわけでもなく、痛いのはお尻だけだ。</span></p>
+<p><span class="paragraph"><a name="L74" id="L74" class="anchor"></a>「だーめーなーのー！」</span></p>
+<p><span class="paragraph sticky"><a name="L76" id="L76" class="anchor"></a>　そこには、手を腰に当ててプンプンと頬を膨らませた<ruby>幼<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>女<rp> (</rp><rt>・</rt><rp>)</rp></ruby>がいた。いや、正確には宙に浮かんでいる。</span>
+<span class="paragraph"><a name="L77" id="L77" class="anchor"></a>　腰まで伸びた金髪をひるがえし、蒼い瞳が僕をギロリとにらみつけ、白いフワフワとしたワンピースを身に着けている。五歳児くらいだろうか。僕の目線より高く浮かんでいるためパンツが見えそうになっているが、僕には断じて<ruby>小児性愛<rp> (</rp><rt>ペド</rt><rp>)</rp></ruby>の気はない。</span></p>
+<p><span class="paragraph"><a name="L79" id="L79" class="anchor"></a>「何がダメなの？」</span></p>
+<p><span class="paragraph"><a name="L81" id="L81" class="anchor"></a>　出来るだけ穏やかな声を作って尋ねてみる。いくらコミュ障の僕といえ、このぐらいの歳の幼児に怯えたりはしない。</span></p>
+<p><span class="paragraph"><a name="L83" id="L83" class="anchor"></a>「とおっちゃ、めっ！　あぶないの！」</span></p>
+<p><span class="paragraph"><a name="L85" id="L85" class="anchor"></a>　どうやらこの子は僕が壁を通るために設定に手を加えようとした事に気がついているようだ。そして、壁の中に入る事が危険だと警告しているらしい。</span></p>
+<p><span class="paragraph sticky"><a name="L87" id="L87" class="anchor"></a>「うーん、でもね、僕達は中の人達を助けたいんだよ。何が危ないのかな？」</span>
+<span class="paragraph"><a name="L88" id="L88" class="anchor"></a>「え？　んーと、んーと……あのねー、がおーってなっちゃうんだよ！　そしたら、みんながおーってなっちゃうの！」</span></p>
+<p><span class="paragraph sticky"><a name="L90" id="L90" class="anchor"></a>　わけがわからないよ。</span>
+<span class="paragraph"><a name="L91" id="L91" class="anchor"></a>　五歳児の文法と語彙を理解できるほどのコミュ力が僕にあるわけがない。</span></p>
+<p><span class="paragraph"><a name="L93" id="L93" class="anchor"></a>　話を聞いてますます混乱する僕に救いの手を差し伸べるように、見かねたボスが横から助け舟を出してくれた。</span></p>
+<p><span class="paragraph sticky"><a name="L95" id="L95" class="anchor"></a>「バンペイ、ここは私に任せてくれ」</span>
+<span class="paragraph"><a name="L96" id="L96" class="anchor"></a>「え、ええ……お願いします」</span></p>
+<p><span class="paragraph"><a name="L98" id="L98" class="anchor"></a>　早々にギブアップ宣言して、ボスに相手を譲る。ボスは浮かんでいる幼女と目線を合わせると、柔らかく微笑みかけた。</span></p>
+<p><span class="paragraph sticky"><a name="L100" id="L100" class="anchor"></a>「やあ、私はルビィ。君の名前は？」</span>
+<span class="paragraph sticky"><a name="L101" id="L101" class="anchor"></a>「あのねー、えへへ、シィはシィなの！」</span>
+<span class="paragraph"><a name="L102" id="L102" class="anchor"></a>「ほうそうか。君はシィと言うんだな」</span></p>
+<p><span class="paragraph"><a name="L104" id="L104" class="anchor"></a>　どうやら幼女の名前はシィというらしい。意外な事に、ボスは子供の扱いに慣れているようだ。いや、僕を子供扱いしていたのだから意外でもないか。ボスは手慣れた誘導によって、シィからするすると情報を引き出していく。</span></p>
+<p><span class="paragraph sticky"><a name="L106" id="L106" class="anchor"></a>「それで、『がおー』とは何だろうか？」</span>
+<span class="paragraph sticky"><a name="L107" id="L107" class="anchor"></a>「んーと、がおーはがおーだよ。みんなをたべちゃうの！　こわいの！」</span>
+<span class="paragraph sticky"><a name="L108" id="L108" class="anchor"></a>「ふむ……がおーに食べられてしまうのか。それはこわいな」</span>
+<span class="paragraph"><a name="L109" id="L109" class="anchor"></a>「うん！　こわいでしょー！」</span></p>
+<p><span class="paragraph sticky"><a name="L111" id="L111" class="anchor"></a>　こわい<ruby>が<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>お<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ー<rp> (</rp><rt>・</rt><rp>)</rp></ruby>の話なのに、なぜかシィはニコニコと自慢気にしている。</span>
+<span class="paragraph sticky"><a name="L112" id="L112" class="anchor"></a>　それにしても、人を食べる『がおー』の正体には心当たりがある。自然、僕の視線は足元に座っているバレットへと向かう。僕がシィに吹き飛ばされた時は、すぐに近寄ってきて頬をペロペロと舐めてくれた。</span>
+<span class="paragraph"><a name="L113" id="L113" class="anchor"></a>　ボスも僕と同様の推論に至ったらしい。バレットを見ながらシィとの話を続ける。</span></p>
+<p><span class="paragraph sticky"><a name="L115" id="L115" class="anchor"></a>「がおーというのは魔物の事かな？」</span>
+<span class="paragraph sticky"><a name="L116" id="L116" class="anchor"></a>「うんっ！　そうだよー！　まもの？　だよー！」</span>
+<span class="paragraph sticky"><a name="L117" id="L117" class="anchor"></a>「それで、がおーになっちゃう、というのは、何が『がおーになってしまう』のだ？」</span>
+<span class="paragraph sticky"><a name="L118" id="L118" class="anchor"></a>「えーとねー、わかんない！」</span>
+<span class="paragraph"><a name="L119" id="L119" class="anchor"></a>「……そうか」</span></p>
+<p><span class="paragraph sticky"><a name="L121" id="L121" class="anchor"></a>　支離滅裂だが、ニコニコしているシィを見ていると、わからないなら仕方ないなという気になってくる。根気よくシィとやりとりを続けるボスは笑顔を崩さない。</span>
+<span class="paragraph sticky"><a name="L122" id="L122" class="anchor"></a>　『がおーになる』という事は『魔物になる』という事だから、動物が魔物になる事を言っているのだろう。魔物とは動物に魔核が与えられる事で生まれてくるものだと本で読んだ。</span>
+<span class="paragraph"><a name="L123" id="L123" class="anchor"></a>　シィは魔物が生まれる兆候があって危険だと警告しているのかもしれない。危険なはずの<ruby>こ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>わ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>い<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>が<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>お<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ー<rp> (</rp><rt>・</rt><rp>)</rp></ruby>は足元であくびをしているが。</span></p>
+<p><span class="paragraph sticky"><a name="L125" id="L125" class="anchor"></a>「それで、その『がおー』はどこにいるのだ？」</span>
+<span class="paragraph"><a name="L126" id="L126" class="anchor"></a>「あそこー！」</span></p>
+<p><span class="paragraph sticky"><a name="L128" id="L128" class="anchor"></a>　そう言ってシィが指差した方向は、壁の内側だった。</span>
+<span class="paragraph"><a name="L129" id="L129" class="anchor"></a>　その小さな指の先には、閉じ込められた商隊の馬車が停められていて、相変わらず商人達が焚き火の周りで横になっている。</span></p>
+<p><span class="paragraph sticky"><a name="L131" id="L131" class="anchor"></a>　そうか、そういう事か。</span>
+<span class="paragraph"><a name="L132" id="L132" class="anchor"></a>　商隊を見て僕と同じように気がついたのであろうボスが、何度か頷いてシィに確認する。</span></p>
+<p><span class="paragraph"><a name="L134" id="L134" class="anchor"></a>「あそこにいる『がおー』とは、<ruby>馬<rp> (</rp><rt>・</rt><rp>)</rp></ruby>のことだな？」</span></p>
+<p><span class="paragraph"><a name="L136" id="L136" class="anchor"></a>　そう。壁の中にいる動物といえば、馬車を牽いている馬しかいない。</span></p>
+<p><span class="paragraph"><a name="L138" id="L138" class="anchor"></a>「え？　ちがうよー！　おうまさんじゃないもん！」</span></p>
+<p><span class="paragraph"><a name="L140" id="L140" class="anchor"></a>　だから、シィのその答えに僕達は愕然となった。</span></p>
+<p><span class="paragraph"><a name="L142" id="L142" class="anchor"></a>「がおーはあそこでねてるもん！　もうすぐがおーになるんだもん！」</span></p>
+</div></main><div class="container"><nav class="page-nav"><ul class="pager"><li class="previous"><a href="/magi-hacker/chapter-01/013.html">前: 013 - hacker.flash();</a></li><li class="next"><a href="/magi-hacker/chapter-01/015.html">次: 015 - hacker.pat(apple);</a></li></ul></nav></div><footer><div class="container"><p>&copy; Copyright 2016 IRIDE Monad</p></div></footer><script src="/magi-hacker/bower/jquery.js" charset="utf-8"></script><script src="/magi-hacker/bower/bootstrap.min.js" charset="utf-8"></script><script src="/magi-hacker/assets/page.js" charset="utf-8"></script></body></html>

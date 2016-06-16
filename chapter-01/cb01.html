@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CoffeeBreak 01 - hacker.explain(Phone);</title><link rel="stylesheet" href="/magi-hacker/bower/bootstrap.min.css"><link rel="stylesheet" href="/magi-hacker/assets/style.css"></head><body class="page page-chapter-01-cb-01 page-novel"><nav class="global-nav navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><button data-toggle="collapse" data-target="#global-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/magi-hacker/" class="navbar-brand"><img src="/magi-hacker/images/logo.png" alt="マギハッカーの異世界ベンチャー起業術" height="100%"></a></div><div id="global-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/magi-hacker/SUMMARY.html">目次</a></li><li><a href="/magi-hacker/GLOSSARY.html">用語集</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://github.com/io-monad/magi-hacker">GitHub</a></li><li><a href="http://ncode.syosetu.com/n5191dd/">小説家になろうで読む</a></li><li><a href="https://kakuyomu.jp/works/4852201425154996024">カクヨムで読む</a></li></ul></div></div></nav><main><div class="container"><h1>
+  <a name="coffee-break-01-hacker-explain-phone" id="coffee-break-01-hacker-explain-phone" class="anchor"></a>
+  CoffeeBreak 01 - hacker.explain(Phone);
+</h1><p><span class="paragraph"><a name="L3" id="L3" class="anchor"></a>「そういえばバンペイ。結局のところ、電話はどうやって実現してるんだ？」</span></p>
+<p><span class="paragraph"><a name="L5" id="L5" class="anchor"></a>　電話をマギサービスとして<ruby>サービスイン<rp> (</rp><rt>稼働開始</rt><rp>)</rp></ruby>して初日、ばたばたと慌ただしかった作業を終えてお茶を飲んでいると、ボスが突然そう切り出してきた。</span></p>
+<p><span class="paragraph sticky"><a name="L7" id="L7" class="anchor"></a>　穏やかな昼下がり、開け放たれた窓の外から青い色が見えるような爽やかな空気が流れ込んでいる。</span>
+<span class="paragraph sticky"><a name="L8" id="L8" class="anchor"></a>　このオフィスに初めて来た時には板が打ち付けられて塞がれていた窓だったが、板を剥がしてボスと二人で何とか窓をでっちあげた。いつも今日のような日ならいいのだが、風が強い日には室内の書類がまきちらされてしまうので、また板でふさいでしまう。</span>
+<span class="paragraph"><a name="L9" id="L9" class="anchor"></a>　このような不便さは他にも様々あるものの、住めば都とはよく言ったもので今ではマギデバイスを駆使した生活にも慣れつつあった。</span></p>
+<p><span class="paragraph sticky"><a name="L11" id="L11" class="anchor"></a>「ボス、前にも説明しませんでしたっけ？」</span>
+<span class="paragraph"><a name="L12" id="L12" class="anchor"></a>「ははは、すまない。理解したつもりだったのだが、やはりあの『でんぱ』だったか？　あれがよくわからなくってな」</span></p>
+<p><span class="paragraph sticky"><a name="L14" id="L14" class="anchor"></a>　真っ赤な髪をかきあげて照れるボスに呆れつつ、でも仕方がないとも考えなおす。携帯電話の仕組みなんて地球の現代人でもなんとなくでしか理解していないはずだ。</span>
+<span class="paragraph"><a name="L15" id="L15" class="anchor"></a>　電波が飛んで来て、手元の携帯電話が受け取る。電話に話しかけると、それが電波になって飛んで行く。基地局とかいう施設があるけど、それが電波を中継してるんだっけ？　という具合だろう。</span></p>
+<p><span class="paragraph sticky"><a name="L17" id="L17" class="anchor"></a>「マギデバイスの場合、電波は使ってないですよ？」</span>
+<span class="paragraph sticky"><a name="L18" id="L18" class="anchor"></a>「なに？　では、どうやって電話を実現しているんだ。電波を使うから電話じゃなかったのか？　私をだまそうったってそうはいかないぞ」</span>
+<span class="paragraph sticky"><a name="L19" id="L19" class="anchor"></a>「いや、ですから、マギデバイスに遠くのマギデバイスと通信……はわからないか。えーと、『やりとり』する機能があるんですって」</span>
+<span class="paragraph sticky"><a name="L20" id="L20" class="anchor"></a>「マギデバイス同士がやりとり？」</span>
+<span class="paragraph sticky"><a name="L21" id="L21" class="anchor"></a>「そうですよ。名前だって説明したのにボスが『じゃあ、このマギサービスの名前は電話だな！』って無理矢理に採用してしまったんじゃないですか」</span>
+<span class="paragraph sticky"><a name="L22" id="L22" class="anchor"></a>「そうだったか？　いや、すまんすまん。まあ過ぎた事はいいじゃないか。『電話』でマギサービスを開始してしまったし今さら変えるわけにもいかないだろう。それで、結局のところ電話のマギサービスはどうやって実現されてるんだ？」</span>
+<span class="paragraph"><a name="L23" id="L23" class="anchor"></a>「はぁ、まったく……。えーと、ですね。マギランゲージが何かに『命令』するための言語だという事は説明したと思うんですが――」</span></p>
+<hr>
+<p><span class="paragraph sticky"><a name="L27" id="L27" class="anchor"></a>　マギランゲージとは、何かに『命令』を送る事によって全てがなりたっている言語だ。計算ですら数に対して『１増えろ』や『１減らせ』といった命令で成り立っていて、全てを『<ruby>オブジェクト<rp> (</rp><rt>もの</rt><rp>)</rp></ruby>』に対する命令として扱うという概念を『オブジェクト指向』と呼ぶことは前に説明した（#007参照）。</span>
+<span class="paragraph"><a name="L28" id="L28" class="anchor"></a>　マギランゲージを書いていて大変なのは、マギランゲージが提供するのは最小限でしかなく、全てを自作しなくてはならない点だ。掛け算すらできないのに円の面積を求めろと言われても困ってしまうだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L30" id="L30" class="anchor"></a>　そこで、僕はまず出来ることを増やす事から手をつけた。例えば、『１増えろ』ではなくｎ増やす。これには『１増えろ』という命令をｎ回繰り返す事になる。</span>
+<span class="paragraph sticky"><a name="L31" id="L31" class="anchor"></a>　ややこしいのは、この繰り返しすら何かへの命令で表現しなくてはならないところだろう。数ｎに対して『この命令を自分の数だけ繰り返せ』と『命令』するのである。この時、『この命令』という部分に『１増えろ』を当てはめれば、その数ｎは二倍になるわけだ。</span>
+<span class="paragraph sticky"><a name="L32" id="L32" class="anchor"></a>　マギランゲージの面白いところは、『この命令』という形で扱ったように『命令』自体も一つのオブジェクトとして扱えるところだ。そして『命令オブジェクト』は、そのもの自身に対する命令だけではなく、別のオブジェクトへの命令も表現できる。例えば『Ａに対して１増えろ』という具合である。</span>
+<span class="paragraph"><a name="L33" id="L33" class="anchor"></a>　結論からいえば、Ａをｎ増やすには、『“Ａに対して１増えろ”という命令を自分の数だけ繰り返せ』という命令をｎに送ることになる。</span></p>
+<p><span class="paragraph sticky"><a name="L35" id="L35" class="anchor"></a>　さあオブジェクトと命令だらけで混乱してきたぞ。この混乱が、異世界の人々をマギランゲージから遠ざけている元凶だろう。ちなみに、地球のオブジェクト指向言語はここまで難しくはない。計算だって最初から簡単にできるようになっている。</span>
+<span class="paragraph"><a name="L36" id="L36" class="anchor"></a>　悪戦苦闘しつつ加減乗除の四則演算や簡単な計算ができるようになったら、ようやくスタートラインに立ったことになる。これでは、マギランゲージを勉強しようという気もなくすのは仕方ないだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L38" id="L38" class="anchor"></a>　『ｎ増やす』のような直感的で簡単な書き方ができれば、もうちょっと間口が広がるのにと考えたところで、閃くものがあった。</span>
+<span class="paragraph sticky"><a name="L39" id="L39" class="anchor"></a>　いっそのこと、こういった書き方ができるようにマギランゲージの上に<ruby>新<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>た<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>な<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>言<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>語<rp> (</rp><rt>・</rt><rp>)</rp></ruby>をかぶせてしまえばいいのではないか？</span>
+<span class="paragraph"><a name="L40" id="L40" class="anchor"></a>　そして僕は新たな言語づくりに手をつけた。より簡単に、より直感的な記述ができるように、誰でも書けるようにするためだ。さらにマギランゲージの文字を覚えなくても使えるように、異世界で主に使われている言語を使って書けるようにする。</span></p>
+<p><span class="paragraph"><a name="L42" id="L42" class="anchor"></a>　それは地球におけるコンピュータの歴史の再現だった。</span></p>
+<p><span class="paragraph sticky"><a name="L44" id="L44" class="anchor"></a>　コンピュータが作られた当初、コンピュータが解釈できるのは『機械語』と呼ばれる言語、一種類のみだったのである。それは人間ではなく機械のための言語であり、０と１で構成されていて単なる数字の羅列にしか見えないものだ。例えば１番が加算で、２番が減算、といった具合である。</span>
+<span class="paragraph"><a name="L45" id="L45" class="anchor"></a>　当然ながら機械語でプログラムを作るのは非常に大変で、単純な操作しかできないために１つの動作を書くのにも膨大な量の機械語を書く必要があった。人間からすれば数字しかないために間違いも起きやすく、とてもではないが大規模なシステム開発など不可能だった。</span></p>
+<p><span class="paragraph sticky"><a name="L47" id="L47" class="anchor"></a>　次に登場したのが『アセンブリ言語』と呼ばれる言語である。これは機械語の数字をそのまま同じ意味の英単語に置き換え、数字の代わりに英単語でコードを書けるようにしたものだ。例えるなら、１番の代わりに『ＡＤＤ』、２番の代わりに『ＳＵＢ』といった形だ。それぞれ加算を意味するＡｄｄｉｔｉｏｎ、減算を意味するＳｕｂｔｒａｃｔｉｏｎの頭文字である。</span>
+<span class="paragraph sticky"><a name="L48" id="L48" class="anchor"></a>　数字を読み書きするよりはだいぶ負担が減ったが、それでもできる事が単純な操作しかできない事にかわりはなく、やはり大きいコードを書くのは非常に大変だった。</span>
+<span class="paragraph"><a name="L49" id="L49" class="anchor"></a>　それでも人間の慣れとはすごいもので、当時は大企業の作るシステムや商用ソフトウェア、コンピュータを動かす基本ソフトのＯＳですらアセンブリ言語で書かれていた。</span></p>
+<p><span class="paragraph sticky"><a name="L51" id="L51" class="anchor"></a>　僕がマギランゲージという言語に抱いた印象は、このアセンブリ言語に近い。単純な操作しかサポートされておらず、しかし既存のマギサービスのような大規模なシステムでも使われている。</span>
+<span class="paragraph"><a name="L52" id="L52" class="anchor"></a>　実際にはオブジェクト指向のサポートがある分、もうちょっと抽象度が高いが、そのまま人間が読み書きするには大変だというのが正直な感想だろう。</span></p>
+<p><span class="paragraph sticky"><a name="L54" id="L54" class="anchor"></a>　アセンブリ言語の次に生まれてきたのが、『高級言語』と呼ばれるようになったプログラミング言語たちである。対して機械語やアセンブリ言語は『低級言語』と呼ばれる。</span>
+<span class="paragraph sticky"><a name="L55" id="L55" class="anchor"></a>　この高級や低級とは値段や品質のことではなく、ソフトウェアがハードウェアの上で動くことになぞらえて、ハードウェアに近い単純な操作だと<ruby>低<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>く<rp> (</rp><rt>・</rt><rp>)</rp></ruby>、ハードウェアから遠い抽象的な操作が<ruby>高<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>い<rp> (</rp><rt>・</rt><rp>)</rp></ruby>からだ。</span>
+<span class="paragraph sticky"><a name="L56" id="L56" class="anchor"></a>　高級言語と呼ばれる言語は、人間にとってよりわかりやすく、機械語のようにハードウェアに依存しない書き方ができるように考案されたものだ。</span>
+<span class="paragraph"><a name="L57" id="L57" class="anchor"></a>　当初は数式を書きやすくするために、あらかじめ数学関数やよく使われる操作を備え持った<ruby>ＦＯＲＴＲＡＮ<rp> (</rp><rt>フォートラン</rt><rp>)</rp></ruby>という高級言語が開発され、その有用さが証明されると次々と新たな高級言語が作られていった。</span></p>
+<p><span class="paragraph"><a name="L59" id="L59" class="anchor"></a>　僕がやろうとしているのは、まさしくこの『高級言語』の開発である。マギランゲージという『低級言語』をよりわかりやすく、書きやすくするためのオリジナル高級言語を作るのだ。</span></p>
+<hr>
+<p><span class="paragraph sticky"><a name="L63" id="L63" class="anchor"></a>「ちょ、ちょっと待ってくれバンペイ。えーとだな、私は電話の仕組みを聞きたかったのだが、その、高級？　言語を作っているのはおいておいてだな……」</span>
+<span class="paragraph sticky"><a name="L64" id="L64" class="anchor"></a>「ああ、すみません。ちょっと熱中してしまって。でもボス、高級言語は大事ですよ。これができれば、もっと多くの人がマギを作れるようになるはずです」</span>
+<span class="paragraph"><a name="L65" id="L65" class="anchor"></a>「う、うむ。私だってマギランゲージに挫折した一人だから。それは嬉しいのだが……」</span></p>
+<p><span class="paragraph sticky"><a name="L67" id="L67" class="anchor"></a>　どうやらボスは言語の開発の話はお気に召さないようだった。これから面白くなるところだったのになぁ。仕方ないので、電話の開発の話をすることにする。</span>
+<span class="paragraph"><a name="L68" id="L68" class="anchor"></a>　あれ、そういえば以前に電話の話をした時も、地球の電話の話ばかりしていた気がしてきたぞ。もしかしてボスが勘違いしていたのは僕のせい？</span></p>
+<p><span class="paragraph sticky"><a name="L70" id="L70" class="anchor"></a>「す、すみませんボス。どうもマギランゲージの話になると熱中してしまうみたいで」</span>
+<span class="paragraph sticky"><a name="L71" id="L71" class="anchor"></a>「いや、いいんだ。それでこそバンペイだろう。それじゃあ電話の方も聞かせてもらえるだろうか」</span>
+<span class="paragraph"><a name="L72" id="L72" class="anchor"></a>「ええ、そもそも電話を実現するには遠くのマギデバイスと通信……つまり、やりとりする必要があるんですが――」</span></p>
+<hr>
+<p><span class="paragraph sticky"><a name="L76" id="L76" class="anchor"></a>　電話を実現するには、遠くのマギデバイスと通信する必要がある。それをどう行なうかが問題になったわけだが、シィから借りた『仕様書』のおかげでマギデバイスにはそもそも通信機能のようなものが備わっている事が判明した。</span>
+<span class="paragraph"><a name="L77" id="L77" class="anchor"></a>　しかしマギランゲージの例によって、これも一筋縄ではいかない代物だった。</span></p>
+<p><span class="paragraph"><a name="L79" id="L79" class="anchor"></a>　通信に関する要素として『通信相手』と『通信方法』の二つがあげられる。</span></p>
+<p><span class="paragraph sticky"><a name="L81" id="L81" class="anchor"></a>　この内『通信相手』に関しては、まず『どのマギデバイスと通信するのか』を教えなくてはならない。通信するといっても、どの相手と通信するのかわからなければどうしようもないからだ。</span>
+<span class="paragraph sticky"><a name="L82" id="L82" class="anchor"></a>　地球のインターネットでは、この通信相手の指定に『ＩＰアドレス』と呼ばれるものが使われている。電話機に電話番号があり、郵便配達には住所があるように、インターネットの中でも接続しているパソコンやサーバーなどの端末を識別するための番号があるのだ。</span>
+<span class="paragraph sticky"><a name="L83" id="L83" class="anchor"></a>　端末から発信された『パケット』、ようするに『情報の小包』には送り先となるＩＰアドレスが書かれている。宅配便の荷物に送り先の住所が書いてあるのと同じだ。</span>
+<span class="paragraph sticky"><a name="L84" id="L84" class="anchor"></a>　<ruby>荷物<rp> (</rp><rt>パケット</rt><rp>)</rp></ruby>を渡された<ruby>配達業者<rp> (</rp><rt>ルーター</rt><rp>)</rp></ruby>は、自分の管理する住所の範囲でなければ、送り先の住所を知っていそうな別の配達業者に配達を委託する。そしてその配達業者も知らなければ別の業者へ……といった具合に、どんどんと荷物をリレーしていく。</span>
+<span class="paragraph"><a name="L85" id="L85" class="anchor"></a>　こうして無事に相手の元まで荷物である情報が届くのである。誤解を恐れずにいってみれば、インターネットとは配達業者のネットワークとも言い換えられる。</span></p>
+<p><span class="paragraph sticky"><a name="L87" id="L87" class="anchor"></a>　ではマギデバイスの場合はというと、一応、相手を識別するための情報自体は存在する。しかしそれはマギデバイスに付いているのではなく、なんと『人間』に付いているのである。</span>
+<span class="paragraph sticky"><a name="L88" id="L88" class="anchor"></a>　仕様書によると、これは『マギフィンガープリント』と呼ばれている。フィンガープリントとは『指紋』のことなので、要するに人間ごとに異なるのだろう。国民総背番号制の個人番号みたいなものだ。</span>
+<span class="paragraph"><a name="L89" id="L89" class="anchor"></a>　マギフィンガープリント自体も長い桁数の数字だ。いつの間に、どうやって割り振られているのかはわからないが、異なる世界からやってきた僕にも割り振られている。</span></p>
+<p><span class="paragraph sticky"><a name="L91" id="L91" class="anchor"></a>　マギデバイスをボスから借り受けた時に所有者登録を行なったが、所有者の識別もこのマギフィンガープリントによって行われているらしい。これは仕様書にあった。</span>
+<span class="paragraph sticky"><a name="L92" id="L92" class="anchor"></a>　マギサービスの利用者登録も、実際には利用者のマギフィンガープリントを登録しているわけだ。だから、ボスからマギデバイスを借り受けても、ボスの使っているマギサービスを使えるわけではなかった。</span>
+<span class="paragraph"><a name="L93" id="L93" class="anchor"></a>　マギデバイス同士を<ruby>く<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>っ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>つ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>け<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>る<rp> (</rp><rt>・</rt><rp>)</rp></ruby>と、その所有者のマギフィンガープリントを相手に伝える事ができる。こうして、マギサービスの登録を行なっているわけだ。</span></p>
+<p><span class="paragraph sticky"><a name="L95" id="L95" class="anchor"></a>　であれば、電話にもマギフィンガープリントを使えばいいと思うだろう。</span>
+<span class="paragraph sticky"><a name="L96" id="L96" class="anchor"></a>　しかしマギフィンガープリントは、電話番号のように気軽に相手に教えるべきではない情報だ。電話帳にマギフィンガープリントがたくさん載っていると、漏洩のリスクが高すぎる。それに、お店のように電話番号は必ずしも個人と対応するわけではない。</span>
+<span class="paragraph"><a name="L97" id="L97" class="anchor"></a>　よって、マギフィンガープリントではなく電話番号を採用したのだ。</span></p>
+<p><span class="paragraph"><a name="L99" id="L99" class="anchor"></a>　電話番号とマギフィンガープリントの対応表は、登録所の中央マギデバイスのみが持っている。電話をかける時は、電話相手の電話番号を中央マギデバイスに伝えて相手方の特定とマギフィンガープリントによる符号化音声の中継を行なってもらう。</span></p>
+<p><span class="paragraph sticky"><a name="L101" id="L101" class="anchor"></a>　こうして、電話をする際には必ず中央マギデバイスを通して行なう、というモデルを構築した。</span>
+<span class="paragraph sticky"><a name="L102" id="L102" class="anchor"></a>　つまり、電話のネットワークは全てのマギデバイスが１つのマギデバイスにつながっているという中央集権型なのだ。それぞれのマギデバイスがつながっている分散型のインターネットとは異なっているわけだ。</span>
+<span class="paragraph"><a name="L103" id="L103" class="anchor"></a>　インターネットを目指す僕としては苦渋の決断だったが、いざできてみれば、うまくできたものだと<ruby>傲<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>慢<rp> (</rp><rt>・</rt><rp>)</rp></ruby>に自画自賛している。</span></p>
+<p><span class="paragraph"><a name="L106" id="L106" class="anchor"></a>　通信の要素として、もう一つの『通信方法』だが、これもまた難しい決断が必要だった。</span></p>
+<p><span class="paragraph sticky"><a name="L108" id="L108" class="anchor"></a>　インターネットでは、世界規模で『こういう風に通信しましょう』という<ruby>決<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ま<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>り<rp> (</rp><rt>・</rt><rp>)</rp></ruby>があり、それに則って端末や<ruby>配送業者<rp> (</rp><rt>ルーター</rt><rp>)</rp></ruby>がやりとりしている。この決まりの事を『プロトコル』と呼ぶ。</span>
+<span class="paragraph sticky"><a name="L109" id="L109" class="anchor"></a>　当然ながらマギデバイスの通信機能にプロトコルなんてものは存在しない。本にも書かれていないため、マギサービスも恐らく企業ごとに通信方法がバラバラだ。</span>
+<span class="paragraph"><a name="L110" id="L110" class="anchor"></a>　これはかなり恐ろしい状態だ。マギサービス同士の連携というのが一切不可能なのである。いわば企業内で閉じた<ruby>イントラネット<rp> (</rp><rt>企業内ネットワーク</rt><rp>)</rp></ruby>みたいなものだ。</span></p>
+<p><span class="paragraph sticky"><a name="L112" id="L112" class="anchor"></a>　僕が作るマギサービスだって、他のマギサービスとの互換性なんてあるはずがないから、<ruby>ひ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>と<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>り<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>よ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>が<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>り<rp> (</rp><rt>・</rt><rp>)</rp></ruby>の状態になるだろう。</span>
+<span class="paragraph sticky"><a name="L113" id="L113" class="anchor"></a>　そこで僕は、自分でプロトコルを策定して、それに則って通信を実装した。このプロトコルを今後、公開していくつもりである。もし他の企業がプロトコルに従ってくれたらしめたものだが、まだまだ難しいだろう。</span>
+<span class="paragraph"><a name="L114" id="L114" class="anchor"></a>　でも、今は一人だけであろうと『決めておく』ことが重要なのだ。そして、それをはみ出さないようにする。そうする事によって将来につなげていけるのだ。</span></p>
+<p><span class="paragraph sticky"><a name="L116" id="L116" class="anchor"></a>　<ruby>ひ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>と<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>り<rp> (</rp><rt>・</rt><rp>)</rp></ruby>プロトコルの策定を始めたものの、かなり大変だった。地球では長い時をかけて何人もの手で作られチェックされ、策定に至ったものだ。一人でやれば大変なのは当たり前だ。</span>
+<span class="paragraph sticky"><a name="L117" id="L117" class="anchor"></a>　例えば、通信に使用する文字ですら、１から『文字コード』を決めなければならない。文字コードとは文字を<ruby>符<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>号<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>化<rp> (</rp><rt>・</rt><rp>)</rp></ruby>したものだ。音声を１と０に変換したように、文字も一文字一文字に番号を割り当てて１と０で表現できるようにする。</span>
+<span class="paragraph"><a name="L118" id="L118" class="anchor"></a>　<ruby>パケット<rp> (</rp><rt>情報の小包</rt><rp>)</rp></ruby>の定義、使われる文字コード、やりとりの手順、通信される内容の規格にいたるまで、１つずつ自分で決めなくてはならなかった。通信の暗号化もここで定めたものだ。</span></p>
+<p><span class="paragraph"><a name="L120" id="L120" class="anchor"></a>　これを十日、ブライさんの件があったから実質八日ほどで全て一人で作成した。</span></p>
+<hr>
+<p><span class="paragraph sticky"><a name="L124" id="L124" class="anchor"></a>「……なんというか、おつかれさまだったな」</span>
+<span class="paragraph sticky"><a name="L125" id="L125" class="anchor"></a>「ええ、僕の苦労がボスに伝わったようでなによりです」</span>
+<span class="paragraph sticky"><a name="L126" id="L126" class="anchor"></a>「いや、その、気軽に十日を目処に、なんて言って悪かったな」</span>
+<span class="paragraph sticky"><a name="L127" id="L127" class="anchor"></a>「ふふふ、いいんですよ。ボスは無茶ぶりするぐらいがちょうどいいんですから。それに十日でできるといったのは僕自身です。僕の矜持にかけても約束をやぶるわけにはいきませんでしたから」</span>
+<span class="paragraph"><a name="L128" id="L128" class="anchor"></a>「そ、そうか……」</span></p>
+<p><span class="paragraph"><a name="L130" id="L130" class="anchor"></a>　なぜだかボスが少しひいた様子だったのが不思議だった。</span></p>
+</div></main><div class="container"><nav class="page-nav"><ul class="pager"><li class="previous"><a href="/magi-hacker/chapter-01/021.html">前: 021 - hacker.enjoy(AnotherWorld);</a></li><li class="next"><a href="/magi-hacker/chapter-01/cb02.html">次: CoffeeBreak 02 - c.apologize();</a></li></ul></nav></div><footer><div class="container"><p>&copy; Copyright 2016 IRIDE Monad</p></div></footer><script src="/magi-hacker/bower/jquery.js" charset="utf-8"></script><script src="/magi-hacker/bower/bootstrap.min.js" charset="utf-8"></script><script src="/magi-hacker/assets/page.js" charset="utf-8"></script></body></html>

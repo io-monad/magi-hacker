@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>022 - hacker.setSummoned(true);</title><link rel="stylesheet" href="/magi-hacker/bower/bootstrap.min.css"><link rel="stylesheet" href="/magi-hacker/assets/style.css"></head><body class="page page-chapter-02-022 page-novel"><nav class="global-nav navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><button data-toggle="collapse" data-target="#global-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/magi-hacker/" class="navbar-brand"><img src="/magi-hacker/images/logo.png" alt="マギハッカーの異世界ベンチャー起業術" height="100%"></a></div><div id="global-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/magi-hacker/SUMMARY.html">目次</a></li><li><a href="/magi-hacker/GLOSSARY.html">用語集</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://github.com/io-monad/magi-hacker">GitHub</a></li><li><a href="http://ncode.syosetu.com/n5191dd/">小説家になろうで読む</a></li><li><a href="https://kakuyomu.jp/works/4852201425154996024">カクヨムで読む</a></li></ul></div></div></nav><main><div class="container"><h1>
+  <a name="022-hacker-set-summoned-true" id="022-hacker-set-summoned-true" class="anchor"></a>
+  022 - hacker.setSummoned(true);
+</h1><p><span class="paragraph"><a name="L3" id="L3" class="anchor"></a>　ハッカー達が立ち止まって何かを考えている時、そっとしておいてほしい。</span></p>
+<p><span class="paragraph sticky"><a name="L5" id="L5" class="anchor"></a>　例えば高層ビルでエレベータを待っている時に手持ち無沙汰なら、階数表示を見てエレベータが降りてくる遅さにイラついたり、何の意味もないというのに▼ボタンを連打したり、そういう事をして気を紛らわせるのが一般的だろう。</span>
+<span class="paragraph sticky"><a name="L6" id="L6" class="anchor"></a>　しかしハッカー達はエレベータを待っている間に、エレベータの待ち時間を減らすための『アルゴリズム』を考えていたりする。アルゴリズムというのは、何か行なうための『手順』みたいなものだ。</span>
+<span class="paragraph sticky"><a name="L7" id="L7" class="anchor"></a>　上へ行くボタンと下へ行くボタンしかない癖に、エレベータというのは裏で計算をたくさんしている。一台だけなら簡単だが、複数台になると途端に複雑さが増す。まずは押された階に一番近い箱を探してそれを動かせばいいとおもいきや、すでに人が乗っているかもしれないし、別の階へ向かう途中だったかもしれない。</span>
+<span class="paragraph sticky"><a name="L8" id="L8" class="anchor"></a>　さらにエレベータというのは統計的に一階に呼ばれる確率が一番高いのだから、普段から一階には一基を待機させておくなど、人間の行動に基づいた確率による最適化ができるかもしれない。いっそ<ruby>ＡＩ<rp> (</rp><rt>人工知能</rt><rp>)</rp></ruby>に学習させるのもありかも。</span>
+<span class="paragraph"><a name="L9" id="L9" class="anchor"></a>　こういった具合に、どういうアルゴリズムでエレベータを動かせば一番効率よく待ち時間を減らせるのかという問題は非常に奥が深く、そういった難しい問題をついつい考えてしまうのは、ハッカーがハッカーたるゆえんなのだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L11" id="L11" class="anchor"></a>　別にエレベータに限った話ではなく、アルゴリズムというのは身近なところにたくさん隠れている。</span>
+<span class="paragraph"><a name="L12" id="L12" class="anchor"></a>　例えば、とある数を言われてそれが『素数かどうか調べろ』と言われたら、どうやって考えるだろうか？　２で割ってみて、ダメなら３から奇数で順番に割れるかどうか試してみる。何かで割れれば素数ではない、最後まで割れなければ素数。これだって立派なアルゴリズムだ。人間だって、何かを考える時は自然に<ruby>手<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>順<rp> (</rp><rt>・</rt><rp>)</rp></ruby>に沿っているのだ。</span></p>
+<p><span class="paragraph"><a name="L14" id="L14" class="anchor"></a>　そう。手順だ。</span></p>
+<p><span class="paragraph"><a name="L16" id="L16" class="anchor"></a>　物事には手順というものがある。なにをするにも一つ一つ手順を進めていかなくてはならないんだ。けっして一つとばしで物事を進めてはいけない。</span></p>
+<p><span class="paragraph sticky"><a name="L18" id="L18" class="anchor"></a>「……どういう事なんですか、ボス」</span>
+<span class="paragraph"><a name="L19" id="L19" class="anchor"></a>「は、はっはっは……すまない、バンペイ……」</span></p>
+<p><span class="paragraph sticky"><a name="L21" id="L21" class="anchor"></a>　腕を組んで説明を求める僕の目の前では、我が社の社長であり、僕にとって唯一の上司であり、異世界に迷い込んだ僕を助けてくれた恩人とも言える『ボス』こと、ルビィ＝レイルズがうなだれている。</span>
+<span class="paragraph"><a name="L22" id="L22" class="anchor"></a>　相変わらずの真っ赤な髪の毛がちょこちょこ跳ねている。寝ぐせも直さずに外に出るなんて社長として大丈夫なのだろうか。少し心配になるぞ。それに、せっかくの美人なのにもったいないと思う。セクハラになるかもしれないから言わないけど。</span></p>
+<p><span class="paragraph sticky"><a name="L24" id="L24" class="anchor"></a>　マギと呼ばれる異世界の魔法を提供するマギサービス、その運営会社をボスと二人で起業してからそろそろ二週間が経とうとしている。ボスに無理矢理誘われた形で入社したが、今では生きがいに思えるほど楽しんでいる。</span>
+<span class="paragraph sticky"><a name="L25" id="L25" class="anchor"></a>　僕達の作り上げた初めてのマギサービスである『電話』は、それなりに順調に利用者を増やしつつあった。やはり実演してみせたのが大きかったらしい。今は口コミで徐々に利用者が広がっていく時期だろう。</span>
+<span class="paragraph sticky"><a name="L26" id="L26" class="anchor"></a>　これも、実演という形での地道な活動をシィが提案してくれたおかげだ。世界にはびこるバグと戦う金髪の魔法少女シィは、今日も元気に庭で遊んでいる。そのかたわらでは黒死狼と呼ばれて恐れられている<ruby>は<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ず<rp> (</rp><rt>・</rt><rp>)</rp></ruby>のバレットが見守っている。僕のマギで小さくしてあげたから今は柴犬ほどの大きさだが、本来は数メートルを超えるような巨大な狼の『魔物』だ。</span>
+<span class="paragraph"><a name="L27" id="L27" class="anchor"></a>　はしゃぎまわるシィを暖かく見守る様子からは全く想像できないが、人間の天敵の魔物である<ruby>は<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ず<rp> (</rp><rt>・</rt><rp>)</rp></ruby>なのだ。ふぅ、それにしても二人を見ていると和むなぁ。</span></p>
+<p><span class="paragraph"><a name="L29" id="L29" class="anchor"></a>「……バンペイ、人が謝っているのに無視はひどいんじゃないか？　うう、泣いてしまうかもしれないぞ」</span></p>
+<p><span class="paragraph"><a name="L31" id="L31" class="anchor"></a>　見てみぬふりしていた方向から、うらめしそうな声が聞こえてきた。振り向くとボスは目元に手を当てている。あきらかに泣き真似である。</span></p>
+<p><span class="paragraph sticky"><a name="L33" id="L33" class="anchor"></a>「ボスが泣くところなんて是非みてみたいですね。まったく、泣いてしまいたいのはこちらですよ。どうしていきなりそういう事を引き受けてしまうのですか」</span>
+<span class="paragraph sticky"><a name="L34" id="L34" class="anchor"></a>「だってだって、売り言葉に買い言葉だったんだ。それに、電話も順調だし会社を大きくするチャンスだと思ったんだよ。ほら、バンペイだって何か作りたいだろう？」</span>
+<span class="paragraph sticky"><a name="L35" id="L35" class="anchor"></a>「はぁ……作りたいですけど、今は電話が優先ですよ。確かに順調ですけど、これからまた利用者が減ってしまうかもしれませんし、まだまだ問題も残ってるんですから」</span>
+<span class="paragraph sticky"><a name="L36" id="L36" class="anchor"></a>「え？　問題？　そんなものあったか？」</span>
+<span class="paragraph sticky"><a name="L37" id="L37" class="anchor"></a>「ボス、昨日さんざん説明して……ああ、そうか。そういえば酔いつぶれて後半はほとんど寝ていましたね」</span>
+<span class="paragraph sticky"><a name="L38" id="L38" class="anchor"></a>「うっ……それは、その」</span>
+<span class="paragraph sticky"><a name="L39" id="L39" class="anchor"></a>「私はボスの大切な部下としてボスを守る義務がありますね。そろそろボスが身体を壊してしまわないように、涙をのんで辛い決断をする時期なのかもしれません。そう、一週間の<ruby>禁<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>酒<rp> (</rp><rt>・</rt><rp>)</rp></ruby>です」</span>
+<span class="paragraph sticky"><a name="L40" id="L40" class="anchor"></a>「えええ！　そんな！　禁酒なんて無理だ！　横暴だ！　民権侵害だ！」</span>
+<span class="paragraph sticky"><a name="L41" id="L41" class="anchor"></a>「労働の義務を果たさないものに権利などありません」</span>
+<span class="paragraph"><a name="L42" id="L42" class="anchor"></a>「ううー。バンペイのいじわる……」</span></p>
+<p><span class="paragraph"><a name="L44" id="L44" class="anchor"></a>　この人、本来は立派な父親に憧れて、この国の議員を目指していたんだよな？　ボスから身の上話が少しだけ聞けて嬉しかったのに、急にうさんくさく感じてくる。酒乱だし猪突猛進だしおっちょこちょいだし、おおよそ議員には向かない性格だと思う。</span></p>
+<p><span class="paragraph"><a name="L46" id="L46" class="anchor"></a>「まあ、電話の問題はすぐにどうこうなるものではないので置いておくとして、今はボスが引き受けてしまった仕事の方ですよ。一体どういう事なんですか？」</span></p>
+<p><span class="paragraph"><a name="L48" id="L48" class="anchor"></a>　そう、仕事を受ける事自体は問題ない。問題は内容なのだ。</span></p>
+<p><span class="paragraph"><a name="L50" id="L50" class="anchor"></a>　――新たなマギサービスを電話とは別に作り、議員達の前でプレゼンすること。</span></p>
+<p><span class="paragraph"><a name="L52" id="L52" class="anchor"></a>　それが、僕に与えられた新たなミッションだった。</span></p>
+<hr>
+<p><span class="paragraph"><a name="L56" id="L56" class="anchor"></a>「ごめんである！」</span></p>
+<p><span class="paragraph"><a name="L58" id="L58" class="anchor"></a>「ジャ、ジャイルさん！？」</span></p>
+<p><span class="paragraph sticky"><a name="L60" id="L60" class="anchor"></a>　事のはじまりは、広場で出会ったマスター・センセイことジャイル＝ムライさんが、何の前触れもなく突然オフィスへとやってきた事だった。</span>
+<span class="paragraph sticky"><a name="L61" id="L61" class="anchor"></a>　ジャイルさんは広場で電話を実演していた際に知り合った人で、電話マギサービスにとても興味をもって僕の説明を熱心に聞いてくれたうえに、軍に電話を全面的に採用するとまで言ってくれたお客様だ。毎日拝んでありがたがるべきなぐらい会社にとってはお得意様になる予定だ。</span>
+<span class="paragraph"><a name="L62" id="L62" class="anchor"></a>　とにかく立ち話はなんなので中へと案内する。相変わらず大きくて立派な体格の持ち主であるジャイルさんは、玄関をくぐるにも屈んで入るほどだ。</span></p>
+<p><span class="paragraph"><a name="L64" id="L64" class="anchor"></a>「ボス、こちらが先日、広場でお会いしたジャイル＝ムライさんです。ジャイルさん、こちらが弊社社長のルビィ＝レイルズです」</span></p>
+<p><span class="paragraph"><a name="L66" id="L66" class="anchor"></a>　かろうじて身につけていた異世界で通じるかもわからない社会人マナーにのっとって初対面の二人を仲立ちすると、ジャイルさんはボスの名前を聞いてピクリと眉を上げた。</span></p>
+<p><span class="paragraph sticky"><a name="L68" id="L68" class="anchor"></a>「レイルズ……？　むむ、その赤い髪といい、見当外れならばあいすまぬが、もしやお主はデイビッド殿の御令嬢かな？」</span>
+<span class="paragraph sticky"><a name="L69" id="L69" class="anchor"></a>「は、はい。お初にお目にかかります。デイビッド＝レイルズが長女のルビィ＝レイルズと申します。この良き出会いに感謝を」</span>
+<span class="paragraph"><a name="L70" id="L70" class="anchor"></a>「ほう。やはりそうであったか。うむ、我輩の名はジャイル＝ムライ！　人呼んでマスター・センセイとは我輩の事であーる！」</span></p>
+<p><span class="paragraph sticky"><a name="L72" id="L72" class="anchor"></a>　僕と会った時の名乗りと一字一句変わらない名乗りをしたジャイルさんは、どうやらボスの父親と知り合いらしい。それにしてもデイビッドとはまたイケメンっぽい名前だなぁ。この世界、名前が英語ぽかったり日本語ぽかったり、結構カオスな世界だ。もちろん、英語や日本語を実際に使っているわけではなく、発音が似ているだけの偶然だろうけど。</span>
+<span class="paragraph"><a name="L73" id="L73" class="anchor"></a>　それにしても、ブライさんを前にした時といい、ボスは意外と……と言ったら失礼にもほどがあるだろうが、ちゃんと敬語を使って丁寧に接客や応対をしている。たぶん、僕達に対する態度が素だとは思うが、やっぱり議員を目指していただけの事はある。失礼な前言は撤回しよう。</span></p>
+<p><span class="paragraph sticky"><a name="L75" id="L75" class="anchor"></a>「それにしても、デイビッド殿の娘御が会社の社長とは、一体どのような巡り合わせによるものであるか？」</span>
+<span class="paragraph"><a name="L76" id="L76" class="anchor"></a>「そ、それは……その……」</span></p>
+<p><span class="paragraph"><a name="L78" id="L78" class="anchor"></a>　まさか喧嘩して家出してきましたなんて言えないボスは、言葉を濁している。ここは助け舟を出してあげよう。</span></p>
+<p><span class="paragraph sticky"><a name="L80" id="L80" class="anchor"></a>「ボスの夢は新しいマギサービスを世に出す事だったんですよ。この会社を作って夢を叶えたわけです」</span>
+<span class="paragraph"><a name="L81" id="L81" class="anchor"></a>「なんとぉ！！　それはまことにもって素晴らしいことであーる！！　人間誰しも夢の一つや二つあって当たり前なのである！　どれほど困難であろうと夢を追ってこそ人間なのである！　いや、素晴らしいのだ！　我輩は感動したである！」</span></p>
+<p><span class="paragraph"><a name="L83" id="L83" class="anchor"></a>　いきなり熱く興奮しはじめたジャイルさんと、ガッシリと手を掴まれてたじたじなボスの構図が丸っきりジャイルさんに初めて会った時の再現になっている。あれは痛いんだよな。ボスの顔が青くなる前に助けてあげなくては。</span></p>
+<p><span class="paragraph sticky"><a name="L85" id="L85" class="anchor"></a>「と、ところでジャイルさん。本日はどのようなご用件でいらっしゃったんですか？」</span>
+<span class="paragraph"><a name="L86" id="L86" class="anchor"></a>「おお！　忘れるところであった！　バンペイは気のつく男で素晴らしいである！」</span></p>
+<p><span class="paragraph"><a name="L88" id="L88" class="anchor"></a>　先ほどから『素晴らしい』を連発しているジャイルさんは、ガサゴソと懐をあさって手紙らしきものを取り出した。金糸などで飾り付けられた、かなりしっかりとした格式高い作りの封筒で、どう考えてもこんな場末のオフィスには似合わない代物だ。</span></p>
+<p><span class="paragraph"><a name="L90" id="L90" class="anchor"></a>「これを届けに参ったのだ。<ruby>円<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>卓<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>議<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>会<rp> (</rp><rt>・</rt><rp>)</rp></ruby>からの召喚状であーる」</span></p>
+<p><span class="paragraph sticky"><a name="L92" id="L92" class="anchor"></a>「な、なんですって！？」</span>
+<span class="paragraph sticky"><a name="L93" id="L93" class="anchor"></a>「召喚状だと！？」</span>
+<span class="paragraph"><a name="L94" id="L94" class="anchor"></a>「どーしたの？」</span></p>
+<p><span class="paragraph"><a name="L96" id="L96" class="anchor"></a>　ボスと僕の二人から驚きの声があがり、庭にいたシィが何事かと窓から顔を出した。</span></p>
+<p><span class="paragraph sticky"><a name="L98" id="L98" class="anchor"></a>　召喚状とはつまり呼び出しであり、『円卓議会』といえば王直属のシンクタンクの役割を果たす諮問機関である。いわば、この国のほぼトップに近い位置から深い<ruby>スコープ<rp> (</rp><rt>階層</rt><rp>)</rp></ruby>の奥にいる僕達に直接呼び出しがかかったのだ。これがプログラムだったら、<ruby>カプセル化<rp> (</rp><rt>途中の階層</rt><rp>)</rp></ruby>が足りない下手なコードだと怒るところだ。</span>
+<span class="paragraph sticky"><a name="L99" id="L99" class="anchor"></a>　もちろん断ることなんてできないだろう。もし召喚されて下手なことをすれば、あっという間に広まって会社の評判はガタ落ちになるだろう。議員は当然ながら大店の商人達ともつながりがある。大変なことになってしまった。</span>
+<span class="paragraph"><a name="L100" id="L100" class="anchor"></a>　とりあえず事情を知っていそうなジャイルさんに詳しく聞いてみるしかない。</span></p>
+<p><span class="paragraph sticky"><a name="L102" id="L102" class="anchor"></a>「一体どうして急に召喚状が出てきたんですか？」</span>
+<span class="paragraph sticky"><a name="L103" id="L103" class="anchor"></a>「うむ。それは我輩が進言したからであーる。お主達が生み出した電話というマギサービスは、まさしく人々の生活を変え、軍事の常識すら塗り替える可能性がある画期的なマギサービスであると我輩は認識しているである」</span>
+<span class="paragraph sticky"><a name="L104" id="L104" class="anchor"></a>「そ、そこまでは……」</span>
+<span class="paragraph"><a name="L105" id="L105" class="anchor"></a>「いいや、それはお主が軍事の専門家ではないからわからないだけであーる。我輩、三十年この道一筋で軍に尽くしてまいったが、即座に安全に遠隔の味方と話せるだけで、どれほど戦いが有利にできることか、考えるだけで恐ろしくなるのである！」</span></p>
+<p><span class="paragraph sticky"><a name="L107" id="L107" class="anchor"></a>　確かに無線通信というのは戦いの有利不利を大幅に傾ける可能性があるのだろう。地球でも無線通信が大きく発展したのは第二次世界大戦によるところが大きい。電波によるレーダーや、暗号化された通信などが積極的に活用された。</span>
+<span class="paragraph sticky"><a name="L108" id="L108" class="anchor"></a>　しかし、<ruby>脆弱<rp> (</rp><rt>ぜいじゃく</rt><rp>)</rp></ruby>な暗号ほどに危険なものはない。太平洋戦争で旧日本軍が使用していたパープル暗号と呼ばれる暗号化方式は、アメリカ軍によって解読されてしまった。何よりも大事な機密情報が駄々漏れになったのである。</span>
+<span class="paragraph"><a name="L109" id="L109" class="anchor"></a>　難しいのは、電話のマギサービスに使った暗号化方式のような強固なものでも、それを運用する人間の側がミスをすれば意味がないという事だ。公開鍵暗号でも本人しか知らないはずの秘密鍵を漏らしてしまえば、簡単に暗号を解読されてしまう。</span></p>
+<p><span class="paragraph"><a name="L111" id="L111" class="anchor"></a>　ジャイルさんの言には納得できたが、だからといって議会に召喚されることには納得できない。</span></p>
+<p><span class="paragraph sticky"><a name="L113" id="L113" class="anchor"></a>「とにかく、召喚状を読むである。我輩は受領を確認する役割も仰せつかっているであーる」</span>
+<span class="paragraph sticky"><a name="L114" id="L114" class="anchor"></a>「普通、そういう雑用はもっと下っ端の人がくるものではないんですか？」</span>
+<span class="paragraph"><a name="L115" id="L115" class="anchor"></a>「何を言うのだ。使者を務める以上、相手に失礼のないように出来る限り地位の高い人間が行くのが当たり前である！　円卓議会からの召喚ともなれば大変に名誉なことであーる！」</span></p>
+<p><span class="paragraph"><a name="L117" id="L117" class="anchor"></a>　うん、やっぱりこの国は良い国だ。議員のような権威ある立場の人達が、こんな庶民相手でも気を使ってくれるなんてすごいことだと思う。憲法っぽいものもあるし、国民を大事にしているのがわかる。</span></p>
+<p><span class="paragraph sticky"><a name="L119" id="L119" class="anchor"></a>　ボスが召喚状の封筒を開くと、中には折りたたまれた白い紙。これもまた職人がせいを出して飾り立てられたものに見える。</span>
+<span class="paragraph"><a name="L120" id="L120" class="anchor"></a>　手紙を開いて内容を読み進めていたボスは、ある一点を見て目を大きく見開く。</span></p>
+<p><span class="paragraph"><a name="L122" id="L122" class="anchor"></a>「な、なんだ……と！？　<ruby>父様<rp> (</rp><rt>とうさま</rt><rp>)</rp></ruby>の名前！？」</span></p>
+<p><span class="paragraph"><a name="L124" id="L124" class="anchor"></a>　どうやら、そろそろ親子の仲直りの時間のようだ。</span></p>
+</div></main><div class="container"><nav class="page-nav"><ul class="pager"><li class="previous"><a href="/magi-hacker/chapter-01/cb02.html">前: CoffeeBreak 02 - c.apologize();</a></li><li class="next"><a href="/magi-hacker/chapter-02/023.html">次: 023 - hacker.isLazy();</a></li></ul></nav></div><footer><div class="container"><p>&copy; Copyright 2016 IRIDE Monad</p></div></footer><script src="/magi-hacker/bower/jquery.js" charset="utf-8"></script><script src="/magi-hacker/bower/bootstrap.min.js" charset="utf-8"></script><script src="/magi-hacker/assets/page.js" charset="utf-8"></script></body></html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>072 - hacker.set(trap);</title><link rel="stylesheet" href="/magi-hacker/bower/bootstrap.min.css"><link rel="stylesheet" href="/magi-hacker/assets/style.css"></head><body class="page page-chapter-04-072 page-novel"><nav class="global-nav navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><button data-toggle="collapse" data-target="#global-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/magi-hacker/" class="navbar-brand"><img src="/magi-hacker/images/logo.png" alt="マギハッカーの異世界ベンチャー起業術" height="100%"></a></div><div id="global-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/magi-hacker/SUMMARY.html">目次</a></li><li><a href="/magi-hacker/GLOSSARY.html">用語集</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://github.com/io-monad/magi-hacker">GitHub</a></li><li><a href="http://ncode.syosetu.com/n5191dd/">小説家になろうで読む</a></li><li><a href="https://kakuyomu.jp/works/4852201425154996024">カクヨムで読む</a></li></ul></div></div></nav><main><div class="container"><h1>
+  <a name="072-hacker-set-trap" id="072-hacker-set-trap" class="anchor"></a>
+  072 - hacker.set(trap);
+</h1><p><span class="paragraph"><a name="L3" id="L3" class="anchor"></a>　エンジニアにとって『セキュリティ』というのは大きな鬼門だ。</span></p>
+<p><span class="paragraph sticky"><a name="L5" id="L5" class="anchor"></a>　特にインターネットなどで不特定多数に提供されるサービスやソフトウェアは、セキュリティにことさら気を使う必要がある。ウェブサイトから個人情報が流出した、なんてニュースが頻繁に出てくるのを見ると、裏側にいるエンジニアたちの苦労を想像してしまい、ひたすら同情してしまう。</span>
+<span class="paragraph sticky"><a name="L6" id="L6" class="anchor"></a>　こういった事件は悪意のある人間がシステムに『攻撃』を加えるところから始まる。攻撃というのは要するに、システムに侵入したり秘密の情報を読んだりするために、非正規な手段を試みるという事だ。例えば、よく使われるパスワードを入力してみたり、プログラムの不具合を突くような情報を入力してみたり、という事が行われることになる。</span>
+<span class="paragraph sticky"><a name="L7" id="L7" class="anchor"></a>　もちろんエンジニア達だってやられる一方ではない。セキュリティは日進月歩で進歩しており、攻防はどんどん高度になっていく一方だ。新種のコンピュータウィルスが登場しても、すぐにアンチウィルスソフトが対応するように、攻撃手法に対しての『防御』も研究されているのだ。</span>
+<span class="paragraph"><a name="L8" id="L8" class="anchor"></a>　そうした研究をするには、まず『どのような攻撃が行われるのか』を知る必要がある。アンチウィルスソフトを作っている会社だって、まずは実物のウィルスを手に入れるところから対策が始まるのだ。ただ、自己増殖で増え続けるウィルスと違って、不正アクセスのような一過性の攻撃はどのような攻撃が行われたのか知るのが難しい。</span></p>
+<p><span class="paragraph sticky"><a name="L10" id="L10" class="anchor"></a>「というわけでね、こういう不正アクセスについては『罠』を仕掛けるという手法があるんだ」</span>
+<span class="paragraph sticky"><a name="L11" id="L11" class="anchor"></a>「罠、ですか？」</span>
+<span class="paragraph sticky"><a name="L12" id="L12" class="anchor"></a>「そう。ただし、相手には自分が罠にかかった事を気づかせないようにする。そして、罠に引っ掛かった攻撃者がどういう風に動くかを観察するんだ。そうやって攻撃の手法を研究するんだね」</span>
+<span class="paragraph"><a name="L13" id="L13" class="anchor"></a>「な、なるほどー。でも、それだと攻撃自体は受けてしまうんじゃないんですか？」</span></p>
+<p><span class="paragraph"><a name="L15" id="L15" class="anchor"></a>　僕の説明を聞いたパールは感心したように何度も頷き、良い指摘をしてくる。</span></p>
+<p><span class="paragraph sticky"><a name="L17" id="L17" class="anchor"></a>「それが面白いところでね。まるで本物のような<ruby>偽<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>物<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>の<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>シ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ス<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>テ<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ム<rp> (</rp><rt>・</rt><rp>)</rp></ruby>を用意するんだ。攻撃者からすると区別が付かないんだけど、実際にはいくら攻撃しても本物のシステムには全く影響がないというわけさ」</span>
+<span class="paragraph"><a name="L18" id="L18" class="anchor"></a>「あはは。意地悪ですねー。せっかく頑張って侵入しても、ぜーんぶ無駄って事ですね」</span></p>
+<p><span class="paragraph sticky"><a name="L20" id="L20" class="anchor"></a>　こういった『偽物の箱庭』のことを『ハニーポット』と呼ぶ。訳すなら<ruby>蜜壷<rp> (</rp><rt>みつつぼ</rt><rp>)</rp></ruby>だろうか。美味しそうな<ruby>情報<rp> (</rp><rt>蜜</rt><rp>)</rp></ruby>が詰まった<ruby>システム<rp> (</rp><rt>壷</rt><rp>)</rp></ruby>を用意して、攻撃者たちをおびき寄せるというわけだ。</span>
+<span class="paragraph"><a name="L21" id="L21" class="anchor"></a>　さらに意地が悪いのは、このハニーポットがまともに動かなかったりするところである。例えば、本来なら使えるはずのコマンドが使えず不便だったり、極端に動作スピードが遅かったりと、攻撃者を散々にいらつかせる。しかし、有益な情報がありそうだと、攻撃者も簡単にあきらめるわけにもいかない。</span></p>
+<p><span class="paragraph"><a name="L23" id="L23" class="anchor"></a>「なるほど。つまり、治療マギサービスの『裏口』が、その『偽物』へつながるようにしておく、という事ですね？」</span></p>
+<p><span class="paragraph"><a name="L25" id="L25" class="anchor"></a>　僕の説明を聞いていた教皇が口を挟んでくる。先ほど垣間見えたイタズラっぽい子供のような笑みはすぐに引っ込んで、また人形のような顔になっている。</span></p>
+<p><span class="paragraph"><a name="L27" id="L27" class="anchor"></a>「それだけではなくて――」</span></p>
+<p><span class="paragraph"><a name="L29" id="L29" class="anchor"></a>　僕が考えていた続きを話すと、その場にいた人達はあんぐりと口を開いた。教皇ですら、かすかに口元がピクついている。</span></p>
+<p><span class="paragraph"><a name="L31" id="L31" class="anchor"></a>「……あなたがマギハッカーの再来と呼ばれている理由が理解できましたよ」</span></p>
+<p><span class="paragraph"><a name="L33" id="L33" class="anchor"></a>　教皇の一言に、その場にいた一同は深く頷いたのだった。なんでだろう。</span></p>
+<hr>
+<p><span class="paragraph sticky"><a name="L37" id="L37" class="anchor"></a>　その場で即興で『罠』となるハニーポットを組み上げた。もちろん、僕が最後に口にした<ruby>案<rp> (</rp><rt>・</rt><rp>)</rp></ruby>も組み込まれている。パールが試してみたいというので実際に裏口にアクセスさせてみると、考えていた通りの効果が得られた。これなら攻撃者の特定も問題ないだろう。</span>
+<span class="paragraph"><a name="L38" id="L38" class="anchor"></a>　治療マギサービスも無事復旧し再発の原因もふさいだわけだが、攻撃者には再び同じ手で攻撃できると思ってもらわなくてはならない。よって、『停止した原因は不明だったが、怪しいデータを削除したら直った』という事にしてもらった。</span></p>
+<p><span class="paragraph"><a name="L40" id="L40" class="anchor"></a>「うむ！　さすがはバンペイだ！」</span></p>
+<p><span class="paragraph sticky"><a name="L42" id="L42" class="anchor"></a>　報告のために掛けた電話で、ボスからもお褒めの言葉を頂いた。</span>
+<span class="paragraph"><a name="L43" id="L43" class="anchor"></a>　治療マギサービスが存在する地下から地上に上がり、中庭のような場所で電話を掛けている。複雑なコードを読むのに疲れた目と頭が、そこらに生えた緑によって癒されるのを感じる。周囲には誰もいない。パールはシスターに案内されて『お花摘み』に行ったようだ。</span></p>
+<p><span class="paragraph sticky"><a name="L45" id="L45" class="anchor"></a>「恐らく、今回の件で円卓議会も治療マギサービスの在り方を見直すだろう。国が重い腰を上げてリンター教に干渉する可能性もあるな」</span>
+<span class="paragraph"><a name="L46" id="L46" class="anchor"></a>「ですがリンター教は国内最大の宗教です。下手に刺激してもまずいのでは？　シスターはともかく、あの教皇様は一癖も二癖もある感じでしたし……」</span></p>
+<p><span class="paragraph"><a name="L48" id="L48" class="anchor"></a>　正直、あまり関わり合いたくない相手である。相性が悪いというか、すっかり苦手意識がついてしまった。普段は人間よりもコンピュータの方が付き合いやすいなんて考えている僕だが、人間離れした相手というのも実にやりづらいものである。</span></p>
+<p><span class="paragraph sticky"><a name="L50" id="L50" class="anchor"></a>「うむ、そうなのか？　あの教皇は人格者として歴代の教皇と比べても人望は高い方だぞ？　国内での人気も高いし、国外でも来訪を求める声が多いというしな」</span>
+<span class="paragraph"><a name="L51" id="L51" class="anchor"></a>「ええ？　そ、それは意外ですね……」</span></p>
+<p><span class="paragraph"><a name="L53" id="L53" class="anchor"></a>　僕がうがった見方をしているだけなのだろうか？　急に不安になってくる。どうも僕には、大多数の意見というものに弱い傾向があるのだ。流されやすいともいう。これも恐らく自分の鑑定眼をそこまで信頼していないという事なのだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L55" id="L55" class="anchor"></a>「まあ、教会と国はこれまでも付かず離れずの関係だったからな。議員の中には教会から献金を受けているものもいるから、教会内部へ切り込むのはなかなか難しいだろう。政教分離として宗教団体の関係者が議員になる事は明確に禁じられているが、宗教団体が議員を支援する事は別に禁じられていないしな」</span>
+<span class="paragraph"><a name="L56" id="L56" class="anchor"></a>「へえ。政教分離なんてルールがあるんですね」</span></p>
+<p><span class="paragraph"><a name="L58" id="L58" class="anchor"></a>　中世ヨーロッパのように宗教団体が力を持っている状態にも関わらず、政教分離のような考え方が定着している事に驚いた。だが、やはり日本と同様に完全に分離できているとは言えないようだ。円卓議会はあくまでも王様のためのバックアップ機関なので、他の権力と結びつくのは避けたいはずなのだが。</span></p>
+<p><span class="paragraph sticky"><a name="L60" id="L60" class="anchor"></a>「うむ。過去に、この国の王がとある宗教に過度にはまりこんだ事があってな。その宗教団体を優遇する政策ばかり採用するようになったのだ。結果としてクーデターが起こりかけるほど国民の怒りを招いた。その時は、第一王子が強制的に父親に引導を渡し、代わりに即位して事態を収束させた」</span>
+<span class="paragraph sticky"><a name="L61" id="L61" class="anchor"></a>「はぁ。なるほど。トップが宗教にハマってしまったら止めるのも難しいでしょうね」</span>
+<span class="paragraph"><a name="L62" id="L62" class="anchor"></a>「ああ。その反省を活かして、今は『王民誓言』で国王はあらゆる宗教との関わりを持たない事となっている。その流れで政教分離という考え方も生まれたわけだ。その事件がなければ今のリンター教はもっと大きな権力を持っていただろうな」</span></p>
+<p><span class="paragraph"><a name="L64" id="L64" class="anchor"></a>　世界が違っても、やはり似たような事は起こるという訳か。歴史とは面白いものだ。</span></p>
+<p><span class="paragraph sticky"><a name="L66" id="L66" class="anchor"></a>「まあともかく、よくやった。さすがは我が社の<ruby>ＣＴＯ<rp> (</rp><rt>最高技術責任者</rt><rp>)</rp></ruby>だ」</span>
+<span class="paragraph sticky"><a name="L67" id="L67" class="anchor"></a>「まだ犯人はわかっていませんが、その内にわかるかもしれません」</span>
+<span class="paragraph"><a name="L68" id="L68" class="anchor"></a>「ほう？」</span></p>
+<p><span class="paragraph"><a name="L70" id="L70" class="anchor"></a>　ボスにハニーポットの事を説明すると、呆れた顔になる。</span></p>
+<p><span class="paragraph sticky"><a name="L72" id="L72" class="anchor"></a>「むぅ……。やっぱりバンペイはバンペイだったか」</span>
+<span class="paragraph sticky"><a name="L73" id="L73" class="anchor"></a>「え？　どういう事です？」</span>
+<span class="paragraph sticky"><a name="L74" id="L74" class="anchor"></a>「いや、バンペイはそれでいいんだ。それでこそバンペイだからな。ハッハッハ」</span>
+<span class="paragraph"><a name="L75" id="L75" class="anchor"></a>「ええ？」</span></p>
+<p><span class="paragraph"><a name="L77" id="L77" class="anchor"></a>　なんだか一人で納得してしまった様子のボスに困惑していると、電話の画面の横に人影が立った。ボスにはオフィスでの再会を約束して電話を切る。</span></p>
+<p><span class="paragraph sticky"><a name="L79" id="L79" class="anchor"></a>「すみません、お待たせしました。シスター」</span>
+<span class="paragraph sticky"><a name="L80" id="L80" class="anchor"></a>「いえ、シライシさんの大事な人とのお話をさえぎってしまい申し訳ありませんね」</span>
+<span class="paragraph sticky"><a name="L81" id="L81" class="anchor"></a>「た、確かに、だ、大事な人、ですけど……。その言い方は何か別の意味に聞こえますね」</span>
+<span class="paragraph sticky"><a name="L82" id="L82" class="anchor"></a>「あら。うふふ、何の事でしょう？　それよりも、シライシさん。本当にこの度はありがとうございました。教会の者達を代表してお礼を申し上げます。本来なら教皇様から申し上げるべきなのですが、あの通りのお方ですから……」</span>
+<span class="paragraph sticky"><a name="L83" id="L83" class="anchor"></a>「あ、あはは……。ずいぶんと、その、変わったお方でしたね」</span>
+<span class="paragraph"><a name="L84" id="L84" class="anchor"></a>「うふふ、正直におっしゃっても大丈夫ですよ。普段は教会のトップとして厳格に振る舞っておられますが、本来のあの方はもっと奔放で子供のようなところがあるのです。どうやら、シライシさんの事を気に入られたみたいですし、ね」</span></p>
+<p><span class="paragraph"><a name="L86" id="L86" class="anchor"></a>　王様に続いて教皇様にまで目をつけられてしまったようだ。どうしてこう、次から次と権力者に顔が売れてしまうのだろう。小市民な僕としては目立たずヒッソリと生きていきたいのに、この世界に来てからどんどん真逆の方向に進んでいる気がする。</span></p>
+<p><span class="paragraph sticky"><a name="L88" id="L88" class="anchor"></a>「利用料の件も、あの方は恐らく本気で高い利用料のままで良いとは思っていらっしゃらないでしょう。後から考えてみれば、あの言葉は私を慰めるためのものだったように思えるのです」</span>
+<span class="paragraph"><a name="L89" id="L89" class="anchor"></a>「そ、そうですかね？」</span></p>
+<p><span class="paragraph"><a name="L91" id="L91" class="anchor"></a>　全くそうは見えなかったけど。でも、教皇とは僕よりも長い付き合いであろうシスターは、あの人形のような表情の裏側に隠された感情が読めるのかもしれない。</span></p>
+<p><span class="paragraph sticky"><a name="L93" id="L93" class="anchor"></a>「本当に治療マギサービスの現状をなんとも思っていらっしゃらないのであれば、今回の全面刷新もお認めにはなられなかったでしょう。ですが実際には認めないどころか、今回の全面刷新を提案されたのは教皇様ご本人なのですから」</span>
+<span class="paragraph sticky"><a name="L94" id="L94" class="anchor"></a>「ええ？　そうなんですか？」</span>
+<span class="paragraph sticky"><a name="L95" id="L95" class="anchor"></a>「はい。私が代表として取りまとめるよう教皇様から直に依頼を受けたのです。貴女なら信頼できる、とまで仰っていただいたのに、私の力不足で……」</span>
+<span class="paragraph"><a name="L96" id="L96" class="anchor"></a>「うーん、やり方は間違っていなかったと思うんですけどね。投票で決めるというのは公平ですし、最初から一社に絞るよりも各社から提案させるというのも良かったと思います」</span></p>
+<p><span class="paragraph sticky"><a name="L98" id="L98" class="anchor"></a>　投票というのは民主的で公平感のある意見集約の方法だ。だがその一方で個人の意見が無視されやすいという欠点もある。シスターのマギスター社に対する危惧は無視され、結果には反映されなかった。</span>
+<span class="paragraph"><a name="L99" id="L99" class="anchor"></a>　本来ならこういう事がないように、投票の前に徹底的に意見交換を行なって全体の意見をある程度まとめておくべきなのだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L101" id="L101" class="anchor"></a>「シスターの危惧を関係者の人達に話したりしなかったのでしょうか？　教皇様から代表として依頼を受けていたのであれば、意見交換の場を設けるなど、やりようもあったと思うのですが」</span>
+<span class="paragraph"><a name="L102" id="L102" class="anchor"></a>「それは……」</span></p>
+<p><span class="paragraph"><a name="L104" id="L104" class="anchor"></a>　シスターがためらいがちに口を開こうとした時、中庭の反対側から誰かがやってきた。</span></p>
+<p><span class="paragraph sticky"><a name="L106" id="L106" class="anchor"></a>　黒いローブを身に着けているのは教会関係者の証だ。だが、その男性のローブにはワンポイントどころかところどころに派手な金や赤の刺繍が入っており、先ほど見た教皇のローブよりよほど豪華に見えた。その豪奢なローブに包まれた肥満体をゆっさゆっさと揺らしながら、お付きと思われる人達を連れてこっちへとやってくる。</span>
+<span class="paragraph"><a name="L107" id="L107" class="anchor"></a>　つるりと禿げ上がった頭に、樽のようなお腹と、特徴には事欠かない印象的な人物だ。</span></p>
+<p><span class="paragraph sticky"><a name="L109" id="L109" class="anchor"></a>「す、<ruby>枢機卿<rp> (</rp><rt>すうききょう</rt><rp>)</rp></ruby><ruby>猊下<rp> (</rp><rt>げいか</rt><rp>)</rp></ruby>……」</span>
+<span class="paragraph"><a name="L110" id="L110" class="anchor"></a>「おやおやぁ。こんなところで奇遇ですなぁ、シスター・エイダ。このような場所で若い男と密会ですかなぁ？　シスターもそのお歳でおやりになるものだ。フォッフォフォ！」</span></p>
+<p><span class="paragraph"><a name="L112" id="L112" class="anchor"></a>　いきなりなんという事を言い出すんだこの人は。下品にもほどがある。</span></p>
+<p><span class="paragraph sticky"><a name="L114" id="L114" class="anchor"></a>「そ、そのような事はありません。この方はバンペイ＝シライシさんです。あのマギハッカーの再来とも謳われる高名なマギエンジニアのお方です。この度は治療マギサービスの復旧にお力添えをお願いしました」</span>
+<span class="paragraph sticky"><a name="L115" id="L115" class="anchor"></a>「おぉ。おぉ。お話はかねがね。いやぁ、このような若造……おっと失礼。若いお方が、噂に名高いマギハッカーだとは、私は感服いたしましたよ。えぇ。フォフォッフォ！」</span>
+<span class="paragraph"><a name="L116" id="L116" class="anchor"></a>「は、はぁ」</span></p>
+<p><span class="paragraph"><a name="L118" id="L118" class="anchor"></a>　丸いお腹をポンポンと叩きながら、高笑いをする枢機卿。</span></p>
+<p><span class="paragraph sticky"><a name="L120" id="L120" class="anchor"></a>「おっと、名乗りを忘れておりましたな。私はポンゴ＝マールブルグ。枢機卿を務めておりますぞ。いやはや、シライシ殿とは良いお付き合いがしたいですなぁ！」</span>
+<span class="paragraph sticky"><a name="L121" id="L121" class="anchor"></a>「よ、よろしくお願いします」</span>
+<span class="paragraph sticky"><a name="L122" id="L122" class="anchor"></a>「確か先日のコンペの時にもいらっしゃったらしいですなぁ。見事な提案でしたのに、フォフォ、選ばれずに残念な事でしたな」</span>
+<span class="paragraph"><a name="L123" id="L123" class="anchor"></a>「い、いえ、投票の結果ですから。それに……」</span></p>
+<p><span class="paragraph"><a name="L125" id="L125" class="anchor"></a>　ちらりとシスターに目をやると、枢機卿はほとんど無い首を傾げる。見事な二重あごだ。</span></p>
+<p><span class="paragraph sticky"><a name="L127" id="L127" class="anchor"></a>「フォ？　どうかされたのですかな、シスター？」</span>
+<span class="paragraph sticky"><a name="L128" id="L128" class="anchor"></a>「そ、その……投票で選ばれたマギスター社ですが、この度の事件で契約を破棄したいと。復旧を請け負う義務はなく契約外だなどと言われるので、私の方からも契約の方はもう結構だとお答えしました」</span>
+<span class="paragraph sticky"><a name="L129" id="L129" class="anchor"></a>「な、なんとぉ！？　どういうことですかな、シスター！　我々に断りもなく契約を打ち切るなど、これは大問題ですぞ！」</span>
+<span class="paragraph sticky"><a name="L130" id="L130" class="anchor"></a>「で、ですが、あのままマギスター社にお願いしていたら、いつまで経っても治療マギサービスを復旧する事はできませんでした。こちらのシライシさんが助けてくださらなければ、いまだに苦しむ方々がいたはずなのです」</span>
+<span class="paragraph"><a name="L131" id="L131" class="anchor"></a>「それとこれとは話が別のはずですぞ！　これではマギスター社から受け取るはずの……あ、いや……。フォフォフォ」</span></p>
+<p><span class="paragraph"><a name="L133" id="L133" class="anchor"></a>　笑ってごまかしてるけど何か聞こえたぞ。やっぱり、投票に関しては賄賂か何か不正があったんだな。</span></p>
+<p><span class="paragraph"><a name="L135" id="L135" class="anchor"></a>「とにかく！　この件はしっかりと追求させて頂きますぞ！　我々の投票を無下にするなど許されない事ですからな！」</span></p>
+<p><span class="paragraph"><a name="L137" id="L137" class="anchor"></a>　そう言い残して、のっしのっしと音を立てるようにポンゴ枢機卿は去っていった。</span></p>
+<p><span class="paragraph"><a name="L139" id="L139" class="anchor"></a>「はぁ……」</span></p>
+<p><span class="paragraph"><a name="L141" id="L141" class="anchor"></a>　その後ろ姿を見送りながらシスターは珍しく溜息をついた。</span></p>
+<p><span class="paragraph"><a name="L143" id="L143" class="anchor"></a>「あの枢機卿猊下が、利用料を下げる事に反対する方達の中心となっているのです。今回のコンペでもやたらとマギスター社を推していらっしゃって、私が意見を申し上げる事もできず……」</span></p>
+<p><span class="paragraph"><a name="L145" id="L145" class="anchor"></a>　どうやら、教会の問題が少しずつ見えてきたようだった。</span></p>
+</div></main><div class="container"><nav class="page-nav"><ul class="pager"><li class="previous"><a href="/magi-hacker/chapter-04/071.html">前: 071 - hacker.fix(system);</a></li><li class="next"><a href="/magi-hacker/chapter-04/073.html">次: 073 - hacker.express(himself);</a></li></ul></nav></div><footer><div class="container"><p>&copy; Copyright 2016 IRIDE Monad</p></div></footer><script src="/magi-hacker/bower/jquery.js" charset="utf-8"></script><script src="/magi-hacker/bower/bootstrap.min.js" charset="utf-8"></script><script src="/magi-hacker/assets/page.js" charset="utf-8"></script></body></html>

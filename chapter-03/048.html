@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>048 - student.wantTo(&quot;escape&quot;);</title><link rel="stylesheet" href="/magi-hacker/bower/bootstrap.min.css"><link rel="stylesheet" href="/magi-hacker/assets/style.css"></head><body class="page page-chapter-03-048 page-novel"><nav class="global-nav navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><button data-toggle="collapse" data-target="#global-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/magi-hacker/" class="navbar-brand"><img src="/magi-hacker/images/logo.png" alt="マギハッカーの異世界ベンチャー起業術" height="100%"></a></div><div id="global-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/magi-hacker/SUMMARY.html">目次</a></li><li><a href="/magi-hacker/GLOSSARY.html">用語集</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://github.com/io-monad/magi-hacker">GitHub</a></li><li><a href="http://ncode.syosetu.com/n5191dd/">小説家になろうで読む</a></li><li><a href="https://kakuyomu.jp/works/4852201425154996024">カクヨムで読む</a></li></ul></div></div></nav><main><div class="container"><h1>
+  <a name="048-student-want-to-quot-escape-quot" id="048-student-want-to-quot-escape-quot" class="anchor"></a>
+  048 - student.wantTo(&quot;escape&quot;);
+</h1><p><span class="paragraph"><a name="L3" id="L3" class="anchor"></a>「違う違う！　どうしてそうやって長ったらしく書こうとしちゃうの！」</span></p>
+<p><span class="paragraph"><a name="L5" id="L5" class="anchor"></a>　相変わらずマギマニアのパールがヒョロガリどもの書いたコードにダメ出しし続けてる。さっきからずっとこれだ。どうやら、ヒョロガリ達の書くコードはパールから見るとてんでダメダメらしい。</span></p>
+<p><span class="paragraph sticky"><a name="L7" id="L7" class="anchor"></a>「でも、僕達はずっとこうやってマギを習ってきたし……」</span>
+<span class="paragraph sticky"><a name="L8" id="L8" class="anchor"></a>「うー、だから！　バンペイ先生だって言ってたでしょ！　わざわざ長く書く必要はないんだってば！」</span>
+<span class="paragraph"><a name="L9" id="L9" class="anchor"></a>「でもさ……」</span></p>
+<p><span class="paragraph sticky"><a name="L11" id="L11" class="anchor"></a>　あーダメだこいつら。ヒョロガリの方は慣れた書き方に固執してるし、パールの方は自分のやり方を上から押し付けようとしてる。どっちもどっちだな。</span>
+<span class="paragraph sticky"><a name="L12" id="L12" class="anchor"></a>　あのバンペイっていう先生だって、短く書く事もできるって言ってるだけで、別に俺たちにも短く書くように強制したりはしてない。あくまでも、こういう書き方もできるって紹介しただけだ。すげーインパクトがでかい紹介だったけどさ。</span>
+<span class="paragraph"><a name="L13" id="L13" class="anchor"></a>　まあ、まともな頭をもってるヤツなら、短く書く方を選ぶよな。だってそっちの方がすげえ楽だし。それがわかってるから、あの先生もいちいち押し付けたりはしないんだろ。</span></p>
+<p><span class="paragraph sticky"><a name="L15" id="L15" class="anchor"></a>　お互いの主張が平行線な二人は置いといて、俺も少しコードを書いてみるか。自分のマギデバイスからスクリーンを出したら目立つかと思ったけど、他の奴らはパール達に集中してるから大丈夫そうだしな。</span>
+<span class="paragraph sticky"><a name="L16" id="L16" class="anchor"></a>　マギデバイスに保存しておいたあの先生の書いてたコードを参考にしつつ、こんな感じかと見当をつけつつ書き進めてみる。宿題でマギを作った時の感覚が残ってたから、そんなに苦戦はしなかった。一つ一つが命令だって意識してみると、わざわざ命令を伝言ゲームみたいに遠回りさせなくてもダイレクトに送ってやればいいってわかる。</span>
+<span class="paragraph"><a name="L17" id="L17" class="anchor"></a>　さて、問題はどんな命令を送るかって事なんだが……。</span></p>
+<p><span class="paragraph sticky"><a name="L19" id="L19" class="anchor"></a>「全部を書きなおさなくても、ほら、こうやって……」</span>
+<span class="paragraph sticky"><a name="L20" id="L20" class="anchor"></a>「それだと、こっちもこっちも、こっちも直さないといけないんだよ」</span>
+<span class="paragraph"><a name="L21" id="L21" class="anchor"></a>「な、なんで一か所変えただけで、他の場所をこんなに直さなくちゃいけないの！」</span></p>
+<p><span class="paragraph sticky"><a name="L23" id="L23" class="anchor"></a>　パールが地団駄を踏んでるが、一か所変えれば他の場所も変えるなんてそんなの当たり前だろ？　あれ、でも先生の書いた短いコードだと、直すところは多くなさそうだな。なんでだ？</span>
+<span class="paragraph sticky"><a name="L24" id="L24" class="anchor"></a>　……そうか、同じような意味の記述がまとまってたり、変更が必要な範囲が一か所にまとまってて、一つの変更が他の場所にあんまり影響を与えないようになってるんだな。なるほどねー。</span>
+<span class="paragraph"><a name="L25" id="L25" class="anchor"></a>　そもそも、全体が短いから修正範囲が大きくても大した事ないしな。ちっ、うまくできてやがる。</span></p>
+<p><span class="paragraph sticky"><a name="L27" id="L27" class="anchor"></a>　頭をこねくり回しながらひねり出したコードは、俺にしてはまあまあの出来だと思うぜ。</span>
+<span class="paragraph sticky"><a name="L28" id="L28" class="anchor"></a>　送る命令はわからんから、片っ端から思いついた言葉を次々と送るようにしてみた。きっと大量の命令にシールイは混乱するだろうが、悪く思うなよ。</span>
+<span class="paragraph"><a name="L29" id="L29" class="anchor"></a>　んじゃ、まだやりあってる奴らはおいといて、実行、っと。</span></p>
+<p><span class="paragraph"><a name="L31" id="L31" class="anchor"></a>　ピピン！</span></p>
+<p><span class="paragraph"><a name="L33" id="L33" class="anchor"></a>　びびったぁ。いきなりでっけえ音がシールイのスクリーンから鳴り響いた。なんだあ、今の音？</span></p>
+<p><span class="paragraph sticky"><a name="L35" id="L35" class="anchor"></a>「な、なんの音！？」</span>
+<span class="paragraph sticky"><a name="L36" id="L36" class="anchor"></a>「見て！　スクリーンに書いてある事が変わってるよ！」</span>
+<span class="paragraph"><a name="L37" id="L37" class="anchor"></a>「僕が読んでみるね。えーと、『【恋人になってほしい】ですか？　申し訳ございません。あなたのご要望にはお答えできません。今はあなたをご案内する仕事に集中したいのです』……ってなんだこれ」</span></p>
+<p><span class="paragraph"><a name="L39" id="L39" class="anchor"></a>　やっべえ。思いついた言葉を片っ端から書いてたから、なんか『彼女がほしい』とか書いてた気がしてきた。なんでよりにもよってその言葉に反応すんだよ！</span></p>
+<p><span class="paragraph sticky"><a name="L41" id="L41" class="anchor"></a>　幸い、俺が命令を送ってる事は気づかれてないっぽいな。みんなはスクリーンに集中してるし、俺はマギデバイスを袖の中からこっそりと向けてるから、わかりづれーはずだ。</span>
+<span class="paragraph"><a name="L42" id="L42" class="anchor"></a>　いっぺんに命令を送るとわけがわかんなくなりそうだったから、俺の書いたコードでは少しずつ時間差で送るようになっている。どうやらシールイが認識する言葉だとあの音が鳴るみたいで、さっきから「ピピン！」「ピピン！」と鳴りまくっててうるせえ。</span></p>
+<p><span class="paragraph sticky"><a name="L44" id="L44" class="anchor"></a>『【ご飯】ですか？　すみません。私は料理があまり得意ではないのです。電話で食事が注文できるようになるまでお待ち下さい』</span>
+<span class="paragraph sticky"><a name="L45" id="L45" class="anchor"></a>『【眠い】のですか。それでは、僭越ながら私が子守唄を……音声モジュールが作成されていないため、歌を歌うことができませんでした』</span>
+<span class="paragraph"><a name="L46" id="L46" class="anchor"></a>『申し訳ございません。不適切なお言葉でのご命令は受け付けておりません。もうすこし、きれいな言葉をお使い頂くようお願いいたします』</span></p>
+<p><span class="paragraph sticky"><a name="L48" id="L48" class="anchor"></a>「おいおい、なんかすごい勢いでスクリーンが切り替わりまくってるぞ？」</span>
+<span class="paragraph sticky"><a name="L49" id="L49" class="anchor"></a>「先生のしわざかなぁ？　でも、さっきから変な事ばっかり書いてある気がするけど」</span>
+<span class="paragraph"><a name="L50" id="L50" class="anchor"></a>「このシールイって本当にマギで作られてるの？　なんか本当に人間みたい……」</span></p>
+<p><span class="paragraph sticky"><a name="L52" id="L52" class="anchor"></a>　あーあ。もうどうにでもなれ。途中で止められるように作ってなかったから、どうしようもねーや。</span>
+<span class="paragraph"><a name="L53" id="L53" class="anchor"></a>　しばらく、ピピンピピンとうるせー時間が続いたあと、ようやくそれも終わる時がやってきた。どうやら、適当に書きまくった言葉の一つが正解だったらしい。</span></p>
+<p><span class="paragraph"><a name="L55" id="L55" class="anchor"></a>『かしこまりました。それでは【外へ出る方法】をご説明いたします。その方法はとっても簡単です。今いる壁に囲まれた場所を外側、壁に遮られて行けない場所を内側だと思えばいいのです。そうすれば、私達がいる場所は外になります。ね、簡単でしょう？』</span></p>
+<p><span class="paragraph sticky"><a name="L57" id="L57" class="anchor"></a>「ぐぬぬ……馬鹿にしてんの？」</span>
+<span class="paragraph"><a name="L58" id="L58" class="anchor"></a>「待って、まだ続きがあるよ。えーと……」</span></p>
+<p><span class="paragraph"><a name="L60" id="L60" class="anchor"></a>『……冗談です。外へ出るには、私に【○○へ連れていって】と命じてください。行きたい場所にお連れいたします。なお、命令でお運びできるのは命令を送った方だけですので、ご注意ください』</span></p>
+<p><span class="paragraph sticky"><a name="L62" id="L62" class="anchor"></a>「えー、なんだ、そんな命令を送るだけでいいのかぁ」</span>
+<span class="paragraph"><a name="L63" id="L63" class="anchor"></a>「……これって僕達みんながそれぞれ、自分で命令を送らなくちゃならないってこと、かな？」</span></p>
+<p><span class="paragraph"><a name="L65" id="L65" class="anchor"></a>　チビがポツリとつぶやいた。まあ、そうなるわな。送れねえやつはここでリタイアってわけだ。</span></p>
+<p><span class="paragraph sticky"><a name="L67" id="L67" class="anchor"></a>「だ、大丈夫さ。どうしても無理なら、他の人が書いたコードを写させてもらえばいいよ」</span>
+<span class="paragraph"><a name="L68" id="L68" class="anchor"></a>「でもこれって一応授業なんだよ？　他の人のを真似するだけだと何にもしてないのと一緒だよ」</span></p>
+<p><span class="paragraph"><a name="L70" id="L70" class="anchor"></a>　そりゃそうだ。他の奴の真似ばっかりするやつは、『ミミック』って呼ばれて嫌われるしな。</span></p>
+<p><span class="paragraph"><a name="L72" id="L72" class="anchor"></a>「じゃあ、僕が皆に書き方を教えてあげればいいんだ！　皆、大丈夫だよ。一緒にコードを書こうよ！」</span></p>
+<p><span class="paragraph"><a name="L74" id="L74" class="anchor"></a>　ヒョロガリが皆に呼びかけた。いかにも優等生らしい言葉だが、実際のところはリーダーシップをアピールしたいだけだろ。コードに自信のないやつらは、嬉しそうな顔してヒョロガリの元へと向かう。</span></p>
+<p><span class="paragraph sticky"><a name="L76" id="L76" class="anchor"></a>　ま、俺は関係ないから適当にちょろっとコード書いてさっさとここから抜け出すか。</span>
+<span class="paragraph sticky"><a name="L77" id="L77" class="anchor"></a>　スクリーンを開いて、さっき使ったコードを修正する。先生のコードを参考にしたおかげで、送る命令を変えるだけなら大した修正は必要ねーな。えーと、ここ、と、あとここを直してっと。</span>
+<span class="paragraph"><a name="L78" id="L78" class="anchor"></a>　よくわかんねえけど【○○へ連れていって】って命令するって事は、【外へ連れていって】って命令すりゃ外に出してもらえんだろ。あーあ、さっさと脱出してーな。</span></p>
+<p><span class="paragraph sticky"><a name="L80" id="L80" class="anchor"></a>　書き終わったコードを保存して実行しようとした時、視線を感じる事に気がついた。</span>
+<span class="paragraph sticky"><a name="L81" id="L81" class="anchor"></a>　なんだと思って見てみりゃ、パールがあのでっけぇメガネの奥でこっちを見てやがる。げっ。やめろ、俺を見るなよ。ほっといてくれ。こっちくんな。しっしっ。</span>
+<span class="paragraph"><a name="L82" id="L82" class="anchor"></a>　しかし、俺のそんな思いは届かず、パールは嬉しそうな犬みたいに近づいてきた。</span></p>
+<p><span class="paragraph sticky"><a name="L84" id="L84" class="anchor"></a>「ねえねえ。今マギランゲージのコード書いてたでしょ？」</span>
+<span class="paragraph sticky"><a name="L85" id="L85" class="anchor"></a>「あ？　……ああ、まあな」</span>
+<span class="paragraph sticky"><a name="L86" id="L86" class="anchor"></a>「スクリーン開いた時から見てたんだけど、あっという間に書き終わって閉じちゃったから気になっちゃって」</span>
+<span class="paragraph sticky"><a name="L87" id="L87" class="anchor"></a>「あー。さっき書いたコードを少し直しただけだからな」</span>
+<span class="paragraph"><a name="L88" id="L88" class="anchor"></a>「だよね！　普通、送る命令を変えるぐらいなら、そんなに修正はいらないよね！　あー、なんでみんなわかってくれないのかなぁ……」</span></p>
+<p><span class="paragraph"><a name="L90" id="L90" class="anchor"></a>　やべえ、このままだとこいつの味方に組み込まれそうだ。確かに俺は短いコードの方が好きだけどよ、他の奴らにまでわかってほしいなんて別に考えてねーんだよ。</span></p>
+<p><span class="paragraph sticky"><a name="L92" id="L92" class="anchor"></a>「しらね。別に短くしなきゃいけねえ決まりもねーんだし、他のやつらの勝手だろ」</span>
+<span class="paragraph sticky"><a name="L93" id="L93" class="anchor"></a>「えー！　だって……」</span>
+<span class="paragraph"><a name="L94" id="L94" class="anchor"></a>「俺は先に出るから。じゃあな」</span></p>
+<p><span class="paragraph"><a name="L96" id="L96" class="anchor"></a>　そう言って会話を無理矢理切り上げた。こいつに付き合ってたらいつまで経っても抜けだせねえ。やっぱこの女、マギの事になると態度が完全に変わりやがる。めんどくせぇ。普段は大人しくて良い子ちゃんしてるのになぁ。やっぱこいつはアホ変態メガネだな。</span></p>
+<p><span class="paragraph sticky"><a name="L98" id="L98" class="anchor"></a>　書いたコードを実行すると「ピピン！」って音がして俺は光に包まれた。これって転移マギサービスのやつだよな？　運ぶって、やっぱりそういう事なのか？</span>
+<span class="paragraph"><a name="L99" id="L99" class="anchor"></a>　あの先生、転移マギまで再現するなんてマジで何者なんだよ。</span></p>
+<hr>
+<p><span class="paragraph"><a name="L103" id="L103" class="anchor"></a>『第一関門突破、おめでとう』</span></p>
+<p><span class="paragraph sticky"><a name="L105" id="L105" class="anchor"></a>　目を開けるとそんな声が聞こえてきた。あの先生の声だ。姿は見えねーが、どこかから俺の姿を見て声だけ送り出してるらしい。</span>
+<span class="paragraph"><a name="L106" id="L106" class="anchor"></a>　周りの景色は俺が嫌んなるほど慣れ親しんだ学校の景色じゃねえ。相変わらずそこは、黒い壁に囲まれた空間だった。いや、正確にはさっきの大部屋とは違って、廊下みたいに奥に続くっぽい道が続いてる。どうやら俺は廊下の端っこに転送されたらしい。</span></p>
+<p><span class="paragraph sticky"><a name="L108" id="L108" class="anchor"></a>「外じゃねーじゃねーか！」</span>
+<span class="paragraph"><a name="L109" id="L109" class="anchor"></a>『外だよ。さっきの<ruby>部<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>屋<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>の<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>外<rp> (</rp><rt>・</rt><rp>)</rp></ruby>だね』</span></p>
+<p><span class="paragraph"><a name="L111" id="L111" class="anchor"></a>　ぐぬぬ。確かに外って言ったら部屋の外っていう解釈もできるけどよ。俺はこの黒い壁の外に出たかったんだよ。ひでえ引っかけだぜ。</span></p>
+<p><span class="paragraph sticky"><a name="L113" id="L113" class="anchor"></a>「もしかして、【学校の教室へ連れていけ】とか命令してれば……」</span>
+<span class="paragraph"><a name="L114" id="L114" class="anchor"></a>『教室に転送されただろうね』</span></p>
+<p><span class="paragraph"><a name="L116" id="L116" class="anchor"></a>　うわー、下手こいた……。力が抜けて、ガクリと膝をつく。あのシールイの野郎が『外』だの『内』だのごちゃごちゃ言うから、行くなら『外』だって思い込まされちまったんだ。</span></p>
+<p><span class="paragraph sticky"><a name="L118" id="L118" class="anchor"></a>『残りの関門もがんばってね！』</span>
+<span class="paragraph"><a name="L119" id="L119" class="anchor"></a>「はーあ。はいはい……」</span></p>
+<p><span class="paragraph"><a name="L121" id="L121" class="anchor"></a>　どうやら、まだまだこのおかしな授業は続くらしいな。</span></p>
+<p><span class="paragraph"><a name="L123" id="L123" class="anchor"></a>　しばらく続きをする気力がでずに座り込んでいると、誰かがここへとやってくるようだ。空中が光り始めて、スッと急に姿を現す。</span></p>
+<p><span class="paragraph sticky"><a name="L125" id="L125" class="anchor"></a>「あっ！　さっきの！」</span>
+<span class="paragraph"><a name="L126" id="L126" class="anchor"></a>「げぇっ！」</span></p>
+<p><span class="paragraph sticky"><a name="L128" id="L128" class="anchor"></a>　よりにもよって、アホ変態メガネことパールが現れやがった。こちらの姿を見つけて指差してきやがる。</span>
+<span class="paragraph sticky"><a name="L129" id="L129" class="anchor"></a>　パールは嬉しそうに笑いながら、座り込んでる俺の元へ駆け寄ってくる。明るい茶髪のツインテールと歳の割にでけぇ胸が揺れて、ついつい目がいってしまう。悲しい男の性ってやつよ。</span>
+<span class="paragraph"><a name="L130" id="L130" class="anchor"></a>　そのまま俺の隣に座り込んで、ぐいぐいと話しかけてくる。どうでもいいが近いぞ。</span></p>
+<p><span class="paragraph sticky"><a name="L132" id="L132" class="anchor"></a>「ねぇねぇ、あなたのお名前はなんていうの？　私はパール＝モンガーっていうんだ。クラスが一緒なのにお話した事なかったよね？」</span>
+<span class="paragraph sticky"><a name="L133" id="L133" class="anchor"></a>「うぐ……あんま近づくなよ。お、俺はペチパだよ。ペチパ＝ペアーズだ」</span>
+<span class="paragraph sticky"><a name="L134" id="L134" class="anchor"></a>「そうなんだ！　うーん、ペチパ君、ペアーズ君……あっ、そうだ。じゃあペペ君って呼ぶね！」</span>
+<span class="paragraph sticky"><a name="L135" id="L135" class="anchor"></a>「略すなよ！」</span>
+<span class="paragraph sticky"><a name="L136" id="L136" class="anchor"></a>「ペペ君はここで何してるの？　私、【外へ連れていって】って命令したはずなんだけど、ここ外じゃないよね？」</span>
+<span class="paragraph sticky"><a name="L137" id="L137" class="anchor"></a>「はぁ……もういいよ。ここも『部屋の外』だから『外』なんだと。さっき、あの先生の声が聞こえてきて説明してくれたぜ？」</span>
+<span class="paragraph"><a name="L138" id="L138" class="anchor"></a>「えっ！　バンペイさんの声が？」</span></p>
+<p><span class="paragraph"><a name="L140" id="L140" class="anchor"></a>　こいつ、やたらとあの先生に食いついてるよな。時々さん付けで呼んでるし。やっぱ同じマギ好き同士、通じるものがあんのかね。頼むから俺をその輪に巻き込まないでくれ。</span></p>
+<p><span class="paragraph sticky"><a name="L142" id="L142" class="anchor"></a>『二人とも、たぶん他にそこにやってくる人はいないから、先に進んでも大丈夫だよ』</span>
+<span class="paragraph sticky"><a name="L143" id="L143" class="anchor"></a>「あっ、バンペイさんだ！」</span>
+<span class="paragraph sticky"><a name="L144" id="L144" class="anchor"></a>「他にこないってどういうことだ？　他の奴らは『外』じゃなかったって事か？」</span>
+<span class="paragraph"><a name="L145" id="L145" class="anchor"></a>「もうっ！　敬語で話さないとダメだよ！」</span></p>
+<p><span class="paragraph"><a name="L147" id="L147" class="anchor"></a>　俺に敬語を求めないでくれ。俺はいつでも自然体でいたいんだ。</span></p>
+<p><span class="paragraph sticky"><a name="L149" id="L149" class="anchor"></a>『違う違う。みんなやっぱり【外】に行ったよ。だけどね、あのシールイには仕掛けがあってさ。皆が書いてるコードの【長さ】によって行き先を変えてるんだ。君達がいるのは、僕が想定していた中では一番短いコードを書いた人向けの上級コースだね』</span>
+<span class="paragraph sticky"><a name="L150" id="L150" class="anchor"></a>「うへぇ……じゃあ、こっから先は普通よりも難しいって事じゃねーか……」</span>
+<span class="paragraph sticky"><a name="L151" id="L151" class="anchor"></a>「すごいっ！　コードの長さなんてどうやって調べてるんですか！？　命令だけじゃコードの長さなんてわからないですよね？」</span>
+<span class="paragraph"><a name="L152" id="L152" class="anchor"></a>『ああ、それはイベントフックをね……あ、いや、なんでもない。まあともかく、そこから先は二人で協力してがんばってね』</span></p>
+<p><span class="paragraph"><a name="L154" id="L154" class="anchor"></a>　そして、プツリと音声が途切れる。この女と二人っきりだって？　しかも、上級コース？　俺は早く教室に戻って昼寝したいのに、どうしてこうなっちまうんだ……。</span></p>
+<p><span class="paragraph sticky"><a name="L156" id="L156" class="anchor"></a>「早く行こうよ、ペペ君！」</span>
+<span class="paragraph"><a name="L157" id="L157" class="anchor"></a>「あーはいはい……」</span></p>
+<p><span class="paragraph sticky"><a name="L159" id="L159" class="anchor"></a>　俺の腕をつかんでぐいぐいと引っ張るパール。おいやめろ、当たってんだよ。</span>
+<span class="paragraph"><a name="L160" id="L160" class="anchor"></a>　ああ、最悪だ。</span></p>
+</div></main><div class="container"><nav class="page-nav"><ul class="pager"><li class="previous"><a href="/magi-hacker/chapter-03/047.html">前: 047 - student.standBy();</a></li><li class="next"><a href="/magi-hacker/chapter-03/049.html">次: 049 - hacker.fail();</a></li></ul></nav></div><footer><div class="container"><p>&copy; Copyright 2016 IRIDE Monad</p></div></footer><script src="/magi-hacker/bower/jquery.js" charset="utf-8"></script><script src="/magi-hacker/bower/bootstrap.min.js" charset="utf-8"></script><script src="/magi-hacker/assets/page.js" charset="utf-8"></script></body></html>

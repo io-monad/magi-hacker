@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>046 - hacker.start(game);</title><link rel="stylesheet" href="/magi-hacker/bower/bootstrap.min.css"><link rel="stylesheet" href="/magi-hacker/assets/style.css"></head><body class="page page-chapter-03-046 page-novel"><nav class="global-nav navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><button data-toggle="collapse" data-target="#global-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/magi-hacker/" class="navbar-brand"><img src="/magi-hacker/images/logo.png" alt="マギハッカーの異世界ベンチャー起業術" height="100%"></a></div><div id="global-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/magi-hacker/SUMMARY.html">目次</a></li><li><a href="/magi-hacker/GLOSSARY.html">用語集</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://github.com/io-monad/magi-hacker">GitHub</a></li><li><a href="http://ncode.syosetu.com/n5191dd/">小説家になろうで読む</a></li><li><a href="https://kakuyomu.jp/works/4852201425154996024">カクヨムで読む</a></li></ul></div></div></nav><main><div class="container"><h1>
+  <a name="046-hacker-start-game" id="046-hacker-start-game" class="anchor"></a>
+  046 - hacker.start(game);
+</h1><p><span class="paragraph sticky"><a name="L3" id="L3" class="anchor"></a>「ただいまー」</span>
+<span class="paragraph"><a name="L4" id="L4" class="anchor"></a>「おかえりなさい、おにーちゃん！」</span></p>
+<p><span class="paragraph sticky"><a name="L6" id="L6" class="anchor"></a>　クタクタになってオフィスに帰ってくると、シィが笑顔で迎えてくれた。肉体的な疲れではなく、精神的な疲労が大きかった。</span>
+<span class="paragraph sticky"><a name="L7" id="L7" class="anchor"></a>　あの後、デルフィさんが暴走しないようにニシキさんと一緒に必死で抑えていたのだ。確かにあの生徒達の様子を見ていると、教師達の教える内容にも問題はあるのだろうが、急にやり方を変えようと言っても賛同が得られるはずがない。</span>
+<span class="paragraph"><a name="L8" id="L8" class="anchor"></a>　一番の問題は、教師達や生徒達、いや、現役のマギエンジニア達に「今のやり方が非効率的だ」という意識がない事だ。長らく今の状態が当たり前になっているわけで、効率を考えるという発想がない。著名なマギエンジニアが開発したという四千行を超えるコードは、間違いなく非効率で無駄なコードが９０％以上を占めているだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L10" id="L10" class="anchor"></a>　コードというのは書こうと思えばいくらでも冗長に書けるものだ。たった一行のメッセージを表示するだけのプログラムに「何かを表示をするオブジェクト」「表示するメッセージを返すオブジェクト」「これらのオブジェクトを生成するファクトリと呼ばれるオブジェクト」「これらのオブジェクトを利用してメッセージを表示するオブジェクト」などの様々なオブジェクトを作り出す事だってできてしまう。</span>
+<span class="paragraph sticky"><a name="L11" id="L11" class="anchor"></a>　このようにオブジェクトの役割を細かく分割することで修正の際の影響範囲を減らしたり、テストをしやすくしたりというメリットはあるのだが、数行で書けるものを大げさに表現するのは逆に見通しを悪くしてしまい、保守のしやすさを落としてしまう。</span>
+<span class="paragraph"><a name="L12" id="L12" class="anchor"></a>　どうしてこのようなコードがはびこっているのか理由は定かではないが、まずは「簡潔に単純にしておくべし」というＫＩＳＳの原則を広める必要があるだろう。<ruby>バカでもわかる<rp> (</rp><rt>キープ・イット・</rt><rp>)</rp></ruby><ruby>ほど単純に<rp> (</rp><rt>シンプル・スチューピッド</rt><rp>)</rp></ruby>、だ。</span></p>
+<p><span class="paragraph sticky"><a name="L14" id="L14" class="anchor"></a>「ただいま、シィちゃん。ボスはどうしたの？」</span>
+<span class="paragraph"><a name="L15" id="L15" class="anchor"></a>「ボスならあそこだよー」</span></p>
+<p><span class="paragraph sticky"><a name="L17" id="L17" class="anchor"></a>　何が面白いのかクスクス笑うシィが指さす先を見ると、ボスはソファに腰掛けていた。</span>
+<span class="paragraph"><a name="L18" id="L18" class="anchor"></a>　いや、よく見ると目が開いていない。</span></p>
+<p><span class="paragraph"><a name="L20" id="L20" class="anchor"></a>「……もしかして」</span></p>
+<p><span class="paragraph sticky"><a name="L22" id="L22" class="anchor"></a>　音を立てないようにこっそりと近づいてみると、ボスはスースーと寝息を立てていた。どうやらソファに腰掛けたまま眠ってしまったらしい。腕を組んでいるのがボスらしい。</span>
+<span class="paragraph sticky"><a name="L23" id="L23" class="anchor"></a>　いつも酒を飲んだ後に眠ってしまうため、僕にとってボスの寝顔はそこまで珍しいものではないのだが、こうも無防備な姿を見せられるとついつい見入ってしまう。</span>
+<span class="paragraph"><a name="L24" id="L24" class="anchor"></a>　そしてムクムクと起き上がってきた「いたずら心」の赴くままに、ボスのほっぺにそっと触れてみる。</span></p>
+<p><span class="paragraph"><a name="L26" id="L26" class="anchor"></a>「……ん…………むぅ……」</span></p>
+<p><span class="paragraph"><a name="L28" id="L28" class="anchor"></a>　眠ったままのボスはくすぐったそうに身をよじる。ついつい楽しくてほっぺをプニプニとつついていると、ボスはやがて目を覚ましてしまった。慌てて手を引っ込める。</span></p>
+<p><span class="paragraph"><a name="L30" id="L30" class="anchor"></a>「……うーん、バンペイか…………ん？　バ、バンペイ！？」</span></p>
+<p><span class="paragraph"><a name="L32" id="L32" class="anchor"></a>　ガバリと身を起こしたボス。どんどん顔が赤くなる。どうやら寝顔を見られたのが恥ずかしいらしい。いつも見ているのに今更である。</span></p>
+<p><span class="paragraph sticky"><a name="L34" id="L34" class="anchor"></a>「おはようございます、ボス。ダメじゃないですか、ちゃんと『お留守番』してなくちゃ」</span>
+<span class="paragraph sticky"><a name="L35" id="L35" class="anchor"></a>「ち、ちがう、ちゃんと留守番してたんだ！　ただちょっと食後の休憩をと思ってだな！」</span>
+<span class="paragraph"><a name="L36" id="L36" class="anchor"></a>「それにしてはもう夕方ですよ？」</span></p>
+<p><span class="paragraph"><a name="L38" id="L38" class="anchor"></a>　窓の外からは鮮やかな赤い光が差し込んでいる。ボスは二の句が継げずに若干涙目になっている。</span></p>
+<p><span class="paragraph sticky"><a name="L40" id="L40" class="anchor"></a>「あー、うー」</span>
+<span class="paragraph"><a name="L41" id="L41" class="anchor"></a>「はいはい、わかりましたから。ちゃんとお留守番できて、えらい、えらい」</span></p>
+<p><span class="paragraph"><a name="L43" id="L43" class="anchor"></a>　そう言ってボスの頭をそっとなでる。ボスは僕よりも身長が少し高いので格好はつかないが、それでも僕に頭をなでられたボスは顔を真っ赤にして口をパクパクさせた。</span></p>
+<p><span class="paragraph"><a name="L45" id="L45" class="anchor"></a>「うぅ……バンペイのいじわる……」</span></p>
+<p><span class="paragraph"><a name="L47" id="L47" class="anchor"></a>　それからしばらくボスをなだめるのに苦労したが、この程度の苦労ならいくらでも買ってでるところだ。上司のご機嫌をとるのも部下の立派な仕事なのである。</span></p>
+<p><span class="paragraph"><a name="L49" id="L49" class="anchor"></a>「コホン。で、学校はどうだったんだ？」</span></p>
+<p><span class="paragraph"><a name="L51" id="L51" class="anchor"></a>　まだ少し顔が赤いが機嫌を直したボスは、気を取り直して僕に尋ねてきた。</span></p>
+<p><span class="paragraph sticky"><a name="L53" id="L53" class="anchor"></a>「そうですね、やっぱり色々と問題がわかりました。どうも僕の考えているコードの書き方と、生徒達の教えられている書き方が違うようで、根本から授業計画を考えなおす必要がありそうです」</span>
+<span class="paragraph"><a name="L54" id="L54" class="anchor"></a>「だろうな。バンペイの非常識さが生徒達に通じるはずがない」</span></p>
+<p><span class="paragraph"><a name="L56" id="L56" class="anchor"></a>　ボスは腕を組んでうんうんと頷いてみせる。さきほどの悪戯への意趣返しのつもりだろうか、顔がニヤけている。</span></p>
+<p><span class="paragraph sticky"><a name="L58" id="L58" class="anchor"></a>「生徒達だけではなく教師達もですよ。今のやり方ではあまりに非効率的すぎます。水生成のマギだって、マギサービスで使われているのは四千行を超えるコードだと言うじゃないですか。僕がボスに見せた水生成のコードはたった五行ですよ」</span>
+<span class="paragraph sticky"><a name="L59" id="L59" class="anchor"></a>「そ、そんなに違うのか……」</span>
+<span class="paragraph"><a name="L60" id="L60" class="anchor"></a>「ですが、いきなりやり方を変えろと上から言っても伝わるわけがありません。生徒達ならまだ可能かもしれませんが、長年の経験のある教師達は難しいでしょう。一部、例外がいましたが……」</span></p>
+<p><span class="paragraph"><a name="L62" id="L62" class="anchor"></a>　デルフィさんの暴走した様子を思い浮かべる。あの人も教師が長いと言っていたのに、やり方を変える事に一切の躊躇を見せなかった。むしろ推進しようとしたぐらいだ。</span></p>
+<p><span class="paragraph sticky"><a name="L64" id="L64" class="anchor"></a>「しかしそんな事を言っていたらいつまでも変わらない。一体どうするんだ？」</span>
+<span class="paragraph"><a name="L65" id="L65" class="anchor"></a>「ひとつ考えがあります」</span></p>
+<p><span class="paragraph"><a name="L67" id="L67" class="anchor"></a>　指を一本立てて示してみせる。</span></p>
+<p><span class="paragraph"><a name="L69" id="L69" class="anchor"></a>　ボスにその<ruby>考<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>え<rp> (</rp><rt>・</rt><rp>)</rp></ruby>を説明してみせると、呆れた表情になった。そして「バンペイらしいやり方だ」と言いながらも、そのやり方に社長として同意してくれた。</span></p>
+<p><span class="paragraph"><a name="L71" id="L71" class="anchor"></a>「ねぇねぇ、おにーちゃん、シィもマギの『がっこー』にいってみたいなー」</span></p>
+<p><span class="paragraph"><a name="L73" id="L73" class="anchor"></a>　ボスとの話が一段落つくと、シィが僕の服を引っ張って言った。珍しく自分の希望を言っているシィには悪いが、特別教師は仕事として引き受けているので、職場に子どもを連れて行くわけにはいかない。だが、入学するにしても、中学生から高校生ほどの年齢の生徒達に混じるのは難しい。</span></p>
+<p><span class="paragraph sticky"><a name="L75" id="L75" class="anchor"></a>「そうだなぁ、シィちゃんはもうちょっと大きくならないと入れないかなぁ」</span>
+<span class="paragraph sticky"><a name="L76" id="L76" class="anchor"></a>「ぶー、シィ早くおっきくなりたい！　おにーちゃんのマギでおっきくなれないかな？」</span>
+<span class="paragraph sticky"><a name="L77" id="L77" class="anchor"></a>「ははは、そりゃあ見た目だけは大きくできるかもしれないけどね。でも、中身はシィちゃんのままだから、学校に行っても多分困っちゃうよ？　シィちゃんにはゆっくり大きくなってほしいな」</span>
+<span class="paragraph sticky"><a name="L78" id="L78" class="anchor"></a>「むー。あのね、シィおっきくなったら、おにーちゃんみたいにマギをたくさんつかえるようになるの！」</span>
+<span class="paragraph"><a name="L79" id="L79" class="anchor"></a>「僕みたいに？　シィちゃんのおとーさんの方がきっともっとスゴかったんじゃないかな？」</span></p>
+<p><span class="paragraph"><a name="L81" id="L81" class="anchor"></a>　なにせマギを作った神様かもしれないのだ。マギデバイスの仕様書すら置いてあったのだから、少なくともマギデバイスの開発に関わっているのは間違いない。僕なんかよりもよほどマギランゲージの扱いだって精通していたはずだ。</span></p>
+<p><span class="paragraph sticky"><a name="L83" id="L83" class="anchor"></a>「うーん、あのね、おとーさんもマギすごかったよ？　でも、おにーちゃんみたいに、他の人に使わせてあげたりしないんだ。シィはおにーちゃんみたいに、色んな人にマギを使ってもらいたいなー」</span>
+<span class="paragraph sticky"><a name="L84" id="L84" class="anchor"></a>「そっか。ありがとうシィちゃん。もっと色々な人に使ってもらえるようにがんばるね」</span>
+<span class="paragraph"><a name="L85" id="L85" class="anchor"></a>「うんっ！　がんばって！」</span></p>
+<p><span class="paragraph"><a name="L87" id="L87" class="anchor"></a>　それこそが異世界でチャンスをもらった僕の役目なのかもしれないのだから。</span></p>
+<hr>
+<p><span class="paragraph"><a name="L91" id="L91" class="anchor"></a>「今日の特別授業は、皆さんに外でやってもらいたい事があります」</span></p>
+<p><span class="paragraph sticky"><a name="L93" id="L93" class="anchor"></a>　二度目の特別授業、教室に入るなり生徒達にそう話しかけた。</span>
+<span class="paragraph sticky"><a name="L94" id="L94" class="anchor"></a>　前回の授業が効果絶大だったのか、今回は疑惑の視線を向けてくる生徒はいない。むしろ、次は何が飛び出してくるんだという緊張した表情をしている生徒がちらほらいる。いい傾向だ。</span>
+<span class="paragraph"><a name="L95" id="L95" class="anchor"></a>　やっぱり先生たるもの生徒に舐められていては授業にならない。けじめをつけて多少は畏怖される程度でなくては、先生は務まらないだろう。</span></p>
+<p><span class="paragraph"><a name="L97" id="L97" class="anchor"></a>「せんせー、何やるんですかー？」</span></p>
+<p><span class="paragraph"><a name="L99" id="L99" class="anchor"></a>　ムードメーカーの女子生徒が恐る恐るたずねてくるが、僕はそれに笑みで応える。</span></p>
+<p><span class="paragraph"><a name="L101" id="L101" class="anchor"></a>「それは外に出てからのお楽しみです」</span></p>
+<p><span class="paragraph sticky"><a name="L103" id="L103" class="anchor"></a>　そして、生徒達を学校敷地内にある広場へと誘導する。校長に事前に許可はもらってある。僕の考えた方法を説明すると、目を白黒とさせていたが。</span>
+<span class="paragraph"><a name="L104" id="L104" class="anchor"></a>　たどりついたのは野球場がすっぽり入るほどの大きな広場だ。広場の真ん中まで誘導されてきた生徒達は一体何が始まるのかと緊張半分、興味半分といった様子である。</span></p>
+<p><span class="paragraph"><a name="L106" id="L106" class="anchor"></a>「皆さん揃いましたね？　それでは、始めます」</span></p>
+<p><span class="paragraph sticky"><a name="L108" id="L108" class="anchor"></a>　僕はマギデバイスを構えて、とある呪文を唱えた。</span>
+<span class="paragraph"><a name="L109" id="L109" class="anchor"></a>　マギデバイスが光り、効果を発揮する。その影響はすぐに目に見えるようになった。</span></p>
+<p><span class="paragraph sticky"><a name="L111" id="L111" class="anchor"></a>　広々としていた広場の風景が一変していた。いや、もはや広場とは呼べない。</span>
+<span class="paragraph"><a name="L112" id="L112" class="anchor"></a>　なぜなら僕達がいた空間は四方を壁に囲まれていたからだ。のっぺりとした黒い壁である。しかし、天井はぼんやりと白く発光していて室内は明るい。全員が入って少し余裕があるぐらいの部屋になっている。</span></p>
+<p><span class="paragraph sticky"><a name="L114" id="L114" class="anchor"></a>「な、なんだこれ！？　ここどこだよ！？」</span>
+<span class="paragraph sticky"><a name="L115" id="L115" class="anchor"></a>「転移マギサービス？　でも、呪文が違ってたような……」</span>
+<span class="paragraph"><a name="L116" id="L116" class="anchor"></a>「そもそも転移マギサービスの転移先なら誰かいるはずだろ？　ここには誰もいないぜ？」</span></p>
+<p><span class="paragraph"><a name="L118" id="L118" class="anchor"></a>　生徒達は一気に騒ぎ始める。生徒の考えている通り、転移マギサービスではない。僕が作った転移マギでもない。僕達は一歩も広場から出てはいないのだ。僕達が転移したのではなく、壁が出現したのである。</span></p>
+<p><span class="paragraph sticky"><a name="L120" id="L120" class="anchor"></a>「はいはい、みんな落ち着いて。大丈夫、この壁は僕が出したものだから」</span>
+<span class="paragraph sticky"><a name="L121" id="L121" class="anchor"></a>「えっ！？　そんなマギサービスはないはずですよ、先生！？」</span>
+<span class="paragraph sticky"><a name="L122" id="L122" class="anchor"></a>「そりゃあ僕が作ったマギだからね」</span>
+<span class="paragraph sticky"><a name="L123" id="L123" class="anchor"></a>「ありえねぇ……もう驚かないつもりだったのに、これはありえねぇ……」</span>
+<span class="paragraph"><a name="L124" id="L124" class="anchor"></a>「壁を作る？　いや、縄を作るマギサービスがあるのだから、壁だって……いや、しかし……」</span></p>
+<p><span class="paragraph sticky"><a name="L126" id="L126" class="anchor"></a>　シィがおとーさんから渡されたマギの一つである『透明の壁』のような、マギを拒絶したり指定したものだけを通すような機能は無理だが、単に物理的な壁を作るだけならそう難しくはない。</span>
+<span class="paragraph"><a name="L127" id="L127" class="anchor"></a>　いつまでも生徒達のざわめきが止まないので、手を叩いて静まらせる。</span></p>
+<p><span class="paragraph sticky"><a name="L129" id="L129" class="anchor"></a>「今日は皆さんにこの空間から<ruby>出<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>て<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>も<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>ら<rp> (</rp><rt>・</rt><rp>)</rp></ruby><ruby>う<rp> (</rp><rt>・</rt><rp>)</rp></ruby>のを目標としてもらいます。相談して協力してもいいし、一人でがんばってもいいけど、たぶん協力した方が簡単だよ」</span>
+<span class="paragraph sticky"><a name="L130" id="L130" class="anchor"></a>「出るって言っても……」</span>
+<span class="paragraph sticky"><a name="L131" id="L131" class="anchor"></a>「出口が見当たらないんだけど……」</span>
+<span class="paragraph sticky"><a name="L132" id="L132" class="anchor"></a>「それと、重要なルールとして『マギサービスの利用は禁止』ね。使うなら、自分達で書いたコードだけを使う事。転移マギサービスでも使えばすぐに出られちゃうけど、それじゃ意味がないからね」</span>
+<span class="paragraph sticky"><a name="L133" id="L133" class="anchor"></a>「ええ！？　水すら作れないってことぉ！？」</span>
+<span class="paragraph sticky"><a name="L134" id="L134" class="anchor"></a>「そもそも転移マギサービスなんて利用料が高すぎて使えないよ……」</span>
+<span class="paragraph"><a name="L135" id="L135" class="anchor"></a>「じゃ、がんばってね。ちゃんと見てるから心配いらないけど、本当にどうしても無理だったら呼んでね」</span></p>
+<p><span class="paragraph sticky"><a name="L137" id="L137" class="anchor"></a>　そう言って、マギデバイスを一振り。モーション登録したマギが発動して、僕だけが別の空間へと転移する。生徒達の様子は自動追尾のカメラを使って見守るつもりだ。</span>
+<span class="paragraph sticky"><a name="L138" id="L138" class="anchor"></a>　転移先は用意しておいた管理用の部屋だ。テレビのモニタのように、たくさんのスクリーンが様々な角度から見た生徒達の様子を映し出している。</span>
+<span class="paragraph"><a name="L139" id="L139" class="anchor"></a>　生徒達は僕が突如として消えてしまい、唖然とした表情を浮かべるもの、どうすればいいのかわからずキョロキョロとしているもの、逆にウキウキしているものなど様々だ。</span></p>
+<p><span class="paragraph"><a name="L141" id="L141" class="anchor"></a>　常識を壊すには、まず無理にでも非常識な行動を自主的に経験させる事。そして、大きな成功体験として強烈な印象を与える事だ。前回の特別授業から一週間ほどしかなかったのでだいぶ苦労したが、きっと生徒達も楽しんでくれるだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L143" id="L143" class="anchor"></a>　この空間の名前は『マギゲーム』。</span>
+<span class="paragraph"><a name="L144" id="L144" class="anchor"></a>　彼らはゲームの主人公として、部屋からの脱出を目指す事になる。</span></p>
+</div></main><div class="container"><nav class="page-nav"><ul class="pager"><li class="previous"><a href="/magi-hacker/chapter-03/045.html">前: 045 - hacker.throwAway(CommonSense);</a></li><li class="next"><a href="/magi-hacker/chapter-03/047.html">次: 047 - student.standBy();</a></li></ul></nav></div><footer><div class="container"><p>&copy; Copyright 2016 IRIDE Monad</p></div></footer><script src="/magi-hacker/bower/jquery.js" charset="utf-8"></script><script src="/magi-hacker/bower/bootstrap.min.js" charset="utf-8"></script><script src="/magi-hacker/assets/page.js" charset="utf-8"></script></body></html>

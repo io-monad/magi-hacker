@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>055 - hacker.propose(event);</title><link rel="stylesheet" href="/magi-hacker/bower/bootstrap.min.css"><link rel="stylesheet" href="/magi-hacker/assets/style.css"></head><body class="page page-chapter-03-055 page-novel"><nav class="global-nav navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"><button data-toggle="collapse" data-target="#global-navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/magi-hacker/" class="navbar-brand"><img src="/magi-hacker/images/logo.png" alt="マギハッカーの異世界ベンチャー起業術" height="100%"></a></div><div id="global-navbar" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li><a href="/magi-hacker/SUMMARY.html">目次</a></li><li><a href="/magi-hacker/GLOSSARY.html">用語集</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="https://github.com/io-monad/magi-hacker">GitHub</a></li><li><a href="http://ncode.syosetu.com/n5191dd/">小説家になろうで読む</a></li><li><a href="https://kakuyomu.jp/works/4852201425154996024">カクヨムで読む</a></li></ul></div></div></nav><main><div class="container"><h1>
+  <a name="055-hacker-propose-event" id="055-hacker-propose-event" class="anchor"></a>
+  055 - hacker.propose(event);
+</h1><p><span class="paragraph"><a name="L3" id="L3" class="anchor"></a>　その日から空き時間に僕による指導が始まった。本来の参加者はスクイー君だけだったはずが、話を立ち聞きしていたパールと、さらにはパールに巻き込まれたぺぺ君までもが参加する事になった。</span></p>
+<p><span class="paragraph"><a name="L5" id="L5" class="anchor"></a>　スクイー君はやはり要領は悪いものの、根気よく丁寧に教えてあげればきちんと理解できるし、一度理解した事はしっかりと覚えているので、地頭は決して悪くはないのだ。最初はどうなることかと思ったほど残念な実力だったのだが、基礎からみっちり教え込むと目に見えて改善しはじめた。</span></p>
+<p><span class="paragraph sticky"><a name="L7" id="L7" class="anchor"></a>「先生、ここで命令を繰り返し送っているのはどういう仕組みなんでしょうか？　これで繰り返しになるのがよくわからなくって……」</span>
+<span class="paragraph"><a name="L8" id="L8" class="anchor"></a>「ああ、それはね、再帰っていって――」</span></p>
+<p><span class="paragraph sticky"><a name="L10" id="L10" class="anchor"></a>　勘違いされがちなのだが、単にマギランゲージの文法を教えるだけならそう難しい事はない。難しいのはその文法を利用して、どうプログラムを組むのかという事だ。例えるなら、英語のアルファベットを覚えるのは簡単でも、その組み合わせである無数の単語や、さらには文章を組み立てるのが難しいのと同じである。マギランゲージの命令が単語に当たり、プログラムが文章に当たる。</span>
+<span class="paragraph"><a name="L11" id="L11" class="anchor"></a>　それでも一般にはアルファベットのレベルで難解だと言われているらしい。きちんと学べばそう難しいものではないはずなのだが、マギランゲージだというだけで拒否反応を示す人が多い。複雑そうに見える数式に拒否反応が出るのと似たようなものかもしれない。</span></p>
+<p><span class="paragraph sticky"><a name="L13" id="L13" class="anchor"></a>　スクイー君はアルファベットにあたる基礎的な文法を正しく覚えていなかった。一部を間違えて覚えていたわけで、これではきちんと動くプログラムが作れないのも無理はない。</span>
+<span class="paragraph"><a name="L14" id="L14" class="anchor"></a>　現在のスクイー君は正しい基礎文法を覚えなおして、その組み合わせである命令と、プログラムの組み方を並行して学習している最中だ。なお、このプログラムの組み方は僕の我流、というか地球のプログラミング技術を参考にしている。</span></p>
+<p><span class="paragraph sticky"><a name="L16" id="L16" class="anchor"></a>「師匠！　ここのプロトコルなんですが、どうして公開鍵にわざわざ証明書が必要なんですか？　公開されている鍵なら、誰がみたって本人のものだってわかるんじゃないんですか？」</span>
+<span class="paragraph"><a name="L17" id="L17" class="anchor"></a>「第三者の証明がなければ、本当に公開鍵が本人のものなのか確実に証明できないんだよ。そうると、公開鍵の差し替えによる中間者攻撃というセキュリティホールが――」</span></p>
+<p><span class="paragraph sticky"><a name="L19" id="L19" class="anchor"></a>　パールはやはり通信の方面に興味が向いているらしい。一つの物に特化するのも結構なのだが、僕の弟子を名乗るからにはコードだってしっかり書けるようにならないといけない。</span>
+<span class="paragraph sticky"><a name="L20" id="L20" class="anchor"></a>　マギゲームで課題が浮き彫りになっった通り、パールの書くコードというのは<ruby>可読性<rp> (</rp><rt>かどくせい</rt><rp>)</rp></ruby>が低い。要するに読みづらいという事だ。読みやすいコードを書くことはプログラマの義務なので、パールにはこの際きっちりと『綺麗なコード』を書く心得を伝授した。</span>
+<span class="paragraph"><a name="L21" id="L21" class="anchor"></a>　伝授といっても大したことではない。例えば、トリッキーな書き方を避けて平易に書く、わかりやすい名前を付ける、空白の入れ方や改行の仕方などを揃える。どれも当たり前の事なのだが、しっかりと実践する事によって読みやすさは段違いになる。</span></p>
+<p><span class="paragraph sticky"><a name="L23" id="L23" class="anchor"></a>「ぺぺ君、何かわからないところはないかい？」</span>
+<span class="paragraph sticky"><a name="L24" id="L24" class="anchor"></a>「だから、俺はぺぺじゃねーって……はぁ、まあいいや。この部分なんだけど、これを書く時にどういうつもりで書いたんだ？　なんかわかりづらいんだけど」</span>
+<span class="paragraph"><a name="L25" id="L25" class="anchor"></a>「ははは……そこは確かに、ちょっと急いでて雑になってたかも。うーん、そうだな、本当ならこういう感じで――」</span></p>
+<p><span class="paragraph sticky"><a name="L27" id="L27" class="anchor"></a>　ぺぺ君は最初の内はブツブツと文句を垂れていたものの、一度始めるとなんだかんだ言って集中して取り組んでいるようだった。</span>
+<span class="paragraph"><a name="L28" id="L28" class="anchor"></a>　マギゲームで見た彼の実力は、実はクラスでも相当の上位だと思っているのだが、本人にあまりやる気がないためにテストの得点は真ん中よりやや下あたりに甘んじている。</span></p>
+<p><span class="paragraph"><a name="L30" id="L30" class="anchor"></a>　彼の言葉は率直で荒っぽいが、時折鋭い指摘をしてくるので油断できない。今まさに、僕のコードにダメ出しを受けたところだ。この異世界では初めての事だった。やはりコードというのは一人で書いていれば一人よがりになってしまうので、誰かに読んでレビューしてもらえるのは非常に助かる。</span></p>
+<p><span class="paragraph sticky"><a name="L32" id="L32" class="anchor"></a>　彼の視点というのは少し独特だ。恐らく、いま指摘を受けた部分だって彼はきちんと理解できている。しかし、あえて「わかりづらい」とツッコミを入れたのだ。可読性を気にしていなかったパールとは、こういうところでも対照的である。</span>
+<span class="paragraph"><a name="L33" id="L33" class="anchor"></a>　そして彼は僕に「どういうつもりで書いたのか」を尋ねてきた。コードの表面だけではなく、その裏側の意図まで読もうとしている証拠である。裏を返せば自分が書くコードだって一行一行しっかりと意図を持って書いているという事だ。</span></p>
+<p><span class="paragraph"><a name="L35" id="L35" class="anchor"></a>　三者三様の生徒達で、それぞれに良いところがあって面白い。先生というのは初めての経験だったが、なかなかやりがいのある面白い仕事だと思う。もちろん良い面ばかりではないのだろうが、自分の手によって成長する生徒達を見るのは感慨深いものがある。</span></p>
+<p><span class="paragraph sticky"><a name="L37" id="L37" class="anchor"></a>「先生、ここなんですが……」</span>
+<span class="paragraph"><a name="L38" id="L38" class="anchor"></a>「うん、今いくよ」</span></p>
+<p><span class="paragraph"><a name="L40" id="L40" class="anchor"></a>　忙しいが、充実した時間だった。</span></p>
+<hr>
+<p><span class="paragraph"><a name="L44" id="L44" class="anchor"></a>　そして、ボスに提案した『思いつき』の方も着実に準備を進めていた。</span></p>
+<p><span class="paragraph sticky"><a name="L46" id="L46" class="anchor"></a>「はぁ、『マギフェスティバル』ですか？」</span>
+<span class="paragraph"><a name="L47" id="L47" class="anchor"></a>「そうです。弊社は、そのスポンサーになりたいと考えています」</span></p>
+<p><span class="paragraph"><a name="L49" id="L49" class="anchor"></a>　いま僕がいるのはマギアカデミーの学校長室。学校長であるザッキー＝シミンスキー氏と二人きりで対面している。学校長に対して提案の内容を説明しているところだ。</span></p>
+<p><span class="paragraph sticky"><a name="L51" id="L51" class="anchor"></a>「マギフェスティバルとは一体どのようなものなんでしょうか？」</span>
+<span class="paragraph"><a name="L52" id="L52" class="anchor"></a>「この学校に通う生徒達全員が参加して、マギの技術を競い合う大会です。ただし、行われるのはテストのような机上の競争ではなく、外に出て多彩な競技によって競い合うのです」</span></p>
+<p><span class="paragraph"><a name="L54" id="L54" class="anchor"></a>　そう、僕が提案しているのはマギ版の運動会、または体育祭である。ボールを放り投げたい、と考えた時に考えたのは野球だった。だが野球のルールは複雑で、異世界の人々に受け入れられるかは未知数だ。そこで、もっとわかりやすくマギを競技化できないかと考えた。</span></p>
+<p><span class="paragraph sticky"><a name="L56" id="L56" class="anchor"></a>「僕が特別教師として校内を見ていた時、一番感じたのは閉塞感でした。学校長も仰られていた通り、生徒達からやる気や熱意が失われているのは、テスト第一主義とも言うべき考えがはびこり、テストの点さえ取れていれば問題ないと考える生徒が増えているからだと思います」</span>
+<span class="paragraph sticky"><a name="L57" id="L57" class="anchor"></a>「ふむ……そうかもしれません。しかし、テストをしないわけには行きませんし……」</span>
+<span class="paragraph sticky"><a name="L58" id="L58" class="anchor"></a>「はい、テストは必要です。ですが、テストの点数だけが全てではないと生徒達に教える必要があると思いました。そこで、様々な競技によってテスト以外の目標を作るんです。テストよりも目に見えて勝ち負けがはっきりとする競技であれば、生徒達のやる気もより引き出す事ができます」</span>
+<span class="paragraph"><a name="L59" id="L59" class="anchor"></a>「なるほど……理由はわかりましたが、そのスポンサー……ですか？　それは一体？」</span></p>
+<p><span class="paragraph sticky"><a name="L61" id="L61" class="anchor"></a>　どうやらスポンサーという言葉は普及していないらしい。スポンサーといえば、広告やＰＲを目的にイベントや団体・個人などを支援することだ。この世界では広告という概念があまりないからだろう。僕達も電話マギサービスを始めた時の宣伝に苦労したのを思い出す。</span>
+<span class="paragraph"><a name="L62" id="L62" class="anchor"></a>　マギアカデミーに寄付しているマギサービス企業もある意味ではスポンサーだろうが、目的は卒業生達の獲得なので微妙にニュアンスが異なる。</span></p>
+<p><span class="paragraph sticky"><a name="L64" id="L64" class="anchor"></a>「弊社がマギフェスティバルの開催にかかる費用を全て受け持ちます。その代わり、二つほど条件をつけさせて頂きたいのです」</span>
+<span class="paragraph"><a name="L65" id="L65" class="anchor"></a>「費用を全て……！　そ、それは素晴らしいですね！」</span></p>
+<p><span class="paragraph"><a name="L67" id="L67" class="anchor"></a>　どうやらタダでできるとわかって学校長も乗り気になったようだ。お金をかけずに生徒達のやる気を引き出せるのなら、それに越したことはないだろう。</span></p>
+<p><span class="paragraph sticky"><a name="L69" id="L69" class="anchor"></a>「条件というのは、まず、大会の中で私達の会社がスポンサーとなっているという事を広め、宣伝活動する事を許してほしいというのが一点目。そして、大会を校外の一般の人達に開放するというのが二点目です」</span>
+<span class="paragraph sticky"><a name="L70" id="L70" class="anchor"></a>「は、はぁ……宣伝については構いませんが、校外の人達に開放するというのはどういう事ですか？」</span>
+<span class="paragraph sticky"><a name="L71" id="L71" class="anchor"></a>「大会の会場に自由に出入りできるようにし、見物席を設けて競技の様子を見物できるようにします。ただし、今回は見物料は取らずに無料にしてください。できる限り多くの人を集めたいので」</span>
+<span class="paragraph sticky"><a name="L72" id="L72" class="anchor"></a>「むむむ、しかし、マギランゲージに興味がないという人が多い中、そこまで人が集まるのでしょうか？」</span>
+<span class="paragraph"><a name="L73" id="L73" class="anchor"></a>「集まりますよ。それは当日をお楽しみにしてください」</span></p>
+<p><span class="paragraph sticky"><a name="L75" id="L75" class="anchor"></a>　この国ではマギサービスが普及しているものの、日常的な利用や仕事上での利用しかしておらず、娯楽目的でマギを使う事は少ない。</span>
+<span class="paragraph sticky"><a name="L76" id="L76" class="anchor"></a>　既存のマギサービスが道具的なものしかないという事もあるし、高額な利用料という問題もある。それにマギサービスは簡単に使える反面、応用力には欠けるので利用範囲が狭いのだ。よって、実はマギを使った競技やスポーツというのが存在しない。</span>
+<span class="paragraph"><a name="L77" id="L77" class="anchor"></a>　そこに、マギを使った多彩な競技が次々と開催されていればどうだろうか。まず目新しさから、そして競技自体の面白さから夢中になる人は多いと思う。問題は宣伝だが、それも考えがある。</span></p>
+<p><span class="paragraph sticky"><a name="L79" id="L79" class="anchor"></a>「最後になりますが、もしマギフェスティバルに他のマギサービス企業も参加したい、スポンサーになりたいと言うようでしたら全て受け入れてください。その代わり、一つだけ提案があるのです」</span>
+<span class="paragraph sticky"><a name="L80" id="L80" class="anchor"></a>「提案というと？」</span>
+<span class="paragraph sticky"><a name="L81" id="L81" class="anchor"></a>「ええ、参加した企業から代表者を出して、生徒達と同じように競技に参加するんです。もちろん生徒達と競うのではなく、企業の代表者同士で競い合う事になるでしょうね」</span>
+<span class="paragraph sticky"><a name="L82" id="L82" class="anchor"></a>「ええっ！？　企業からですか？」</span>
+<span class="paragraph sticky"><a name="L83" id="L83" class="anchor"></a>「企業の代表者同士が競い合うとなれば、ハイレベルな争いになるでしょう。それは生徒達に高い目標を示す事になりますし、企業も自社の実力を広く示せますのでメリットがありますね」</span>
+<span class="paragraph sticky"><a name="L84" id="L84" class="anchor"></a>「なるほど……色々と考えておられるのですなぁ」</span>
+<span class="paragraph"><a name="L85" id="L85" class="anchor"></a>「代表者を出すのがどうしても嫌なら断ってもいいですが、それは……逃げた、という事になりますね」</span></p>
+<p><span class="paragraph"><a name="L87" id="L87" class="anchor"></a>　ニコリと微笑んでみせると、学校長は引きつった顔になる。</span></p>
+<p><span class="paragraph"><a name="L89" id="L89" class="anchor"></a>「……お話はわかりました。こちらから特別教師をお願いしたにも関わらず、こんな提案までして頂けるとはありがたい事です」</span></p>
+<p><span class="paragraph"><a name="L91" id="L91" class="anchor"></a>　学校長は何度も頷いている。</span></p>
+<p><span class="paragraph"><a name="L93" id="L93" class="anchor"></a>「前向きに検討いたしましょう。私も、国王陛下の演説は拝聴いたしました。『変革を恐れてはいけない。古い慣習やしきたりにとらわれ、考える事をやめてはいけない。しがらみに負けて、新しい事をあきらめてはいけない』。陛下のこのお言葉には非常に感銘を受けたのです。だからこそ、あなたを特別教師としてお呼びいたしました」</span></p>
+<p><span class="paragraph"><a name="L95" id="L95" class="anchor"></a>　どうやら王様の言葉は着実にこの国を変えつつある。先ほどマギアカデミーに閉塞感を感じたと言ったが、それは何もマギアカデミーだけでなく、この国全体にも言える事だったのだ。</span></p>
+<p><span class="paragraph"><a name="L97" id="L97" class="anchor"></a>「マギフェスティバル、結構ではないですか。新しいから良いというものではないでしょうが、やってみなければ良いか悪いかもわかりません。少なくとも私は、生徒達のために取り組む価値のあるものだと思いました」</span></p>
+<p><span class="paragraph sticky"><a name="L99" id="L99" class="anchor"></a>　学校長の力強い言葉は、内心不安だった僕を勇気づけた。</span>
+<span class="paragraph"><a name="L100" id="L100" class="anchor"></a>　いつだって最後に力を持つのは、人の言葉なのだ。</span></p>
+</div></main><div class="container"><nav class="page-nav"><ul class="pager"><li class="previous"><a href="/magi-hacker/chapter-03/054.html">前: 054 - hacker.activate(robot);</a></li><li class="next"><a href="/magi-hacker/chapter-03/056.html">次: 056 - hacker.advertise();</a></li></ul></nav></div><footer><div class="container"><p>&copy; Copyright 2016 IRIDE Monad</p></div></footer><script src="/magi-hacker/bower/jquery.js" charset="utf-8"></script><script src="/magi-hacker/bower/bootstrap.min.js" charset="utf-8"></script><script src="/magi-hacker/assets/page.js" charset="utf-8"></script></body></html>
