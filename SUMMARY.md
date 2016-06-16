@@ -142,4 +142,5 @@
     * [103 - hacker.overrun();](chapter-05/103.txt)
     * [CoffeeBreak 09 - maria.start(story);](chapter-05/cb09.txt)
     * [CoffeeBreak 10 - they.chat();](chapter-05/cb10.txt)
+    * [CoffeeBreak 11 - c.melt();](chapter-05/cb11.txt)
 
