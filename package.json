@@ -39,7 +39,7 @@
     "stream-combiner": "^0.2.2",
     "textlint": "^6.0.3",
     "textlint-rule-general-novel-style-ja": "^1.3.0",
-    "textlint-rule-no-start-duplicated-conjunction": "^1.0.7",
+    "textlint-rule-no-start-duplicated-conjunction": "^1.1.0",
     "yamljs": "^0.2.6",
     "yargs": "^4.7.1"
   }
