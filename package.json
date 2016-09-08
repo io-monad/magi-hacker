@@ -37,7 +37,7 @@
     "require-dir": "^0.3.0",
     "rimraf": "^2.5.2",
     "stream-combiner": "^0.2.2",
-    "textlint": "^6.0.3",
+    "textlint": "^7.1.1",
     "textlint-rule-general-novel-style-ja": "^1.3.0",
     "textlint-rule-no-start-duplicated-conjunction": "^1.0.7",
     "yamljs": "^0.2.6",
