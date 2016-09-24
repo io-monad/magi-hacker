@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "bower": "^1.7.7",
-    "coffee-script": "^1.10.0",
+    "coffee-script": "^1.11.0",
     "emoji-images": "^0.1.1",
     "gulp": "^3.9.1",
     "gulp-count-stat": "^1.0.0",
