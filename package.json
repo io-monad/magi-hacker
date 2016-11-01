@@ -30,7 +30,7 @@
     "gulp-webserver": "^0.9.1",
     "jade": "^1.11.0",
     "line-column": "^1.0.1",
-    "lodash": "^4.6.1",
+    "lodash": "^4.16.6",
     "main-bower-files": "^2.11.1",
     "match-index": "^1.0.1",
     "regex-trie": "^1.0.4",
