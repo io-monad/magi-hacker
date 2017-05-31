@@ -34,7 +34,7 @@
     "main-bower-files": "^2.11.1",
     "match-index": "^1.0.1",
     "regex-trie": "^1.0.4",
-    "require-dir": "^0.3.0",
+    "require-dir": "^0.3.2",
     "rimraf": "^2.5.2",
     "stream-combiner": "^0.2.2",
     "textlint": "^6.0.3",
